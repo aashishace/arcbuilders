@@ -50,7 +50,9 @@ export default function AboutPreview() {
               <p className="mt-6 font-sans text-base leading-relaxed text-white/50">
                 At ARC Builders we have been in the industry for over 10 years, with an
                 experienced team driven to deliver excellence in customer service. We
-                provide transparent upfront pricing with no hidden costs.
+                specialise in Vastu-compliant homes, multi-generational living, and builds
+                tailored to Indian-Australian families. Transparent upfront pricing with
+                no hidden costs.
               </p>
               <p className="mt-4 font-sans text-base leading-relaxed text-white/50">
                 Unlike others that only provide set design and build, we customise our

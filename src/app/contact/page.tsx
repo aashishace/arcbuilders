@@ -9,6 +9,8 @@ import { MapPin, Phone, Mail, Send, CheckCircle } from "lucide-react";
 
 const projectTypes = [
   "Custom Home",
+  "Vastu-Compliant Home",
+  "Multi-Generational Home",
   "Renovation",
   "Extension",
   "Granny Flat / Duplex",

@@ -116,7 +116,7 @@ export const residentialServices: Service[] = [
     id: "1",
     title: "Custom Homes",
     description:
-      "From concept to completion, we design and build bespoke homes tailored to your lifestyle, site, and budget.",
+      "From concept to completion, we design and build bespoke homes tailored to your lifestyle — including Vastu-compliant designs for families who value traditional principles in a modern Australian home.",
     icon: "Home",
     href: "/residential#custom-homes",
   },
@@ -140,7 +140,7 @@ export const residentialServices: Service[] = [
     id: "4",
     title: "Granny Flats & Duplex",
     description:
-      "Maximise your property's potential with dual-occupancy builds and self-contained granny flats.",
+      "Maximise your property's potential with dual-occupancy builds and self-contained granny flats — ideal for multi-generational families and investment properties.",
     icon: "Building2",
     href: "/residential#granny-flats",
   },
@@ -148,7 +148,7 @@ export const residentialServices: Service[] = [
     id: "5",
     title: "Designer Homes",
     description:
-      "Premium architectural homes with exceptional finishes and cutting-edge design for the discerning homeowner.",
+      "Premium architectural homes with exceptional finishes. We specialise in multi-generational living, puja rooms, and designs that honour cultural values while embracing modern Australian living.",
     icon: "Gem",
     href: "/residential#designer-homes",
   },
@@ -201,31 +201,31 @@ export const commercialServices: Service[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Sarah & James Mitchell",
-    role: "Custom Home — Brisbane",
+    name: "Raj & Anita Patel",
+    role: "Vastu-Compliant Custom Home — Brisbane",
     quote:
-      "ARC Builders turned our dream into reality. Their attention to detail and transparent pricing made the entire process stress-free. We couldn't be happier with our new home.",
+      "ARC Builders understood exactly what we needed — a modern home that respects Vastu principles. From the north-east entrance to the kitchen placement, every detail was considered. Transparent pricing and beautiful craftsmanship.",
   },
   {
     id: "2",
-    name: "Michael Chen",
-    role: "Duplex Development — Logan",
+    name: "Vikram & Sunita Mehta",
+    role: "Multi-Generational Home — Sunnybank Hills",
     quote:
-      "Professional from start to finish. The team communicated clearly at every stage and delivered a quality duplex that exceeded our expectations. Highly recommended.",
+      "We wanted a home where our parents and kids could live together comfortably, with Vastu-compliant design and a proper puja room. ARC delivered beyond our expectations. They truly understand Indian-Australian family needs.",
   },
   {
     id: "3",
     name: "Dr. Priya Sharma",
     role: "Medical Centre — Brisbane South",
     quote:
-      "Building a medical centre has strict requirements. ARC Builders navigated every regulation with expertise and delivered a facility our patients love.",
+      "Building a medical centre has strict requirements. ARC Builders navigated every regulation with expertise and delivered a facility our patients love. As an NRI, it was refreshing to work with a team that understood my vision.",
   },
   {
     id: "4",
-    name: "David & Karen O'Brien",
-    role: "Renovation — Paddington",
+    name: "Amit & Kavita Singh",
+    role: "Duplex Investment — Logan",
     quote:
-      "Our heritage home needed careful hands. ARC understood the character of our Queenslander and delivered a stunning modern kitchen while respecting the original charm.",
+      "As NRI investors, we needed a builder we could trust with our investment. ARC's transparent fixed-price contracts and regular updates gave us complete peace of mind. The duplex quality exceeded our expectations.",
   },
 ];
 
@@ -261,99 +261,167 @@ export const processSteps: ProcessStep[] = [
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "How Much Does It Cost to Build a Custom Home in Queensland?",
-    slug: "cost-to-build-custom-home-queensland",
+    title: "Vastu-Compliant Home Design in Australia: A Complete Guide for Indian Families",
+    slug: "vastu-compliant-home-design-australia",
     excerpt:
-      "A comprehensive guide to understanding the costs involved in building a custom home in Queensland, from land preparation to final finishes.",
-    content: `Building a custom home in Queensland is one of the most significant investments you'll ever make. Understanding the true costs upfront helps you plan effectively and avoid surprises.
+      "Everything you need to know about building a Vastu-compliant home in Queensland — from plot selection and entrance placement to room orientation and modern adaptations.",
+    content: `For Indian-Australian families, building a new home is the perfect opportunity to incorporate Vastu Shastra principles from the ground up. Unlike renovating, a new build lets you design every element — entrance direction, room placement, kitchen orientation — according to Vastu guidelines while meeting Australian building standards.
 
-## Average Build Costs in Queensland (2025)
+## What Is Vastu Shastra?
 
-The cost of building a custom home in Queensland typically ranges from **$1,800 to $3,500+ per square metre**, depending on the level of customisation, finishes, and complexity of the design.
+Vastu Shastra is an ancient Indian science of architecture and spatial arrangement. Similar to Feng Shui but rooted in Vedic tradition, Vastu provides guidelines for designing homes that promote health, prosperity, and harmony by aligning with natural elements and directions.
 
-For a standard 4-bedroom, 2-bathroom home of approximately 250 sqm, you can expect:
+For NRI families in Australia, Vastu represents a meaningful connection to cultural roots while building a modern home.
 
-- **Budget builds**: $450,000 – $600,000
-- **Mid-range builds**: $600,000 – $900,000
-- **Premium builds**: $900,000 – $1,500,000+
+## Key Vastu Principles for Australian Homes
 
-## What Factors Affect the Cost?
+### 1. Plot Selection & Orientation
+- **Square or rectangular plots** are considered most auspicious
+- **North-east facing plots** are ideal for overall prosperity
+- In Queensland, north-facing homes also maximise natural light — a win for both Vastu and energy efficiency
+- Avoid irregular or T-shaped plots where possible
 
-### 1. Site Conditions
-Sloping blocks, rocky terrain, or flood-prone areas can increase site preparation costs significantly. A geotechnical report is essential before planning begins.
+### 2. Main Entrance (Brahmasthan)
+The entrance is the most important Vastu element:
+- **North, north-east, or east-facing** entrances are considered most auspicious
+- The entrance should be well-lit and welcoming
+- Avoid entrances facing south-west
+- In Australian estate developments, we can work with existing lot orientations and adjust internal layouts accordingly
 
-### 2. Design Complexity
-Single-storey vs double-storey, unique architectural features, large window spans, and curved walls all impact costs. The more complex the design, the more skilled labour and materials required.
+### 3. Room Placement
+- **Master bedroom**: South-west corner for stability and grounding
+- **Kitchen**: South-east corner (Agneya), associated with the fire element
+- **Puja room**: North-east corner (Ishanya), the most sacred direction
+- **Living areas**: North or east for positive energy flow
+- **Bathrooms**: North-west or west side
+- **Children's rooms**: West or north-west
 
-### 3. Material Selection
-From structural elements to internal finishes, material choices dramatically affect the final price. Premium stone benchtops, engineered timber flooring, and high-end appliances can add $50,000–$150,000.
+### 4. Kitchen Design (Vastu Agneya)
+The kitchen is particularly important in Vastu:
+- The cook should face east while cooking
+- The stove should be in the south-east corner
+- Water elements (sink, dishwasher) should be in the north-east of the kitchen
+- Avoid placing the kitchen directly above or below a bedroom
 
-### 4. Council Requirements
-Different councils across Queensland have varying requirements for setbacks, overlays, and approvals. These can affect design options and add to planning costs.
+### 5. Puja Room Design
+A dedicated puja room is essential for many Indian-Australian families:
+- Ideally located in the north-east corner of the home
+- Should have adequate ventilation and natural light
+- The idol or image should face west (so you face east while praying)
+- Use marble or light-coloured stone flooring
+- Incorporate niches for diyas and storage for puja items
 
-## Why Transparent Pricing Matters
+## Modern Adaptations for Queensland Homes
 
-At ARC Builders, we believe in transparent upfront pricing with no hidden costs. Before construction begins, you'll have a detailed, itemised quote covering every aspect of your build. No surprises. No variations you didn't agree to.
+Not every Vastu principle can be applied literally in Australian housing estates. Here's how we adapt:
 
-## How to Get Started
+- **Fixed lot orientations**: We adjust internal layouts to maximise Vastu compliance regardless of the lot's street frontage
+- **Building codes**: Australian building codes take priority, but Vastu and code compliance are rarely in conflict
+- **Climate considerations**: Queensland's subtropical climate means north-facing living areas are ideal for both Vastu and passive solar design
+- **Multi-generational layouts**: We design homes with separate wings or granny flats that maintain Vastu principles for each living space
 
-The first step is a free consultation. We'll discuss your vision, assess your site, and provide realistic guidance on budget expectations. From there, we develop detailed plans and a comprehensive quote before any work begins.
+## Why Build Vastu-Compliant with ARC?
 
-**Ready to understand the true cost of your dream home?** [Contact us](/contact) for an obligation-free consultation.`,
-    category: "Building Costs",
+At ARC Builders, we understand the cultural significance of Vastu for Indian-Australian families. We work with you and, if desired, your Vastu consultant to ensure every principle is respected — from the initial site assessment through to construction.
+
+Our transparent pricing means you know exactly what Vastu-specific features cost, with no hidden surprises.
+
+**Ready to build a Vastu-compliant home in Queensland?** [Contact us](/contact) for a free consultation with our team.`,
+    category: "Vastu & Design",
     author: "ARC Builders Team",
     date: "2025-11-15",
-    readTime: "8 min read",
+    readTime: "10 min read",
     heroImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80",
-    tags: ["building costs", "custom homes", "queensland", "budgeting"],
+    tags: ["vastu shastra", "indian homes", "custom homes", "NRI", "queensland"],
   },
   {
     id: "2",
-    title: "Renovate or Rebuild? How to Decide What's Best for Your Property",
-    slug: "renovate-or-rebuild-guide",
+    title: "Building a Multi-Generational Home in Queensland: For Indian-Australian Families",
+    slug: "multi-generational-home-indian-australian",
     excerpt:
-      "Deciding between renovating your existing home or knocking down and rebuilding? Here's a practical guide to help you make the right choice.",
-    content: `One of the biggest decisions homeowners face is whether to renovate their existing home or demolish and start fresh. Both options have pros and cons, and the right choice depends on your specific situation.
+      "How to design a home that comfortably accommodates parents, grandparents, and children under one roof — with privacy, cultural spaces, and Vastu principles in mind.",
+    content: `Multi-generational living is a cornerstone of Indian culture, and for NRI families in Australia, building a home that accommodates everyone — parents, grandparents, and children — is often the top priority.
 
-## When Renovation Makes Sense
+## Why Multi-Generational Homes Are Growing in Australia
 
-### Structural Integrity
-If your home has good bones — solid foundations, sound framing, and compliant plumbing/electrical — renovation can be a cost-effective way to modernise.
+The Australian Bureau of Statistics reports that multi-generational households are one of the fastest-growing household types in the country. For Indian-Australian families, this isn't a trend — it's tradition.
 
-### Heritage or Character Value
-Queenslanders and heritage homes have unique character that's impossible to replicate. A well-executed renovation preserves this charm while adding modern functionality.
+Benefits include:
+- **Shared childcare and eldercare** responsibilities
+- **Stronger family bonds** across generations
+- **Cost efficiency** compared to maintaining multiple homes
+- **Cultural continuity** — grandparents pass on language, values, and traditions
+- **Support for elderly parents** who may have migrated as dependents
 
-### Budget Constraints
-Targeted renovations (kitchens, bathrooms, extensions) can achieve dramatic results for $100,000–$400,000, significantly less than a full rebuild.
+## Key Design Considerations
 
-### Council Zoning
-Some heritage overlays or neighbourhood character provisions may restrict demolition. Always check with your local council first.
+### 1. Private Zones Within a Shared Home
+The key to successful multi-generational living is balancing togetherness with privacy:
+- **Separate master suites** with ensuite bathrooms for parents and grandparents
+- **Private sitting areas** so grandparents have their own living space
+- **Separate entry points** or a connected granny flat for true independence
+- **Soundproofing** between bedrooms and living areas
 
-## When Rebuilding Makes Sense
+### 2. Shared Community Spaces
+Equally important are the spaces where family comes together:
+- **Large open-plan kitchen and dining** for family meals
+- **Outdoor entertaining areas** for gatherings and celebrations
+- **Puja room** accessible to all family members
+- **Media/living room** large enough for the whole family
 
-### Major Structural Issues
-If foundations are compromised, walls are shifting, or the framing is deteriorated, renovation costs can quickly exceed rebuild costs.
+### 3. Kitchen Design for Indian Cooking
+Indian cooking has specific requirements that standard Australian kitchens don't address:
+- **Powerful rangehood** (900CFM+) to handle spice-heavy cooking
+- **Separate masala/spice kitchen** or butler's pantry for heavy cooking
+- **Gas cooktop** for tawa, kadhai, and pressure cooker cooking
+- **Extra-deep sink** for washing large vessels
+- **Ample pantry storage** for bulk grains, lentils, and spices
+- **Tandoor or outdoor cooking area** for weekend family cooking
 
-### Layout Limitations
-Older homes often have small rooms, poor orientation, and disconnected living spaces. If the layout fundamentally doesn't work, rebuilding gives you a clean slate.
+### 4. Puja Room & Cultural Spaces
+- Dedicated **puja room** in the north-east (Vastu-compliant)
+- Space for a **shoe rack** near the entrance (shoes-off culture)
+- **Havan kund area** in the backyard for outdoor ceremonies
+- **Guest bedroom** for visiting relatives from India or interstate
 
-### Energy Efficiency
-New builds can incorporate modern insulation, solar design principles, and energy-efficient systems from the ground up, resulting in lower running costs for decades to come.
+### 5. Vastu Integration
+- Home entrance facing north-east or east
+- Kitchen in the south-east corner
+- Master bedroom in the south-west
+- Grandparents' suite in the south or west wing
+- Children's rooms in the west or north-west
 
-### Long-Term Value
-A new build typically adds more value to your property than a renovation of equivalent cost, especially in growth suburbs.
+## Floor Plan Ideas
 
-## The ARC Approach
+### Option A: Single-Storey with Wing Layout
+A ground-floor home with separate wings — parent wing, grandparent wing, and children's wing — connected by shared living and kitchen spaces. Ideal for families with elderly parents who prefer single-level living.
 
-We don't push one option over the other. During our initial consultation, we assess your property honestly and provide transparent advice on which option delivers the best outcome for your goals and budget.
+### Option B: Double-Storey with Ground-Floor Suite
+Parents and children upstairs, grandparents' self-contained suite on the ground floor with its own bathroom, kitchenette, and sitting room. Ground floor includes shared kitchen and living areas.
 
-**Not sure which path is right for you?** [Book a free consultation](/contact) and let's assess your options together.`,
-    category: "Home Improvement",
+### Option C: Main Home + Attached Granny Flat
+A full-sized family home with an attached or detached granny flat sharing the property. Each dwelling is self-contained but connected. This option also provides rental income potential if circumstances change.
+
+## Costs and Budget Planning
+
+A multi-generational home in Queensland typically costs:
+- **4-5 bedroom single-storey**: $650,000 – $1,200,000
+- **5-6 bedroom double-storey**: $800,000 – $1,500,000+
+- **Main home + granny flat**: $700,000 – $1,300,000
+
+These include puja room, masala kitchen, upgraded ventilation, and standard Vastu-compliant layout adjustments.
+
+## Building with ARC
+
+ARC Builders specialises in homes for Indian-Australian families. We understand multi-generational needs, Vastu principles, and the specific kitchen and cultural space requirements that make a house feel like home.
+
+**Planning a multi-generational home?** [Contact us](/contact) for a free design consultation.`,
+    category: "Family Living",
     author: "ARC Builders Team",
     date: "2025-10-28",
-    readTime: "6 min read",
+    readTime: "9 min read",
     heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80",
-    tags: ["renovation", "rebuild", "home improvement", "property value"],
+    tags: ["multi-generational", "indian family", "granny flat", "vastu", "NRI"],
   },
   {
     id: "3",
@@ -361,22 +429,24 @@ We don't push one option over the other. During our initial consultation, we ass
     slug: "building-process-what-to-expect",
     excerpt:
       "A step-by-step walkthrough of the entire building process, from initial consultation to final handover, so you know exactly what to expect.",
-    content: `Building a home can feel overwhelming, but it doesn't have to be. At ARC Builders, we guide you through every step with clear communication and no surprises. Here's what to expect.
+    content: `Building a home can feel overwhelming, especially if it's your first time navigating the Australian building process. At ARC Builders, we guide you through every step with clear communication and no surprises. Here's what to expect.
 
 ## Step 1: Initial Consultation (Week 1-2)
 
 Everything starts with a conversation. We meet at your site or our office to discuss:
 - Your vision and lifestyle requirements
+- Cultural and Vastu preferences
 - Budget expectations and financing
 - Site conditions and feasibility
 - Timeline and key milestones
 
-This consultation is completely free and obligation-free.
+This consultation is completely free and obligation-free. We encourage you to bring your family — including parents and grandparents — so we understand everyone's needs.
 
 ## Step 2: Design & Planning (Weeks 3-10)
 
 Once you decide to proceed, our design team develops detailed plans:
 - Architectural drawings and 3D renders
+- Vastu-compliant layout optimisation
 - Engineering specifications
 - Material selections and finishes
 - Council submission and approvals
@@ -391,6 +461,8 @@ This is where ARC differs from most builders. We provide a fully itemised, trans
 - Clear inclusions and exclusions
 - Fixed price (unless you request changes)
 
+For NRI families, this transparency is particularly important — you know exactly what you're investing before committing.
+
 ## Step 4: Construction (Weeks 13-40+)
 
 With approvals in hand and the contract signed, construction begins:
@@ -398,24 +470,25 @@ With approvals in hand and the contract signed, construction begins:
 - **Frame and roof** — the structure takes shape
 - **Lock-up** — windows, doors, and external cladding
 - **Fit-out** — plumbing, electrical, plastering
-- **Finishes** — painting, flooring, cabinetry
+- **Finishes** — painting, flooring, cabinetry, puja room fitout
 - **Landscaping** — driveways, paths, outdoor areas
 
-Throughout construction, you receive regular photo updates and site meetings.
+Throughout construction, you receive regular photo updates and site meetings. If family members are interstate or overseas, we provide video walkthroughs.
 
 ## Step 5: Handover (Final Week)
 
 Before handover, we conduct:
 - A comprehensive quality inspection
-- A full walkthrough with you
+- A full walkthrough with you and your family
 - Any minor adjustments or touch-ups
 - Complete documentation and warranty handover
+- A small puja/blessing ceremony if desired
 
 Your new home is ready to move in.
 
 ## Why Process Matters
 
-A clear, well-managed process is the difference between a stressful build and an enjoyable one. At ARC, we've refined our process over 10+ years to ensure every client has confidence from start to finish.
+A clear, well-managed process is the difference between a stressful build and an enjoyable one. At ARC, we've refined our process over 10+ years to ensure every client — whether first-time builders or experienced investors — has confidence from start to finish.
 
 **Ready to start your building journey?** [Get in touch](/contact) today.`,
     category: "Building Process",
@@ -423,135 +496,205 @@ A clear, well-managed process is the difference between a stressful build and an
     date: "2025-09-12",
     readTime: "7 min read",
     heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80",
-    tags: ["building process", "new home", "construction", "timeline"],
+    tags: ["building process", "new home", "construction", "timeline", "NRI guide"],
   },
   {
     id: "4",
-    title: "5 Kitchen Design Trends Dominating Queensland Homes in 2025",
-    slug: "kitchen-design-trends-2025",
+    title: "NRI Property Investment in Queensland: Building Your Dream Home from Overseas",
+    slug: "nri-property-investment-queensland",
     excerpt:
-      "From natural stone to integrated appliances, discover the top kitchen design trends shaping Queensland homes this year.",
-    content: `The kitchen remains the heart of the home, and 2025 is seeing some exciting design shifts. Whether you're building new or renovating, here are the trends our clients are loving.
+      "A comprehensive guide for Non-Resident Indians looking to build or invest in property in Queensland, covering legal requirements, financing, and how to manage a build remotely.",
+    content: `Many Indian families living in Australia — or still based in India — are looking to invest in property in Queensland. Whether it's a family home for when you relocate, a rental investment, or a home for your children studying in Brisbane, building in Australia offers strong returns and lifestyle benefits.
 
-## 1. Natural Stone Everything
+## Why Queensland for NRI Investment?
 
-Forget manufactured stone — natural marble, granite, and quartzite are back in a big way. Calacatta marble with dramatic veining is the standout choice, used for benchtops, splashbacks, and even feature walls.
+Queensland, particularly South-East Queensland (Brisbane, Gold Coast, Sunshine Coast), offers:
+- **Strong capital growth** — Brisbane property values have grown consistently
+- **Population growth** — interstate migration driving demand
+- **Olympic infrastructure** — Brisbane 2032 Olympics boosting regional development
+- **Affordable relative to Sydney/Melbourne** — better value per square metre
+- **Lifestyle appeal** — subtropical climate, multicultural communities, excellent schools
 
-**Tip**: Natural stone requires sealing and maintenance, but the visual impact is unmatched.
+## Legal Requirements for NRI Buyers
 
-## 2. Dark and Moody Palettes
+### Australian Citizens / Permanent Residents
+If you hold Australian citizenship or permanent residency, you can buy and build without restrictions.
 
-While white kitchens aren't going anywhere, there's a strong shift towards deeper tones:
-- Charcoal and black cabinetry
-- Dark timber veneers
-- Brass and gold hardware
-- Emerald green accents
+### Temporary Visa Holders
+If you're on a temporary visa (student, work visa, etc.), you need **Foreign Investment Review Board (FIRB)** approval to purchase property. You can only buy new dwellings or vacant land for new construction — not established homes.
 
-The key is balancing dark tones with adequate lighting and lighter benchtop surfaces.
+### Key FIRB Rules:
+- Application fee varies based on property value
+- You must build within 24 months of purchasing vacant land
+- If you leave Australia, you may need to sell the property
+- Always consult a solicitor for your specific visa situation
 
-## 3. Integrated and Concealed Appliances
+## Financing Your Build
 
-The "appliance garage" trend is going mainstream. Homeowners want clean, uncluttered sightlines with:
-- Panel-integrated fridges and dishwashers
-- Concealed rangehoods behind cabinetry
-- Hidden appliance cupboards with roller doors
-- Induction cooktops that sit flush with benchtops
+### For Australian Residents
+Standard home loans apply. Most major banks offer construction loans that release funds in stages:
+1. Deposit (usually 10-20%)
+2. Slab/foundation stage
+3. Frame stage
+4. Lock-up stage
+5. Fit-out stage
+6. Completion
 
-## 4. Butler's Pantries (Now Standard)
+### For Overseas-Based NRIs
+Financing is more complex. Options include:
+- **Australian bank loans** — some banks lend to non-residents, typically requiring 30-40% deposit
+- **Indian bank loans** — some Indian banks offer overseas property loans
+- **Self-funded** — many NRI investors fund builds through savings or family
+- **Joint ownership** — building with an Australian-based family member
 
-What was once a luxury feature is now expected in most custom homes. A well-designed butler's pantry provides:
-- Additional benchtop and storage space
-- A place to hide mess during entertaining
-- Room for a second sink, dishwasher, and microwave
-- Dry goods storage and wine storage
+## Managing a Build Remotely
 
-## 5. Statement Lighting
+If you're based interstate or overseas, ARC Builders makes it easy:
+- **Video consultations** for design and planning discussions
+- **3D renders and virtual walkthroughs** before construction
+- **Weekly photo updates** during construction
+- **Video call site meetings** at every key milestone
+- **Single point of contact** — your dedicated project manager
+- **Transparent portal access** — see your budget and progress anytime
 
-Kitchens are getting more intentional with lighting:
-- Oversized pendant lights over islands
-- LED strip lighting under cabinetry and in joinery
-- Warm colour temperatures (2700K–3000K)
-- Dimmer controls for mood flex
+## What to Build for Maximum Returns
 
-## Building Your Dream Kitchen
+### Owner-Occupier (Family Home)
+Build what your family needs — Vastu-compliant layout, puja room, multi-generational design. 4-5 bedrooms in growth suburbs like Sunnybank, Eight Mile Plains, or Calamvale.
 
-At ARC Builders, we work with you to select finishes and design features that match your lifestyle. Our transparent quoting means you know exactly what each element costs — no surprises when the kitchen is being installed.
+### Investment Property
+Focus on rental yield and capital growth:
+- **Duplexes** — two rental incomes from one block
+- **Townhouses** — lower entry cost, strong demand
+- **House + granny flat** — dual income stream
 
-**Planning a kitchen renovation or new build?** [Let's talk design](/contact).`,
-    category: "Design Trends",
+### Student Accommodation
+If building near universities (UQ, Griffith, QUT), consider:
+- Multi-bedroom layouts with shared living
+- Proximity to public transport
+- Low-maintenance finishes
+
+## Why ARC Builders for NRI Clients
+
+We understand the unique needs of NRI investors and Indian-Australian families:
+- **Vastu-compliant designs** available for all home styles
+- **Remote project management** with video updates
+- **Transparent fixed-price contracts** — no surprises
+- **Cultural understanding** — puja rooms, masala kitchens, multi-generational layouts
+- **QBCC licensed** — fully insured and warranties included
+
+**Interested in building or investing in Queensland?** [Contact us](/contact) for a free consultation — we're happy to arrange a video call if you're interstate or overseas.`,
+    category: "Investment",
     author: "ARC Builders Team",
     date: "2025-08-05",
-    readTime: "5 min read",
+    readTime: "9 min read",
     heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80",
-    tags: ["kitchen design", "trends", "renovation", "interior design"],
+    tags: ["NRI investment", "property", "queensland", "FIRB", "building costs"],
   },
   {
     id: "5",
-    title: "Granny Flats in Queensland: Rules, Costs, and Everything You Need to Know",
-    slug: "granny-flats-queensland-guide",
+    title: "Vastu Kitchen Design for Indian-Australian Homes: Principles & Practical Tips",
+    slug: "vastu-kitchen-design-indian-australian",
     excerpt:
-      "Thinking about adding a granny flat to your property? Here's a complete guide to regulations, costs, and design options in Queensland.",
-    content: `Granny flats (also known as secondary dwellings) are one of the smartest ways to add value and functionality to your property. Whether it's for aging parents, rental income, or a home office, here's everything you need to know.
+      "How to design a kitchen that follows Vastu Shastra principles while meeting the practical demands of Indian cooking in an Australian home.",
+    content: `The kitchen is the heart of every Indian home — it's where family gathers, where traditions are passed down through recipes, and where daily nourishment begins. For Indian-Australian families building a new home, getting the kitchen right means balancing Vastu Shastra principles with the practical demands of Indian cooking.
 
-## Queensland Regulations
+## Vastu Principles for Kitchen Placement
 
-### What's Allowed
-In most Queensland council areas, you can build a secondary dwelling on your property provided:
-- Your lot is large enough to meet minimum lot size requirements
-- The dwelling doesn't exceed the maximum floor area (usually 80 sqm)
-- Adequate private open space is maintained
-- Car parking requirements are met
-- The dwelling is not on a separate title (no subdivision)
+### Direction
+- The kitchen should be in the **south-east corner** of the home (Agneya direction), governed by the fire element (Agni)
+- If south-east isn't possible, **north-west** is the second-best option
+- **Never** place the kitchen in the north-east (sacred/water element) or south-west (earth element)
 
-### Council Approval
-Most granny flats require a development application through your local council. Some councils offer fast-track approvals for compliant designs.
+### Cook's Orientation
+- The person cooking should **face east** — this is considered auspicious and aligns with the sunrise/positive energy
+- Design the kitchen layout so the primary cooking station faces east
 
-## Costs
+### Fire & Water Separation
+- The **stove/cooktop** (fire element) and **sink** (water element) should not be directly adjacent
+- Ideally, the sink is in the north-east corner of the kitchen and the stove in the south-east
+- The fridge (water element) should also be separated from the stove
 
-A quality granny flat in Queensland typically costs:
-- **1-bedroom (45-55 sqm)**: $120,000 – $180,000
-- **2-bedroom (60-80 sqm)**: $180,000 – $280,000
-- **Premium finishes**: Add 20-30%
+### Storage
+- Store **grains and groceries** in the south-west area of the kitchen
+- **Overhead cabinets** on the southern and western walls
+- Keep the **north-east corner** of the kitchen clear or minimal
 
-These costs include council fees, site works, construction, and connections to utilities.
+## Practical Design for Indian Cooking
 
-## Rental Returns
+Beyond Vastu, Indian cooking has specific requirements most Australian kitchen designs don't address:
 
-A well-designed granny flat can generate $300–$500+ per week in rental income, depending on location and finish quality. In many Brisbane suburbs, you can achieve a return on investment within 5-8 years.
+### Masala Kitchen (Spice Kitchen)
+A dedicated second kitchen or enclosed cooking area for heavy Indian cooking:
+- Strong **commercial-grade rangehood** (800-1200 CFM) to handle tandoori, frying, and spice grinding
+- **Gas cooktop** — essential for tawa cooking, tempering (tadka), and pressure cooking
+- **Splashback tiles** that are easy to clean (avoid exposed grout lines)
+- **Extra-deep stainless steel sink** for washing large vessels, pressure cookers, and thalis
+- **Separate from the main kitchen** — keeps the presentation kitchen clean for entertaining
 
-## Design Considerations
+### Main Kitchen (Show Kitchen)
+The beautiful kitchen your guests see:
+- **Island bench** for serving and casual dining
+- Modern finishes — stone benchtops, quality cabinetry
+- **Induction cooktop** for everyday cooking
+- **Butler's pantry** connecting to the masala kitchen
 
-### Orientation
-North-facing living areas maximise natural light and reduce energy costs.
+### Pantry & Storage
+Indian households typically store more dry goods than the average Australian home:
+- **Walk-in pantry** or large pull-out pantry system
+- Dedicated storage for **25kg rice bags, dal, atta, spices**
+- **Lazy Susan** corner cabinets for spice jars
+- **Steel wire baskets** for vegetable storage (onions, potatoes, garlic)
 
-### Privacy
-Thoughtful placement, screening, and landscaping ensure privacy for both dwellings.
+### Ventilation
+This cannot be overstated:
+- A **ducted rangehood** (not recirculating) vented to the exterior
+- Minimum **900 CFM** for the masala kitchen
+- **Separate ventilation** for masala kitchen and main kitchen
+- Consider a **window** in the masala kitchen for cross-ventilation
 
-### Access
-Consider separate driveways or pathways for independent access.
+## Design Ideas That Blend Vastu & Modern Style
 
-### Future-Proofing
-If the flat is for aging parents, incorporate universal design principles: wider doorways, step-free access, and accessible bathrooms.
+### Colour Palette (Vastu-Aligned)
+- **South-east kitchen**: Orange, red, or warm earthy tones (fire element colours)
+- **North-west kitchen**: White, silver, or cream tones
+- Avoid black or very dark colours for the kitchen (considered inauspicious in Vastu)
 
-## The ARC Difference
+### Materials
+- **Natural stone benchtops** — granite or quartzite (avoid marble near cooking zones as it stains)
+- **Timber or warm-toned cabinetry** — complements Vastu's fire element
+- **Brass or gold hardware** — culturally resonant and on-trend
 
-We specialise in granny flats that don't feel like afterthoughts. Our designs are architecturally considered, quality-built, and priced transparently.
+### Layout
+- **L-shaped or U-shaped** layouts work best for Vastu compliance
+- Keep the **centre of the kitchen clear** — avoid islands blocking energy flow (though modern interpretations are flexible)
+- **Pooja niche** near the kitchen entry for a small diya or Ganesh idol
 
-**Want to explore your granny flat options?** [Book a consultation](/contact) and we'll assess your property's potential.`,
-    category: "Granny Flats",
+## Costs for a Vastu Kitchen
+
+In a new build or major renovation:
+- **Main kitchen (premium)**: $35,000 – $65,000
+- **Masala kitchen addition**: $15,000 – $30,000
+- **Upgraded rangehood/ventilation**: $2,000 – $5,000
+- **Butler's pantry**: $10,000 – $20,000
+
+At ARC Builders, all kitchen costs are fully specified in your quote — no allowances, no surprises.
+
+**Designing your dream Indian-Australian kitchen?** [Let's talk](/contact) — we'll create a kitchen that honours your traditions and fits your lifestyle.`,
+    category: "Vastu & Design",
     author: "ARC Builders Team",
     date: "2025-07-18",
-    readTime: "6 min read",
-    heroImage: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1920&q=80",
-    tags: ["granny flats", "secondary dwelling", "queensland", "rental income"],
+    readTime: "8 min read",
+    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80",
+    tags: ["vastu kitchen", "indian cooking", "masala kitchen", "kitchen design", "NRI"],
   },
   {
     id: "6",
     title: "Why Transparent Pricing Matters: The Hidden Costs Most Builders Won't Tell You",
     slug: "transparent-pricing-hidden-costs",
     excerpt:
-      "Most building quotes look great on paper, but hide costs in allowances and provisional sums. Here's how to protect yourself.",
-    content: `If you've ever received a building quote that seemed too good to be true, it probably was. The building industry has a transparency problem, and it costs homeowners thousands of dollars every year.
+      "Most building quotes look great on paper, but hide costs in allowances and provisional sums. Here's how to protect yourself — especially important for NRI families investing from overseas.",
+    content: `If you've ever received a building quote that seemed too good to be true, it probably was. The building industry has a transparency problem, and it costs homeowners thousands of dollars every year. For NRI families building from interstate or overseas, this risk is even greater.
 
 ## The Problem with "Allowances"
 
@@ -564,17 +707,20 @@ Common areas where allowances hide true costs:
 - Electrical and lighting
 - Landscaping
 - Driveways
+- Puja room finishes and marble work
 
 ## How Variations Add Up
 
 It's not uncommon for homeowners to face $50,000–$100,000+ in variations on a standard build. By the time you realise the true cost, you're already committed and have limited negotiating power.
+
+For NRI families managing a build remotely, variations are particularly concerning — you may not be there to catch discrepancies or challenge charges.
 
 ## The ARC Approach to Pricing
 
 We do things differently:
 
 ### 1. Fully Specified Quotes
-Every item in your quote is specified — brand, model, colour, and price. No allowances, no provisional sums.
+Every item in your quote is specified — brand, model, colour, and price. No allowances, no provisional sums. This includes speciality items like puja room marble, masala kitchen rangehoods, and Vastu-specific layout adjustments.
 
 ### 2. Selection Before Signing
 We help you select all your finishes and materials BEFORE you sign the contract. This means the price you agree to is the price you pay.
@@ -585,6 +731,13 @@ Once the contract is signed, the price is fixed. The only variations that occur 
 ### 4. Open Book Policy
 You can see exactly where every dollar goes. We don't hide margins in material costs or subcontractor quotes.
 
+### 5. Remote Transparency
+For clients who aren't local, we provide:
+- Digital budget tracking accessible anytime
+- Photo and video updates at every stage
+- Video call meetings for any decisions needed
+- Written approval required for any changes
+
 ## How to Protect Yourself
 
 When comparing quotes from different builders:
@@ -593,6 +746,7 @@ When comparing quotes from different builders:
 3. Request a fixed-price contract
 4. Ask about the builder's average variation percentage
 5. Check reviews for mentions of cost blowouts
+6. Ask how they handle communication with interstate/overseas clients
 
 ## The Bottom Line
 
@@ -604,7 +758,7 @@ The cheapest quote is rarely the cheapest build. A transparent, fully specified 
     date: "2025-06-22",
     readTime: "7 min read",
     heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80",
-    tags: ["pricing", "transparency", "building industry", "contracts"],
+    tags: ["pricing", "transparency", "NRI", "building industry", "contracts"],
   },
 ];
 

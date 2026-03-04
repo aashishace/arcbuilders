@@ -80,8 +80,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 1 }}
             className="mt-6 max-w-lg font-sans text-base font-light leading-relaxed text-white/60 md:text-lg"
           >
-            Custom homes, renovations, and architectural builds. Transparent
-            pricing, superior craftsmanship, and a team that delivers.
+            Custom homes, renovations, and Vastu-compliant builds for
+            Indian-Australian families. Transparent pricing, superior
+            craftsmanship, and a team that understands your vision.
           </motion.p>
 
           {/* CTA buttons */}

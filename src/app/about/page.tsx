@@ -63,13 +63,15 @@ export default function AboutPage() {
                 <p className="mt-6 font-sans text-base leading-relaxed text-[#1a1a1a]/60">
                   At ARC Builders, we have been in the building industry for over 10
                   years, with an experienced team driven to deliver excellence in
-                  customer service. We provide transparent upfront pricing with no
-                  hidden costs.
+                  customer service. We specialise in Vastu-compliant homes,
+                  multi-generational living, and builds tailored to Indian-Australian
+                  families. Transparent upfront pricing with no hidden costs.
                 </p>
                 <p className="mt-4 font-sans text-base leading-relaxed text-[#1a1a1a]/60">
                   Transforming your plans into quality residential or commercial
                   buildings. Unlike others that only provide set design and build, we
-                  customise our plans to reflect your unique vision.
+                  customise our plans to reflect your unique vision — including puja rooms,
+                  masala kitchens, and culturally thoughtful design.
                 </p>
                 <p className="mt-4 font-sans text-base leading-relaxed text-[#1a1a1a]/60">
                   We are driven by a passion to deliver superior customer service,
