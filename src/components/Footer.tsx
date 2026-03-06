@@ -21,7 +21,7 @@ export default function Footer() {
                 alt="ARC Builders"
                 width={500}
                 height={500}
-                className="h-14 w-auto"
+                className="h-20 w-auto"
                 unoptimized
               />
             </Link>
