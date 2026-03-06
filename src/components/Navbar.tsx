@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -30,9 +31,14 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
           {/* Logo */}
           <Link href="/" className="relative z-10 flex items-center gap-2">
-            <span className="text-2xl font-bold tracking-wider text-white">
-              ARC
-            </span>
+            <Image
+              src="/logo.webp"
+              alt="ARC Builders"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
             <span className="text-sm font-light tracking-widest text-accent uppercase">
               Builders
             </span>

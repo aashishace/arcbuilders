@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Youtube, ArrowUp, Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
 import { companyInfo, navLinks } from "@/lib/data";
 
@@ -14,11 +15,15 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block">
-              <span className="text-2xl font-bold tracking-wider text-white">
-                ARC
-              </span>
-              <span className="ml-2 text-sm font-light tracking-widest text-accent uppercase">
+            <Link href="/" className="inline-flex items-center gap-2">
+              <Image
+                src="/logo.webp"
+                alt="ARC Builders"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
+              />
+              <span className="text-sm font-light tracking-widest text-accent uppercase">
                 Builders
               </span>
             </Link>
