@@ -41,7 +41,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 lg:px-8">
+      <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 pt-28 lg:px-8">
         <div className="mx-auto w-full max-w-7xl">
           {/* Subtitle */}
           <motion.p
