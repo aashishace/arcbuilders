@@ -24,8 +24,8 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-[#1a1a1a]/95 backdrop-blur-md shadow-lg py-3"
-            : "bg-transparent py-5"
+            ? "bg-[#1a1a1a]/95 backdrop-blur-md shadow-lg py-2"
+            : "bg-transparent py-4"
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
@@ -36,7 +36,7 @@ export default function Navbar() {
               alt="ARC Builders"
               width={500}
               height={500}
-              className="h-16 w-auto"
+              className="h-20 w-auto"
               priority
               unoptimized
             />

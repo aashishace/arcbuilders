@@ -43,20 +43,12 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 lg:px-8">
         <div className="mx-auto w-full max-w-7xl">
-          {/* Accent line */}
-          <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: 80 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mb-8 h-[1px] bg-accent"
-          />
-
           {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent"
+            className="mb-6 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent"
           >
             Aesthetic Residential & Commercial
           </motion.p>
