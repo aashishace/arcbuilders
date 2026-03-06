@@ -29,7 +29,7 @@ export default function Hero() {
           className="h-full w-full"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80)",
+              "url(/projects/14-verona-st-pallara/hero.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             transform: "scale(1.1)",

@@ -33,7 +33,7 @@ export default function BlogPage() {
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80)",
+              "url(/projects/35-ayesha-place-calamvale/hero.webp)",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />

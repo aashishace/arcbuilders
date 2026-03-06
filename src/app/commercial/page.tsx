@@ -33,7 +33,7 @@ export default function CommercialPage() {
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80)",
+              "url(/projects/3-stanley-st-mount-gravatt/hero.webp)",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />

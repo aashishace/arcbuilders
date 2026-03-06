@@ -1,7 +1,7 @@
 # ARC Builders — Logo & Favicon Generation Prompts
 
 ## Business Context
-- **Company**: ARC Builders (Aesthetic Residential Commercial Builders)
+- **Company**: ARC Builders (Aesthetic Residential and Commercial)
 - **Industry**: Premium residential & commercial construction, Queensland Australia
 - **Target Audience**: Indian-Australian NRI families, professionals, and investors
 - **Brand Colours**: 

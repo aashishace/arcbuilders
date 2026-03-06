@@ -16,7 +16,7 @@ export default function AboutPage() {
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80)",
+              "url(/projects/25-langford-st/hero.webp)",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
@@ -40,7 +40,7 @@ export default function AboutPage() {
                   className="aspect-[4/5] bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80)",
+                      "url(/projects/3-dart-ave-kingston/hero.webp)",
                   }}
                 />
                 {/* Gold border accent */}

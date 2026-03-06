@@ -20,7 +20,7 @@ export default function AboutPreview() {
                   className="h-full w-full bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80)",
+                      "url(/projects/3-stanley-st-mount-gravatt/hero.webp)",
                   }}
                 />
               </div>
