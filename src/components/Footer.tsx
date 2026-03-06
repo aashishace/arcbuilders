@@ -15,17 +15,15 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2">
+            <Link href="/" className="inline-flex items-center">
               <Image
                 src="/logo.webp"
                 alt="ARC Builders"
-                width={40}
-                height={40}
-                className="h-10 w-auto"
+                width={500}
+                height={500}
+                className="h-14 w-auto"
+                unoptimized
               />
-              <span className="text-sm font-light tracking-widest text-accent uppercase">
-                Builders
-              </span>
             </Link>
             <p className="mt-4 font-sans text-sm leading-relaxed text-white/50">
               {companyInfo.fullName}. Transforming plans into quality residential and

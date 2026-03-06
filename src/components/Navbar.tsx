@@ -30,18 +30,16 @@ export default function Navbar() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="relative z-10 flex items-center gap-2">
+          <Link href="/" className="relative z-10 flex items-center">
             <Image
               src="/logo.webp"
               alt="ARC Builders"
-              width={40}
-              height={40}
-              className="h-10 w-auto"
+              width={500}
+              height={500}
+              className="h-12 w-auto"
               priority
+              unoptimized
             />
-            <span className="text-sm font-light tracking-widest text-accent uppercase">
-              Builders
-            </span>
           </Link>
 
           {/* Desktop nav */}
