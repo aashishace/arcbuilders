@@ -29,7 +29,7 @@ export default function Hero() {
           className="h-full w-full"
           style={{
             backgroundImage:
-              "url(/projects/14-verona-st-pallara/hero.webp)",
+              "url(/hero.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             transform: "scale(1.1)",

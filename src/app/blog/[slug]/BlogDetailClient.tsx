@@ -8,36 +8,15 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import SocialShare from "@/components/SocialShare";
 import ScrollReveal from "@/components/ScrollReveal";
-import { blogPosts } from "@/lib/data";
+import type { BlogPost } from "@/lib/types";
 
-export default function BlogDetailClient({ slug }: { slug: string }) {
-  const post = blogPosts.find((p) => p.slug === slug);
-
-  if (!post) {
-    return (
-      <main>
-        <Navbar />
-        <section className="flex min-h-screen items-center justify-center bg-[#1a1a1a]">
-          <div className="text-center">
-            <h1 className="text-4xl font-light text-white">Article Not Found</h1>
-            <Link
-              href="/blog"
-              className="mt-6 inline-block text-accent underline"
-            >
-              Back to Blog
-            </Link>
-          </div>
-        </section>
-        <Footer />
-      </main>
-    );
-  }
-
-  // Get related posts (same category, excluding current)
-  const relatedPosts = blogPosts
-    .filter((p) => p.category === post.category && p.id !== post.id)
-    .slice(0, 2);
-
+export default function BlogDetailClient({
+  post,
+  relatedPosts,
+}: {
+  post: BlogPost;
+  relatedPosts: BlogPost[];
+}) {
   // Build shareable URL
   const shareUrl =
     typeof window !== "undefined"
