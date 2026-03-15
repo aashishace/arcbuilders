@@ -2,6 +2,9 @@
 
 import { useEffect } from "react";
 
+const cmsRepo =
+  process.env.NEXT_PUBLIC_CMS_GITHUB_REPO || "aashishace/arcbuilders";
+
 export default function AdminPage() {
   useEffect(() => {
     // Prevent CMS from auto-loading config.yml (avoids 404 with App Router)
@@ -18,7 +21,7 @@ export default function AdminPage() {
         config: {
           backend: {
             name: "github",
-            repo: "aashishace/arcbuilders",
+            repo: cmsRepo,
             branch: "main",
             base_url: "https://arcbuilders.com.au",
             auth_endpoint: "/api/auth",
