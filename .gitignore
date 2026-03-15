@@ -41,3 +41,8 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# local business docs (do not publish)
+ARC_Builders_Services_Pricing.md
+ARC_Logo_Favicon_Prompts.md
+ARC_Builders_Content_Sheet.csv
