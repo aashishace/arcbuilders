@@ -4,7 +4,7 @@
 export const projects: Project[] = [
   {
     id: "1",
-    title: "14 Verona Street Residence",
+    title: "Verona Residence",
     slug: "14-verona-st-pallara",
     location: "Pallara, QLD 4110",
     type: "custom-home",
@@ -13,7 +13,7 @@ export const projects: Project[] = [
     scope: "Full design & build â€” luxury family home",
     description:
       "A beautifully crafted family residence in Pallara featuring modern architectural lines, premium finishes, and spacious open-plan living. Designed to embrace the Queensland lifestyle with seamless indoor-outdoor flow.",
-    heroImage: "/projects/14-verona-st-pallara/hero.webp",
+    heroImage: "/projects/14-verona-st-pallara/gallery-02.webp",
     images: [
       "/projects/14-verona-st-pallara/gallery-01.webp",
       "/projects/14-verona-st-pallara/gallery-02.webp",
@@ -32,7 +32,7 @@ export const projects: Project[] = [
   },
   {
     id: "2",
-    title: "25 Langford Street",
+    title: "Langford Residence",
     slug: "25-langford-st",
     location: "Brisbane, QLD",
     type: "custom-home",
@@ -40,8 +40,8 @@ export const projects: Project[] = [
     architect: "ARC Design Studio",
     scope: "Custom home â€” contemporary design & build",
     description:
-      "A striking contemporary home on Langford Street showcasing bold architectural design, high-end interiors, and expansive living spaces. Built with meticulous attention to detail and quality craftsmanship throughout.",
-    heroImage: "/projects/25-langford-st/hero.webp",
+      "A striking contemporary residence showcasing bold architectural design, high-end interiors, and expansive living spaces. Built with meticulous attention to detail and quality craftsmanship throughout.",
+    heroImage: "/projects/25-langford-st/gallery-02.webp",
     images: [
       "/projects/25-langford-st/gallery-01.webp",
       "/projects/25-langford-st/gallery-02.webp",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "49 Herbert Street",
+    title: "Herbert Residence",
     slug: "49-herbert-st",
     location: "Brisbane, QLD",
     type: "custom-home",
@@ -68,8 +68,8 @@ export const projects: Project[] = [
     architect: "ARC Design Studio",
     scope: "Full design & build â€” modern family home",
     description:
-      "A sophisticated modern family home on Herbert Street featuring clean architectural lines, premium material selections, and thoughtfully designed living spaces that maximise natural light and ventilation.",
-    heroImage: "/projects/49-herbert-st/hero.webp",
+      "A sophisticated modern family home featuring clean architectural lines, premium material selections, and thoughtfully designed living spaces that maximise natural light and ventilation.",
+    heroImage: "/projects/49-herbert-st/gallery-03.webp",
     images: [
       "/projects/49-herbert-st/gallery-01.webp",
       "/projects/49-herbert-st/gallery-02.webp",
@@ -88,7 +88,7 @@ export const projects: Project[] = [
   },
   {
     id: "4",
-    title: "3 Brooklyn Street Residence",
+    title: "Brooklyn Residence",
     slug: "3-brooklyn-st-spring-mountain",
     location: "Spring Mountain, QLD",
     type: "custom-home",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     scope: "Custom home â€” new build",
     description:
       "A stunning custom home in the Spring Mountain estate featuring contemporary architecture, premium finishes, and generous living areas designed for modern family living in one of Brisbane's most sought-after growth corridors.",
-    heroImage: "/projects/3-brooklyn-st-spring-mountain/hero.webp",
+    heroImage: "/projects/3-brooklyn-st-spring-mountain/gallery-04.webp",
     images: [
       "/projects/3-brooklyn-st-spring-mountain/gallery-01.webp",
       "/projects/3-brooklyn-st-spring-mountain/gallery-02.webp",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
   },
   {
     id: "5",
-    title: "3 Dart Avenue Residence",
+    title: "Dart Residence",
     slug: "3-dart-ave-kingston",
     location: "Kingston, QLD 4114",
     type: "custom-home",
@@ -125,7 +125,7 @@ export const projects: Project[] = [
     scope: "Full design & build â€” family home",
     description:
       "A well-appointed family home in Kingston combining functional design with stylish contemporary finishes. Every space has been carefully planned to deliver comfort, practicality, and lasting quality.",
-    heroImage: "/projects/3-dart-ave-kingston/hero.webp",
+    heroImage: "/projects/3-dart-ave-kingston/gallery-03.webp",
     images: [
       "/projects/3-dart-ave-kingston/gallery-01.webp",
       "/projects/3-dart-ave-kingston/gallery-02.webp",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
   },
   {
     id: "6",
-    title: "3 Stanley Street Residence",
+    title: "Stanley Residence",
     slug: "3-stanley-st-mount-gravatt",
     location: "Mount Gravatt, QLD",
     type: "custom-home",
@@ -153,7 +153,7 @@ export const projects: Project[] = [
     scope: "Full design & build â€” luxury home",
     description:
       "An impressive custom build in Mount Gravatt showcasing architectural excellence and superior craftsmanship. Featuring high ceilings, premium kitchen design, and beautifully appointed interiors throughout.",
-    heroImage: "/projects/3-stanley-st-mount-gravatt/hero.webp",
+    heroImage: "/projects/3-stanley-st-mount-gravatt/gallery-03.webp",
     images: [
       "/projects/3-stanley-st-mount-gravatt/gallery-01.webp",
       "/projects/3-stanley-st-mount-gravatt/gallery-02.webp",
@@ -172,7 +172,7 @@ export const projects: Project[] = [
   },
   {
     id: "7",
-    title: "35 Ayesha Place",
+    title: "Ayesha Residence",
     slug: "35-ayesha-place-calamvale",
     location: "Calamvale, QLD",
     type: "custom-home",
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     scope: "Custom home â€” modern family build",
     description:
       "A modern family home in Calamvale designed with thoughtful attention to space, light, and lifestyle. Featuring contemporary interiors, quality finishes, and functional living areas perfect for family life.",
-    heroImage: "/projects/35-ayesha-place-calamvale/hero.webp",
+    heroImage: "/projects/35-ayesha-place-calamvale/gallery-11.webp",
     images: [
       "/projects/35-ayesha-place-calamvale/gallery-01.webp",
       "/projects/35-ayesha-place-calamvale/gallery-02.webp",
@@ -200,7 +200,7 @@ export const projects: Project[] = [
   },
   {
     id: "8",
-    title: "8 Vineyard Drive",
+    title: "Vineyard Residence",
     slug: "8-vineyard-drive-greenbank",
     location: "Greenbank, QLD",
     type: "custom-home",
@@ -209,7 +209,7 @@ export const projects: Project[] = [
     scope: "Full design & build â€” acreage home",
     description:
       "A spacious acreage home in Greenbank set against lush surroundings. This build features expansive living areas, a chef-grade kitchen, and outdoor entertaining spaces that make the most of the tranquil semi-rural setting.",
-    heroImage: "/projects/8-vineyard-drive-greenbank/hero.webp",
+    heroImage: "/projects/8-vineyard-drive-greenbank/gallery-03.webp",
     images: [
       "/projects/8-vineyard-drive-greenbank/gallery-01.webp",
       "/projects/8-vineyard-drive-greenbank/gallery-02.webp",
@@ -237,7 +237,7 @@ export const projects: Project[] = [
     scope: "Full design & build â€” premium residence",
     description:
       "A premium custom residence showcasing ARC Builders' commitment to exceptional quality. This project features striking exterior design, luxurious interiors, and the finest material selections throughout.",
-    heroImage: "/projects/hi-def-project/hero.webp",
+    heroImage: "/projects/hi-def-project/gallery-03.webp",
     images: [
       "/projects/hi-def-project/gallery-01.webp",
       "/projects/hi-def-project/gallery-02.webp",

@@ -11,6 +11,9 @@ import { projects } from "@/lib/data";
 
 export default function ProjectDetailClient({ slug }: { slug: string }) {
   const project = projects.find((p) => p.slug === slug);
+  const galleryImages = project
+    ? [project.heroImage, ...project.images.filter((img) => img !== project.heroImage)]
+    : [];
 
   if (!project) {
     return (
@@ -133,7 +136,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
           </ScrollReveal>
 
           <div className="mt-12 grid gap-4 md:grid-cols-2">
-            {project.images.map((img, i) => (
+            {galleryImages.map((img, i) => (
               <ScrollReveal
                 key={i}
                 delay={i * 0.1}
