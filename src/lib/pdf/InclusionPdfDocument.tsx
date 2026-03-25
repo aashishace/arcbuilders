@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
   rule: {
     height: 1,
-    backgroundColor: "#df8358",
+    backgroundColor: "#ffe169",
     marginVertical: 10,
   },
   metaGrid: {
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
   },
   statusInlineAllowance: {
     backgroundColor: "#fff0dc",
-    borderColor: "#efc96a",
+    borderColor: "#ffe169",
     color: "#6f4f08",
   },
   statusInlineUpgrade: {
