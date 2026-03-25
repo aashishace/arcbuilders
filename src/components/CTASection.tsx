@@ -58,6 +58,12 @@ export default function CTASection() {
             >
               Call 0411 878 438
             </a>
+            <Link
+              href="/inclusions"
+              className="border border-accent/40 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-all duration-300 hover:border-accent hover:bg-accent hover:text-[#1a1a1a]"
+            >
+              Build Inclusion Sheet
+            </Link>
             <a
               href="https://wa.me/61411878438?text=Hi%20ARC%20Builders%2C%20I%27m%20interested%20in%20discussing%20a%20project."
               target="_blank"

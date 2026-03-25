@@ -409,6 +409,7 @@ export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
   { label: "Residential", href: "/residential" },
+  { label: "Inclusions", href: "/inclusions" },
   { label: "Commercial", href: "/commercial" },
   { label: "Process", href: "/process" },
   { label: "About", href: "/about" },
