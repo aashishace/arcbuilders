@@ -1,14 +1,24 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 export default function Hero() {
   const videoRef = useRef<HTMLDivElement>(null);
+  const [useStaticHero, setUseStaticHero] = useState(false);
 
   useEffect(() => {
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const shouldUseStatic = Boolean(connection?.saveData) || prefersReducedMotion;
+
+    if (shouldUseStatic) {
+      setUseStaticHero(true);
+      return;
+    }
+
     // Parallax effect on scroll
     const handleScroll = () => {
       if (videoRef.current) {
@@ -16,25 +26,40 @@ export default function Hero() {
         videoRef.current.style.transform = `translateY(${scrollY * 0.4}px) scale(1.1)`;
       }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background image with overlay */}
+      {/* Background media with overlay */}
       <div className="absolute inset-0">
-        <div
-          ref={videoRef}
-          className="h-full w-full"
-          style={{
-            backgroundImage:
-              "url(/hero.webp)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            transform: "scale(1.1)",
-          }}
-        />
+        <div ref={videoRef} className="h-full w-full" style={{ transform: "scale(1.1)" }}>
+          {useStaticHero ? (
+            <div
+              className="h-full w-full"
+              style={{
+                backgroundImage: "url(/hero.webp)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            />
+          ) : (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              poster="/videos/hero-langford-poster.jpg"
+              aria-hidden="true"
+              onError={() => setUseStaticHero(true)}
+              className="h-full w-full object-cover"
+            >
+              <source src="/videos/hero-langford.mp4" type="video/mp4" />
+            </video>
+          )}
+        </div>
         {/* Gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/70 via-[#1a1a1a]/40 to-[#1a1a1a]/80" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/60 to-transparent" />
