@@ -41,6 +41,9 @@ export interface BlogPost {
   title: string;
   slug: string;
   excerpt: string;
+  metaDescription?: string;
+  targetKeyword?: string;
+  suburbIntent?: string[];
   content: string;
   category: string;
   author: string;

@@ -1,0 +1,143 @@
+{
+  "generatedAt": "2026-03-26T18:58:01.649Z",
+  "totalPosts": 11,
+  "thresholds": {
+    "sim5WarningPercent": 20,
+    "sim8WarningPercent": 8
+  },
+  "highestSimilarityPairs": [
+    {
+      "pair": "vastu-compliant-home-design-australia <-> vastu-kitchen-design-indian-australian",
+      "sim5": 0.49,
+      "sim8": 0
+    },
+    {
+      "pair": "custom-home-vs-project-home-what-is-the-difference <-> steel-frame-vs-timber-frame-which-is-better",
+      "sim5": 0.29,
+      "sim8": 0
+    },
+    {
+      "pair": "nri-property-investment-queensland <-> vastu-compliant-home-design-australia",
+      "sim5": 0.22,
+      "sim8": 0
+    },
+    {
+      "pair": "multi-generational-home-indian-australian <-> vastu-kitchen-design-indian-australian",
+      "sim5": 0.19,
+      "sim8": 0
+    },
+    {
+      "pair": "custom-home-vs-project-home-what-is-the-difference <-> fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose",
+      "sim5": 0.14,
+      "sim8": 0
+    },
+    {
+      "pair": "fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose <-> steel-frame-vs-timber-frame-which-is-better",
+      "sim5": 0.14,
+      "sim8": 0
+    },
+    {
+      "pair": "how-much-does-it-cost-to-build-a-house-in-brisbane-2026 <-> transparent-pricing-hidden-costs",
+      "sim5": 0.12,
+      "sim8": 0
+    },
+    {
+      "pair": "building-process-what-to-expect <-> custom-home-vs-project-home-what-is-the-difference",
+      "sim5": 0,
+      "sim8": 0
+    },
+    {
+      "pair": "building-process-what-to-expect <-> fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose",
+      "sim5": 0,
+      "sim8": 0
+    },
+    {
+      "pair": "building-process-what-to-expect <-> how-much-does-it-cost-to-build-a-house-in-brisbane-2026",
+      "sim5": 0,
+      "sim8": 0
+    },
+    {
+      "pair": "building-process-what-to-expect <-> multi-generational-home-indian-australian",
+      "sim5": 0,
+      "sim8": 0
+    },
+    {
+      "pair": "building-process-what-to-expect <-> nri-property-investment-queensland",
+      "sim5": 0,
+      "sim8": 0
+    },
+    {
+      "pair": "building-process-what-to-expect <-> steel-frame-vs-timber-frame-which-is-better",
+      "sim5": 0,
+      "sim8": 0
+    },
+    {
+      "pair": "building-process-what-to-expect <-> step-by-step-guide-to-building-a-house-in-qld",
+      "sim5": 0,
+      "sim8": 0
+    },
+    {
+      "pair": "building-process-what-to-expect <-> transparent-pricing-hidden-costs",
+      "sim5": 0,
+      "sim8": 0
+    }
+  ],
+  "riskPairs": [],
+  "maxSimilarityByPost": [
+    {
+      "slug": "building-process-what-to-expect",
+      "maxSim5": 0,
+      "maxSim8": 0
+    },
+    {
+      "slug": "custom-home-vs-project-home-what-is-the-difference",
+      "maxSim5": 0.29,
+      "maxSim8": 0
+    },
+    {
+      "slug": "fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose",
+      "maxSim5": 0.14,
+      "maxSim8": 0
+    },
+    {
+      "slug": "how-much-does-it-cost-to-build-a-house-in-brisbane-2026",
+      "maxSim5": 0.12,
+      "maxSim8": 0
+    },
+    {
+      "slug": "multi-generational-home-indian-australian",
+      "maxSim5": 0.19,
+      "maxSim8": 0
+    },
+    {
+      "slug": "nri-property-investment-queensland",
+      "maxSim5": 0.22,
+      "maxSim8": 0
+    },
+    {
+      "slug": "steel-frame-vs-timber-frame-which-is-better",
+      "maxSim5": 0.29,
+      "maxSim8": 0
+    },
+    {
+      "slug": "step-by-step-guide-to-building-a-house-in-qld",
+      "maxSim5": 0,
+      "maxSim8": 0
+    },
+    {
+      "slug": "transparent-pricing-hidden-costs",
+      "maxSim5": 0.12,
+      "maxSim8": 0
+    },
+    {
+      "slug": "vastu-compliant-home-design-australia",
+      "maxSim5": 0.49,
+      "maxSim8": 0
+    },
+    {
+      "slug": "vastu-kitchen-design-indian-australian",
+      "maxSim5": 0.49,
+      "maxSim8": 0
+    }
+  ]
+}

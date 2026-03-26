@@ -24,6 +24,9 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Must be lowercase with hyphens only'] }
       - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", hint: "SEO description for SERP snippet, ideally 140-160 characters." }
+      - { label: "Primary Target Keyword", name: "targetKeyword", widget: "string", hint: "Exact keyword phrase this post targets." }
+      - { label: "Suburb Intent", name: "suburbIntent", widget: "list", allow_add: true, hint: "Suburbs or local areas this post is intended to rank for." }
       - { label: "Category", name: "category", widget: "select", options: ["Vastu & Design", "Family Living", "Building Process", "Investment", "Industry Insights", "Renovation Tips", "Sustainability"] }
       - { label: "Author", name: "author", widget: "string", default: "ARC Builders Team" }
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }

@@ -29,9 +29,9 @@ export async function generateMetadata({
 
   return createPageMetadata({
     title: `${post.title} | ARC Builders Blog`,
-    description: post.excerpt,
+    description: post.metaDescription || post.excerpt,
     path: `/blog/${post.slug}`,
-    keywords: [post.category, ...post.tags],
+    keywords: [post.category, ...(post.targetKeyword ? [post.targetKeyword] : []), ...(post.suburbIntent || []), ...post.tags],
     images: [post.heroImage],
     type: "article",
   });
@@ -56,7 +56,7 @@ export default async function BlogDetailPage({
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
-    description: post.excerpt,
+    description: post.metaDescription || post.excerpt,
     image: [absoluteUrl(post.heroImage)],
     mainEntityOfPage: postUrl,
     datePublished: post.date,
@@ -73,7 +73,7 @@ export default async function BlogDetailPage({
       },
     },
     articleSection: post.category,
-    keywords: post.tags.join(", "),
+    keywords: [post.targetKeyword, ...(post.suburbIntent || []), ...post.tags].filter(Boolean).join(", "),
   };
 
   const breadcrumbSchema = {
