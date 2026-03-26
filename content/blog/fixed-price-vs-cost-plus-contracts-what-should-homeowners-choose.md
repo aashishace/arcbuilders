@@ -9,7 +9,7 @@ suburbIntent:
   - Logan
   - Springfield
   - Calamvale
-category: "Industry Insights"
+category: "Cost budgeting and finance"
 author: "ARC Builders Team"
 date: "2026-03-27"
 readTime: "9 min read"

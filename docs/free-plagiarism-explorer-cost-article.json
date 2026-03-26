@@ -1,0 +1,31 @@
+{
+  "targetFile": "content/blog/how-much-does-it-cost-to-build-a-house-in-brisbane-2026.md",
+  "timestamp": 1774557193,
+  "disclaimer": "Signal-only check. Use external indexed tools for production compliance.",
+  "localCorpusCheck": {
+    "shingleSize": 8,
+    "topMatches": [
+      {
+        "file": "content/blog/custom-home-vs-project-home-what-is-the-difference.md",
+        "similarity": 0.0
+      },
+      {
+        "file": "content/blog/fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose.md",
+        "similarity": 0.0
+      },
+      {
+        "file": "content/blog/steel-frame-vs-timber-frame-which-is-better.md",
+        "similarity": 0.0
+      },
+      {
+        "file": "content/blog/step-by-step-guide-to-building-a-house-in-qld.md",
+        "similarity": 0.0
+      }
+    ]
+  },
+  "webSpotCheck": {
+    "sampledPhrases": 8,
+    "flaggedMatches": [],
+    "errors": []
+  }
+}

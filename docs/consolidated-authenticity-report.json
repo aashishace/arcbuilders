@@ -1,0 +1,203 @@
+{
+  "generatedAt": "2026-03-26T20:33:13Z",
+  "blogDir": "content/blog",
+  "thresholds": {
+    "local": {
+      "highMaxSim8": 0.08,
+      "highMaxSim5": 0.3,
+      "mediumMaxSim8": 0.03,
+      "mediumMaxSim5": 0.15
+    },
+    "web": {
+      "flagSimilarityThreshold": 0.82,
+      "highFlaggedCount": 2
+    }
+  },
+  "summary": {
+    "totalArticles": 5,
+    "riskBandCounts": {
+      "LOW": 5,
+      "MEDIUM": 0,
+      "HIGH": 0
+    },
+    "samplesPerArticle": 4
+  },
+  "articles": [
+    {
+      "file": "content/blog/custom-home-vs-project-home-what-is-the-difference.md",
+      "riskBand": "LOW",
+      "reasons": [
+        "No significant overlap indicators"
+      ],
+      "local": {
+        "maxSim5": 0.0029,
+        "maxSim8": 0.0,
+        "topMatches": [
+          {
+            "file": "content/blog/steel-frame-vs-timber-frame-which-is-better.md",
+            "sim5": 0.0029,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose.md",
+            "sim5": 0.0014,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/how-much-does-it-cost-to-build-a-house-in-brisbane-2026.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          }
+        ]
+      },
+      "web": {
+        "sampledPhrases": 4,
+        "flaggedCount": 0,
+        "maxSimilarity": 0.0,
+        "flaggedMatches": [],
+        "errors": []
+      }
+    },
+    {
+      "file": "content/blog/fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose.md",
+      "riskBand": "LOW",
+      "reasons": [
+        "No significant overlap indicators"
+      ],
+      "local": {
+        "maxSim5": 0.0014,
+        "maxSim8": 0.0,
+        "topMatches": [
+          {
+            "file": "content/blog/custom-home-vs-project-home-what-is-the-difference.md",
+            "sim5": 0.0014,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/steel-frame-vs-timber-frame-which-is-better.md",
+            "sim5": 0.0014,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/how-much-does-it-cost-to-build-a-house-in-brisbane-2026.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          }
+        ]
+      },
+      "web": {
+        "sampledPhrases": 4,
+        "flaggedCount": 0,
+        "maxSimilarity": 0.0,
+        "flaggedMatches": [],
+        "errors": []
+      }
+    },
+    {
+      "file": "content/blog/how-much-does-it-cost-to-build-a-house-in-brisbane-2026.md",
+      "riskBand": "LOW",
+      "reasons": [
+        "No significant overlap indicators"
+      ],
+      "local": {
+        "maxSim5": 0.0,
+        "maxSim8": 0.0,
+        "topMatches": [
+          {
+            "file": "content/blog/custom-home-vs-project-home-what-is-the-difference.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/steel-frame-vs-timber-frame-which-is-better.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          }
+        ]
+      },
+      "web": {
+        "sampledPhrases": 4,
+        "flaggedCount": 0,
+        "maxSimilarity": 0.0,
+        "flaggedMatches": [],
+        "errors": []
+      }
+    },
+    {
+      "file": "content/blog/steel-frame-vs-timber-frame-which-is-better.md",
+      "riskBand": "LOW",
+      "reasons": [
+        "No significant overlap indicators"
+      ],
+      "local": {
+        "maxSim5": 0.0029,
+        "maxSim8": 0.0,
+        "topMatches": [
+          {
+            "file": "content/blog/custom-home-vs-project-home-what-is-the-difference.md",
+            "sim5": 0.0029,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose.md",
+            "sim5": 0.0014,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/how-much-does-it-cost-to-build-a-house-in-brisbane-2026.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          }
+        ]
+      },
+      "web": {
+        "sampledPhrases": 4,
+        "flaggedCount": 0,
+        "maxSimilarity": 0.0,
+        "flaggedMatches": [],
+        "errors": []
+      }
+    },
+    {
+      "file": "content/blog/step-by-step-guide-to-building-a-house-in-qld.md",
+      "riskBand": "LOW",
+      "reasons": [
+        "No significant overlap indicators"
+      ],
+      "local": {
+        "maxSim5": 0.0,
+        "maxSim8": 0.0,
+        "topMatches": [
+          {
+            "file": "content/blog/custom-home-vs-project-home-what-is-the-difference.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          },
+          {
+            "file": "content/blog/how-much-does-it-cost-to-build-a-house-in-brisbane-2026.md",
+            "sim5": 0.0,
+            "sim8": 0.0
+          }
+        ]
+      },
+      "web": {
+        "sampledPhrases": 4,
+        "flaggedCount": 0,
+        "maxSimilarity": 0.0,
+        "flaggedMatches": [],
+        "errors": []
+      }
+    }
+  ],
+  "note": "Signal-based authenticity report. Use external indexed plagiarism tools for legal/compliance-grade checks."
+}

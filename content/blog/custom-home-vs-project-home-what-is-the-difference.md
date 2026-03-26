@@ -9,7 +9,7 @@ suburbIntent:
   - Logan
   - Pallara
   - Rochedale
-category: "Industry Insights"
+category: "Home design and inspiration"
 author: "ARC Builders Team"
 date: "2026-03-27"
 readTime: "8 min read"

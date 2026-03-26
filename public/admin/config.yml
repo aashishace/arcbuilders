@@ -27,7 +27,7 @@ collections:
       - { label: "Meta Description", name: "metaDescription", widget: "text", hint: "SEO description for SERP snippet, ideally 140-160 characters." }
       - { label: "Primary Target Keyword", name: "targetKeyword", widget: "string", hint: "Exact keyword phrase this post targets." }
       - { label: "Suburb Intent", name: "suburbIntent", widget: "list", allow_add: true, hint: "Suburbs or local areas this post is intended to rank for." }
-      - { label: "Category", name: "category", widget: "select", options: ["Vastu & Design", "Family Living", "Building Process", "Investment", "Industry Insights", "Renovation Tips", "Sustainability"] }
+      - { label: "Category", name: "category", widget: "select", options: ["Home design and inspiration", "Building process and tips", "Cost budgeting and finance", "Projects and case studies", "Sustainability and material", "Industry updates"] }
       - { label: "Author", name: "author", widget: "string", default: "ARC Builders Team" }
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
       - { label: "Read Time", name: "readTime", widget: "string", default: "5 min read" }

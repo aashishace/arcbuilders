@@ -9,7 +9,7 @@ suburbIntent:
   - Rochedale
   - Greenbank
   - Springfield
-category: "Building Process"
+category: "Building process and tips"
 author: "ARC Builders Team"
 date: "2026-03-27"
 readTime: "9 min read"

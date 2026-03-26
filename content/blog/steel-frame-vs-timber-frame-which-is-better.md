@@ -9,7 +9,7 @@ suburbIntent:
   - Mount Gravatt
   - Brisbane
   - Eight Mile Plains
-category: "Industry Insights"
+category: "Sustainability and material"
 author: "ARC Builders Team"
 date: "2026-03-27"
 readTime: "8 min read"
