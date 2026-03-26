@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { processSteps } from "@/lib/data";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Our Building Process",
+  description:
+    "Understand ARC Builders' step-by-step process from consultation and design to construction and handover for projects in Brisbane and Logan.",
+  path: "/process",
+  keywords: ["home building process", "custom home timeline", "builder process Brisbane"],
+  images: ["/projects/hi-def-project/hero.webp"],
+});
 
 export default function ProcessPage() {
   return (
@@ -124,8 +135,8 @@ export default function ProcessPage() {
                       <ul className="mt-6 space-y-2">
                         {[
                           "Comprehensive quality inspection",
-                          "Full walkthrough with client",
-                          "Complete documentation & warranties",
+                          "Complete documentation and warranties",
+                          "Full walkthrough and handover",
                           "Ongoing support & aftercare",
                         ].map((item) => (
                           <li

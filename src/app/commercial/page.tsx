@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   Store,
   HeartPulse,
@@ -12,6 +13,16 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { commercialServices, projects } from "@/lib/data";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Commercial Construction Services",
+  description:
+    "Commercial construction services including shop fitouts, medical centres, childcare facilities, and mixed-use builds by ARC Builders in South East Queensland.",
+  path: "/commercial",
+  keywords: ["commercial builder Brisbane", "shop fitout builder", "medical centre construction"],
+  images: ["/projects/3-stanley-st-mount-gravatt/hero.webp"],
+});
 
 const iconMap: Record<string, LucideIcon> = {
   Store,
@@ -38,9 +49,6 @@ export default function CommercialPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
-          <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
-            Commercial
-          </p>
           <h1 className="mt-3 text-5xl font-light tracking-tight text-white md:text-6xl">
             Commercial <span className="text-accent">Services</span>
           </h1>

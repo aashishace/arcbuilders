@@ -48,7 +48,7 @@ export default function AboutPreview() {
 
             <ScrollReveal variant="fadeRight" delay={0.2}>
               <p className="mt-6 font-sans text-base leading-relaxed text-white/50">
-                At ARC Builders we have been in the industry for over 10 years, with an
+                At ARC Builders we have been in the industry for over 18 years, with an
                 experienced team driven to deliver excellence in customer service. We
                 specialise in Vastu-compliant homes, multi-generational living, and builds
                 tailored to Indian-Australian families. Transparent upfront pricing with

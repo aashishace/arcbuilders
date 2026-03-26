@@ -1,9 +1,20 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import CTASection from "@/components/CTASection";
 import { companyInfo } from "@/lib/data";
 import { Shield, Eye, Users, Award } from "lucide-react";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "About ARC Builders",
+  description:
+    "Learn about ARC Builders, our 18+ years of experience, transparent building approach, and commitment to quality homes across Brisbane and Logan.",
+  path: "/about",
+  keywords: ["about ARC Builders", "Brisbane builder team", "quality home builder Queensland"],
+  images: ["/projects/25-langford-st/hero.webp"],
+});
 
 export default function AboutPage() {
   return (
@@ -61,17 +72,14 @@ export default function AboutPage() {
 
               <ScrollReveal variant="fadeRight" delay={0.2}>
                 <p className="mt-6 font-sans text-base leading-relaxed text-[#1a1a1a]/60">
-                  At ARC Builders, we have been in the building industry for over 10
-                  years, with an experienced team driven to deliver excellence in
-                  customer service. We specialise in Vastu-compliant homes,
-                  multi-generational living, and builds tailored to Indian-Australian
-                  families. Transparent upfront pricing with no hidden costs.
+                  At ARC Builders, we have been in the construction industry for over
+                  18 years, with an experienced team driven to deliver excellence in
+                  customer service.
                 </p>
                 <p className="mt-4 font-sans text-base leading-relaxed text-[#1a1a1a]/60">
                   Transforming your plans into quality residential or commercial
-                  buildings. Unlike others that only provide set design and build, we
-                  customise our plans to reflect your unique vision — including puja rooms,
-                  masala kitchens, and culturally thoughtful design.
+                  buildings. Unlike others that only provide set design and build,
+                  we customise our plans to reflect your unique vision.
                 </p>
                 <p className="mt-4 font-sans text-base leading-relaxed text-[#1a1a1a]/60">
                   We are driven by a passion to deliver superior customer service,
@@ -84,7 +92,7 @@ export default function AboutPage() {
                 <div className="mt-8 flex gap-12">
                   {[
                     { value: companyInfo.experience, label: "Years Experience" },
-                    { value: "200+", label: "Projects" },
+                    { value: "100+", label: "Projects" },
                     { value: "100%", label: "Satisfaction" },
                   ].map((stat) => (
                     <div key={stat.label} className="text-center">

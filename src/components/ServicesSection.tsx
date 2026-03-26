@@ -63,7 +63,7 @@ export default function ServicesSection() {
                   className="group relative block overflow-hidden border border-[#1a1a1a]/5 bg-white p-8 transition-all duration-500 hover:border-accent/30 hover:shadow-xl"
                 >
                   {/* Gold accent top line */}
-                  <div className="absolute left-0 top-0 h-[2px] w-0 bg-accent transition-all duration-500 group-hover:w-full" />
+                  <div className="absolute left-0 top-0 h-0.5 w-0 bg-accent transition-all duration-500 group-hover:w-full" />
 
                   <div className="flex h-12 w-12 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-[#1a1a1a]">
                     <Icon size={20} />
@@ -83,20 +83,17 @@ export default function ServicesSection() {
           })}
         </div>
 
-        {/* View all */}
+        {/* Services guidance */}
         <ScrollReveal delay={0.3}>
-          <div className="mt-12 flex justify-center gap-4">
+          <div className="mt-12 text-center">
+            <p className="font-sans text-sm text-[#1a1a1a]/55">
+              Need a complete service scope for residential or commercial work?
+            </p>
             <Link
-              href="/residential"
-              className="border border-[#1a1a1a] px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all duration-300 hover:border-accent hover:bg-accent hover:text-[#1a1a1a]"
+              href="/contact"
+              className="mt-4 inline-flex border border-[#1a1a1a] px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all duration-300 hover:border-accent hover:bg-accent hover:text-[#1a1a1a]"
             >
-              Residential Services
-            </Link>
-            <Link
-              href="/commercial"
-              className="border border-[#1a1a1a]/20 px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a]/60 transition-all duration-300 hover:border-accent hover:text-accent"
-            >
-              Commercial Services
+              Get Service Consultation
             </Link>
           </div>
         </ScrollReveal>

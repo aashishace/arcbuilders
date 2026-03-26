@@ -11,6 +11,7 @@ import { navLinks, companyInfo } from "@/lib/data";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const topNavLinks = navLinks;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -24,43 +25,46 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-[#1a1a1a]/95 backdrop-blur-md shadow-lg py-2"
-            : "bg-transparent py-4"
+            ? "bg-[#1a1a1a]/95 py-2 shadow-lg backdrop-blur-md"
+            : "bg-transparent py-3"
         )}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
+        <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="relative z-10 flex items-center">
+          <Link href="/" className="relative z-10 flex shrink-0 items-center">
             <Image
-              src="/logo.webp"
+              src="/logo-tight.webp"
               alt="ARC Builders"
-              width={500}
-              height={500}
-              className="h-20 w-auto"
+              width={373}
+              height={238}
+              className={cn(
+                "w-auto transition-all duration-500",
+                scrolled ? "h-12 md:h-14" : "h-14 md:h-16"
+              )}
               priority
               unoptimized
             />
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-8 lg:flex">
-            {navLinks.map((link) => (
+          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 xl:flex">
+            {topNavLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="group relative text-sm font-medium tracking-wide text-white/80 transition-colors hover:text-accent"
+                className="group relative whitespace-nowrap text-[13px] font-semibold uppercase tracking-widest text-white transition-colors hover:text-accent"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-accent transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden items-center gap-4 lg:flex">
+          <div className="hidden shrink-0 items-center gap-4 xl:flex">
             <a
               href={`tel:${companyInfo.phone}`}
-              className="flex items-center gap-2 text-sm text-white/70 transition-colors hover:text-accent"
+              className="hidden items-center gap-2 text-sm text-white/90 transition-colors hover:text-accent 2xl:flex"
             >
               <Phone size={14} />
               {companyInfo.phone}
@@ -69,14 +73,14 @@ export default function Navbar() {
               href="/contact"
               className="rounded-none border border-accent bg-accent px-6 py-2.5 text-sm font-semibold tracking-wider text-[#1a1a1a] transition-all duration-300 hover:bg-transparent hover:text-accent"
             >
-              START YOUR PROJECT
+              START PROJECT
             </Link>
           </div>
 
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="relative z-10 text-white lg:hidden"
+            className="relative z-10 text-white xl:hidden"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -92,9 +96,9 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-[#1a1a1a]/98 backdrop-blur-lg lg:hidden"
+            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-[#1a1a1a]/98 backdrop-blur-lg xl:hidden"
           >
-            {navLinks.map((link, i) => (
+            {topNavLinks.map((link, i) => (
               <motion.div
                 key={link.href}
                 initial={{ opacity: 0, y: 20 }}

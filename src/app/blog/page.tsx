@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import BlogListClient from "./BlogListClient";
 import { getAllPosts } from "@/lib/blog";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Building Blog and Insights",
+  description:
+    "Read ARC Builders insights on custom homes, Vastu design, NRI property planning, and construction guidance for Brisbane and South East Queensland.",
+  path: "/blog",
+  keywords: ["home building blog", "Vastu home Australia", "NRI property Queensland"],
+  images: ["/projects/35-ayesha-place-calamvale/hero.webp"],
+});
 
 export default function BlogPage() {
   const posts = getAllPosts();

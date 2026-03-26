@@ -31,9 +31,39 @@ const budgetRanges = [
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [mailtoLink, setMailtoLink] = useState("");
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    projectType: "",
+    budgetRange: "",
+    message: "",
+  });
+
+  const updateField = (field: keyof typeof formData) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+      setFormData((prev) => ({ ...prev, [field]: e.target.value }));
+    };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const subject = `New Project Enquiry - ${formData.projectType || "Website"}`;
+    const body = [
+      `Name: ${formData.fullName}`,
+      `Email: ${formData.email}`,
+      `Phone: ${formData.phone || "Not provided"}`,
+      `Project type: ${formData.projectType}`,
+      `Budget range: ${formData.budgetRange || "Not provided"}`,
+      "",
+      "Project details:",
+      formData.message,
+    ].join("\n");
+
+    setMailtoLink(
+      `mailto:${companyInfo.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    );
     setSubmitted(true);
   };
 
@@ -42,7 +72,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex h-[50vh] min-h-[400px] items-end overflow-hidden bg-[#1a1a1a]">
+      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#1a1a1a]">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
@@ -50,7 +80,7 @@ export default function ContactPage() {
               "url(/projects/49-herbert-st/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a] via-transparent to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Get In Touch
@@ -74,11 +104,11 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-light tracking-tight text-[#1a1a1a]">
                   Contact <span className="text-accent">Information</span>
                 </h2>
-                <div className="mt-3 h-[1px] w-16 bg-accent" />
+                <div className="mt-3 h-px w-16 bg-accent" />
 
                 <div className="mt-10 space-y-8">
                   <div className="flex items-start gap-4">
-                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center border border-accent/20 text-accent">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-accent/20 text-accent">
                       <MapPin size={18} />
                     </div>
                     <div>
@@ -92,7 +122,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center border border-accent/20 text-accent">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-accent/20 text-accent">
                       <Phone size={18} />
                     </div>
                     <div>
@@ -109,7 +139,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center border border-accent/20 text-accent">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-accent/20 text-accent">
                       <Mail size={18} />
                     </div>
                     <div>
@@ -127,9 +157,9 @@ export default function ContactPage() {
                 </div>
 
                 {/* Map placeholder */}
-                <div className="mt-10 aspect-[4/3] overflow-hidden border border-[#1a1a1a]/5 bg-[#e5e5e5]">
+                <div className="mt-10 aspect-4/3 overflow-hidden border border-[#1a1a1a]/5 bg-[#e5e5e5]">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14166.26267764!2d153.0561!3d-27.5768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b914f1b4a4e4e0d%3A0x5040c94bb4f7c70!2sSunnybank%20Hills%20QLD%204109!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+                    src="https://www.google.com/maps?q=25+Langford+Street,+Eight+Mile+Plains+QLD,+Australia&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -146,20 +176,39 @@ export default function ContactPage() {
             <div className="lg:col-span-3">
               <ScrollReveal variant="fadeRight">
                 {submitted ? (
-                  <div className="flex min-h-[500px] flex-col items-center justify-center border border-[#1a1a1a]/5 bg-white p-12 text-center">
+                  <div className="flex min-h-125 flex-col items-center justify-center border border-[#1a1a1a]/5 bg-white p-12 text-center">
                     <CheckCircle size={48} className="text-accent" />
                     <h3 className="mt-6 text-3xl font-light text-[#1a1a1a]">
-                      Thank You!
+                      Enquiry Ready To Send
                     </h3>
                     <p className="mt-4 max-w-md font-sans text-base text-[#1a1a1a]/50">
-                      We&apos;ve received your enquiry and will be in touch within 24
-                      hours. Looking forward to discussing your project.
+                      Your project details are prepared. Click below to open your default email app with a pre-filled enquiry draft.
                     </p>
+                    <p className="mt-2 max-w-md font-sans text-sm text-[#1a1a1a]/40">
+                      If your email app did not open, send us a message at {companyInfo.email} or call {companyInfo.phone}.
+                    </p>
+                    <a
+                      href={mailtoLink}
+                      className="mt-8 border border-accent bg-accent px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all hover:bg-transparent hover:text-accent"
+                    >
+                      Open Email App
+                    </a>
                     <button
-                      onClick={() => setSubmitted(false)}
+                      onClick={() => {
+                        setSubmitted(false);
+                        setMailtoLink("");
+                        setFormData({
+                          fullName: "",
+                          email: "",
+                          phone: "",
+                          projectType: "",
+                          budgetRange: "",
+                          message: "",
+                        });
+                      }}
                       className="mt-8 border border-accent px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-[#1a1a1a]"
                     >
-                      Send Another Enquiry
+                      Submit Another Enquiry
                     </button>
                   </div>
                 ) : (
@@ -170,7 +219,7 @@ export default function ContactPage() {
                     <h3 className="text-2xl font-light text-[#1a1a1a]">
                       Project <span className="text-accent">Enquiry</span>
                     </h3>
-                    <div className="mt-2 h-[1px] w-12 bg-accent" />
+                    <div className="mt-2 h-px w-12 bg-accent" />
 
                     <div className="mt-8 space-y-6">
                       {/* Name + Email */}
@@ -182,6 +231,8 @@ export default function ContactPage() {
                           <input
                             type="text"
                             required
+                            value={formData.fullName}
+                            onChange={updateField("fullName")}
                             className="mt-2 w-full border-b border-[#1a1a1a]/10 bg-transparent py-3 font-sans text-sm text-[#1a1a1a] outline-none transition-colors focus:border-accent"
                             placeholder="John Smith"
                           />
@@ -193,6 +244,8 @@ export default function ContactPage() {
                           <input
                             type="email"
                             required
+                            value={formData.email}
+                            onChange={updateField("email")}
                             className="mt-2 w-full border-b border-[#1a1a1a]/10 bg-transparent py-3 font-sans text-sm text-[#1a1a1a] outline-none transition-colors focus:border-accent"
                             placeholder="john@email.com"
                           />
@@ -206,6 +259,8 @@ export default function ContactPage() {
                         </label>
                         <input
                           type="tel"
+                          value={formData.phone}
+                          onChange={updateField("phone")}
                           className="mt-2 w-full border-b border-[#1a1a1a]/10 bg-transparent py-3 font-sans text-sm text-[#1a1a1a] outline-none transition-colors focus:border-accent"
                           placeholder="0400 000 000"
                         />
@@ -218,6 +273,8 @@ export default function ContactPage() {
                         </label>
                         <select
                           required
+                          value={formData.projectType}
+                          onChange={updateField("projectType")}
                           className="mt-2 w-full border-b border-[#1a1a1a]/10 bg-transparent py-3 font-sans text-sm text-[#1a1a1a] outline-none transition-colors focus:border-accent"
                         >
                           <option value="">Select project type</option>
@@ -234,7 +291,11 @@ export default function ContactPage() {
                         <label className="font-sans text-[10px] font-semibold uppercase tracking-[0.15em] text-[#1a1a1a]/40">
                           Budget Range
                         </label>
-                        <select className="mt-2 w-full border-b border-[#1a1a1a]/10 bg-transparent py-3 font-sans text-sm text-[#1a1a1a] outline-none transition-colors focus:border-accent">
+                        <select
+                          value={formData.budgetRange}
+                          onChange={updateField("budgetRange")}
+                          className="mt-2 w-full border-b border-[#1a1a1a]/10 bg-transparent py-3 font-sans text-sm text-[#1a1a1a] outline-none transition-colors focus:border-accent"
+                        >
                           <option value="">Select budget range</option>
                           {budgetRanges.map((range) => (
                             <option key={range} value={range}>
@@ -252,6 +313,8 @@ export default function ContactPage() {
                         <textarea
                           required
                           rows={4}
+                          value={formData.message}
+                          onChange={updateField("message")}
                           className="mt-2 w-full resize-none border-b border-[#1a1a1a]/10 bg-transparent py-3 font-sans text-sm text-[#1a1a1a] outline-none transition-colors focus:border-accent"
                           placeholder="Describe your project, location, timeline, and any other details..."
                         />
@@ -271,6 +334,9 @@ export default function ContactPage() {
                         />
                         <div className="absolute inset-0 -translate-x-full bg-[#1a1a1a] transition-transform duration-500 group-hover:translate-x-0" />
                       </button>
+                      <p className="text-center font-sans text-xs text-[#1a1a1a]/40">
+                        This form opens your default email app so you can review and send your enquiry details directly.
+                      </p>
                     </div>
                   </form>
                 )}

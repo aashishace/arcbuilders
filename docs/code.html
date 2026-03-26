@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARC Builders | Standard Inclusion Sheet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Newsreader:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "secondary-fixed-dim": "#bdc8cd",
+                "surface-tint": "#5f5e5e",
+                "surface-container-low": "#f3f4f4",
+                "on-tertiary-fixed-variant": "#5c4220",
+                "on-surface": "#191c1c",
+                "on-tertiary-fixed": "#2a1700",
+                "outline": "#77777b",
+                "tertiary": "#251400",
+                "on-tertiary-container": "#b08e66",
+                "on-primary-fixed": "#1b1c1c",
+                "inverse-primary": "#c8c6c5",
+                "background": "#f8f9f9",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "on-primary": "#ffffff",
+                "tertiary-fixed": "#ffddb7",
+                "on-secondary-fixed": "#131d21",
+                "outline-variant": "#c7c6ca",
+                "surface-container": "#edeeee",
+                "on-secondary-container": "#596468",
+                "tertiary-container": "#3e2808",
+                "on-secondary": "#ffffff",
+                "inverse-on-surface": "#f0f1f1",
+                "primary-container": "#2c2c2c",
+                "error": "#ba1a1a",
+                "secondary-container": "#d6e2e6",
+                "surface-bright": "#f8f9f9",
+                "on-background": "#191c1c",
+                "on-primary-container": "#959393",
+                "primary-fixed-dim": "#c8c6c5",
+                "on-primary-fixed-variant": "#474746",
+                "tertiary-fixed-dim": "#e6c094",
+                "surface-variant": "#e1e3e3",
+                "surface": "#f8f9f9",
+                "secondary": "#556064",
+                "secondary-fixed": "#d9e4e9",
+                "surface-container-lowest": "#ffffff",
+                "on-error-container": "#93000a",
+                "surface-container-high": "#e7e8e8",
+                "on-surface-variant": "#46464a",
+                "on-secondary-fixed-variant": "#3e484c",
+                "primary-fixed": "#e5e2e1",
+                "surface-container-highest": "#e1e3e3",
+                "primary": "#181818",
+                "surface-dim": "#d9dada",
+                "inverse-surface": "#2e3131"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Newsreader"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopAppBar -->
+<nav class="bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 font-headline">
+                ARC Builders
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors font-headline uppercase tracking-widest text-[10px]" href="#">Portfolio</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors font-headline uppercase tracking-widest text-[10px]" href="#">Process</a>
+<a class="text-zinc-900 dark:text-zinc-100 font-semibold border-b border-zinc-900 dark:border-zinc-100 pb-1 font-headline uppercase tracking-widest text-[10px]" href="#">Materials</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-headline uppercase tracking-widest text-[10px] px-6 py-2 bg-primary text-white hover:bg-primary-container transition-all active:scale-95">Contact</button>
+<button class="material-symbols-outlined text-zinc-900" data-icon="code">code</button>
+</div>
+</div>
+</nav>
+<main class="max-w-screen-2xl mx-auto px-8 py-12">
+<!-- Hero Section -->
+<header class="mb-20 grid md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] px-3 py-1 bg-surface-container-highest text-on-surface-variant rounded-full">Official Document</span>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">Version 1.0.4</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter text-primary leading-[0.9] mb-6">
+                    Standard <br/>Inclusion Sheet
+                </h1>
+<p class="font-body text-2xl text-on-secondary-container max-w-2xl leading-relaxed italic">
+                    Transparency is the cornerstone of architectural integrity. This monograph outlines every structural specification, material standard, and client allowance included in your primary investment.
+                </p>
+</div>
+<div class="md:col-span-4 flex flex-col items-start md:items-end">
+<div class="p-6 bg-surface-container-low rounded-lg w-full max-w-sm">
+<span class="material-symbols-outlined text-tertiary mb-4" data-icon="verified">verified</span>
+<p class="font-headline font-bold text-primary mb-1">Guaranteed Quality</p>
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">All materials listed meet or exceed AS/NZS construction standards for residential dwellings.</p>
+</div>
+</div>
+</header>
+<div class="grid md:grid-cols-12 gap-12">
+<!-- Sidebar Navigation -->
+<aside class="md:col-span-3 sticky top-32 h-fit hidden md:block">
+<nav class="flex flex-col gap-2">
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-4 px-2">Table of Contents</p>
+<a class="px-4 py-2 font-headline text-sm font-semibold text-primary bg-surface-container hover:bg-surface-container-highest transition-all border-l-2 border-primary" href="#section-1">1. Plans &amp; Compliance</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-2">2. Site Works</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-3">3. Concrete &amp; Slab</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-4">4. Framing</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-5">5. External Cladding</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-6">6. Roofing &amp; Plumbing</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-7">7. Electrical</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-8">8. Insulation</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-9">9. Internal Lining</a>
+<a class="px-4 py-2 font-headline text-sm text-on-secondary-container hover:text-primary hover:translate-x-1 transition-all" href="#section-10">10. Kitchen &amp; Joinery</a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<div class="md:col-span-9 space-y-16">
+<!-- Variation Calculator Tool -->
+<section class="bg-primary-container p-8 rounded-lg shadow-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full blur-3xl opacity-20 -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="calculate">calculate</span>
+<h3 class="font-headline font-bold text-white text-xl">Material Variation Calculator</h3>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div>
+<label class="font-label text-[10px] uppercase text-on-primary-container tracking-widest mb-2 block">Standard Allowance</label>
+<div class="text-3xl font-headline font-bold text-white">$50<span class="text-sm font-normal text-on-primary-container">/sqm</span></div>
+<p class="text-xs text-on-primary-container mt-2">Grade 2 Wool Blend Carpet</p>
+</div>
+<div class="flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" data-icon="trending_up">trending_up</span>
+</div>
+<div>
+<label class="font-label text-[10px] uppercase text-on-primary-container tracking-widest mb-2 block">Premium Upgrade</label>
+<div class="text-3xl font-headline font-bold text-on-tertiary-container">$70<span class="text-sm font-normal text-white">/sqm</span></div>
+<p class="text-xs text-on-primary-container mt-2">100% NZ Pure Wool Loop</p>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-white/10 flex justify-between items-center">
+<div>
+<p class="font-body italic text-white/80">Estimated impact for a 240sqm residence:</p>
+<p class="font-headline text-2xl font-black text-white">+$4,800.00 <span class="text-sm font-normal opacity-60">incl. GST</span></p>
+</div>
+<button class="bg-on-tertiary-container text-primary font-headline text-[10px] uppercase tracking-widest font-bold px-6 py-3 rounded hover:brightness-110 transition-all">Recalculate</button>
+</div>
+</div>
+</section>
+<!-- Section 1: Plans & Compliance -->
+<section class="scroll-mt-32" id="section-1">
+<div class="flex items-center justify-between mb-6 border-b border-outline-variant pb-4">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight">1. Plans, Compliance and Warranty</h2>
+<span class="material-symbols-outlined text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">
+<th class="py-4 px-2 font-normal">Item</th>
+<th class="py-4 px-2 font-normal">Status</th>
+<th class="py-4 px-2 font-normal">Allowance</th>
+<th class="py-4 px-2 font-normal">Upgrade Options</th>
+<th class="py-4 px-2 font-normal">Notes</th>
+</tr>
+</thead>
+<tbody class="font-body text-sm">
+<tr class="bg-surface-container-lowest border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Architectural Drafting</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label font-bold rounded uppercase">Included</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">—</td>
+<td class="py-6 px-2 text-on-surface-variant">3D Walkthrough Rendering</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Standard floorplan modifications.</td>
+</tr>
+<tr class="border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Structural Engineering</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label font-bold rounded uppercase">Included</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">—</td>
+<td class="py-6 px-2 text-on-surface-variant">—</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Covers M class soil as standard.</td>
+</tr>
+<tr class="bg-surface-container-lowest border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Soil Report &amp; Survey</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 bg-primary text-white text-[10px] font-label font-bold rounded uppercase">Upgrade</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">—</td>
+<td class="py-6 px-2 text-on-surface-variant">Level 2 Geotech</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Optional for complex terrain.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Section 2: Site Works -->
+<section class="scroll-mt-32" id="section-2">
+<div class="flex items-center justify-between mb-6 border-b border-outline-variant pb-4">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight">2. Site Works</h2>
+<span class="material-symbols-outlined text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">
+<th class="py-4 px-2 font-normal">Item</th>
+<th class="py-4 px-2 font-normal">Status</th>
+<th class="py-4 px-2 font-normal">Allowance</th>
+<th class="py-4 px-2 font-normal">Upgrade Options</th>
+<th class="py-4 px-2 font-normal">Notes</th>
+</tr>
+</thead>
+<tbody class="font-body text-sm">
+<tr class="bg-surface-container-lowest border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Site Preparation</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label font-bold rounded uppercase">Included</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">Up to 500mm fall</td>
+<td class="py-6 px-2 text-on-surface-variant">Mass excavation</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Based on greenfield site conditions.</td>
+</tr>
+<tr class="border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Temp Fencing</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label font-bold rounded uppercase">Included</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">6 Months</td>
+<td class="py-6 px-2 text-on-surface-variant">—</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Required for safety compliance.</td>
+</tr>
+<tr class="bg-surface-container-lowest border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Retaining Walls</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 border border-outline text-outline text-[10px] font-label font-bold rounded uppercase">Excluded</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">—</td>
+<td class="py-6 px-2 text-on-surface-variant">Masonry or Sleeper</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Client responsibility unless quoted.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Section 10: Kitchen & Joinery -->
+<section class="scroll-mt-32" id="section-10">
+<div class="flex items-center justify-between mb-6 border-b border-outline-variant pb-4">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight">10. Kitchen &amp; Joinery</h2>
+<span class="material-symbols-outlined text-outline" data-icon="expand_more">expand_more</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">
+<th class="py-4 px-2 font-normal">Item</th>
+<th class="py-4 px-2 font-normal">Status</th>
+<th class="py-4 px-2 font-normal">Allowance</th>
+<th class="py-4 px-2 font-normal">Upgrade Options</th>
+<th class="py-4 px-2 font-normal">Notes</th>
+</tr>
+</thead>
+<tbody class="font-body text-sm">
+<tr class="bg-surface-container-lowest border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Stone Benchtops</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant text-[10px] font-label font-bold rounded uppercase">Allowance</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">20mm Engineered Stone</td>
+<td class="py-6 px-2 text-on-surface-variant">40mm Mitered Edge / Natural Marble</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Based on Range A color selection.</td>
+</tr>
+<tr class="border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Cabinetry Finish</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label font-bold rounded uppercase">Included</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">Laminate Matte/Gloss</td>
+<td class="py-6 px-2 text-on-surface-variant">Shaker Profile / Two-Pac Paint</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Soft close hinges included.</td>
+</tr>
+<tr class="bg-surface-container-lowest border-b border-surface-container">
+<td class="py-6 px-2 font-semibold font-headline">Integrated Dishwasher</td>
+<td class="py-6 px-2">
+<span class="px-2 py-1 bg-primary text-white text-[10px] font-label font-bold rounded uppercase">Upgrade</span>
+</td>
+<td class="py-6 px-2 text-on-surface-variant">—</td>
+<td class="py-6 px-2 text-on-surface-variant">Miele/Fisher &amp; Paykel</td>
+<td class="py-6 px-2 italic text-on-surface-variant">Requires custom cabinetry panel.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Explicit Exclusions Section -->
+<section class="bg-surface-container-low p-12 border-l-4 border-error">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight mb-8">Explicit Exclusions</h2>
+<p class="font-body italic text-lg text-on-secondary-container mb-8">The following items are not factored into the standard build contract and must be calculated as separate variations if required:</p>
+<div class="grid md:grid-cols-2 gap-8">
+<ul class="space-y-4">
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-error text-sm mt-1" data-icon="cancel">cancel</span>
+<span class="font-headline font-semibold text-primary">Landscaping &amp; Fencing:</span>
+<span class="font-body text-on-surface-variant">Retaining walls beyond 500mm, turf, plants, and boundary fences.</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-error text-sm mt-1" data-icon="cancel">cancel</span>
+<span class="font-headline font-semibold text-primary">Council Escalations:</span>
+<span class="font-body text-on-surface-variant">Specialist permit fees or unexpected council infrastructure levies.</span>
+</li>
+</ul>
+<ul class="space-y-4">
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-error text-sm mt-1" data-icon="cancel">cancel</span>
+<span class="font-headline font-semibold text-primary">Rock Excavation:</span>
+<span class="font-body text-on-surface-variant">Removal of underground rock formations if encountered.</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-error text-sm mt-1" data-icon="cancel">cancel</span>
+<span class="font-headline font-semibold text-primary">Pool Installation:</span>
+<span class="font-body text-on-surface-variant">Excavation, shell, and equipment for swimming pools.</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Client Acknowledgement -->
+<section class="py-16 border-t border-outline-variant">
+<div class="max-w-xl">
+<h3 class="font-headline text-2xl font-bold mb-6">Client Acknowledgement</h3>
+<p class="font-body text-on-surface-variant mb-8 leading-relaxed">By reviewing this document, you acknowledge the standard specifications provided by ARC Builders. Any variation requested hereafter will be subject to a formal Variation Quote (VQ).</p>
+<div class="space-y-6">
+<div class="space-y-4">
+<label class="flex items-center gap-4 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-headline text-sm text-primary group-hover:underline">I have reviewed all 15 inclusion categories.</span>
+</label>
+<label class="flex items-center gap-4 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-headline text-sm text-primary group-hover:underline">I understand the defined allowances and exclusions.</span>
+</label>
+</div>
+<div class="pt-6">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-2 block">Client Full Name</label>
+<input class="w-full bg-surface-container border-none p-4 font-headline focus:ring-2 focus:ring-primary transition-all" placeholder="e.g., Jonathan Sterling" type="text"/>
+</div>
+<div class="flex flex-col md:flex-row gap-4 pt-4">
+<button class="flex-1 bg-primary text-white font-headline font-bold py-4 active:scale-95 transition-all">Sign &amp; Submit Review</button>
+<button class="flex-1 bg-surface-container-highest text-primary font-headline font-bold py-4 flex items-center justify-center gap-2 hover:bg-outline-variant transition-all">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                                    Download PDF summary
+                                </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-50 dark:bg-zinc-950 full-width border-t border-zinc-200 dark:border-zinc-800">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8">
+<div class="font-headline font-black text-zinc-900 dark:text-zinc-100 uppercase tracking-tighter text-2xl">
+                ARC Builders
+            </div>
+<div class="flex flex-wrap justify-center gap-8 font-body italic text-sm">
+<span class="text-zinc-500 dark:text-zinc-400">v1.0.4</span>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Privacy Policy</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Terms of Construction</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Contact Support</a>
+</div>
+<div class="font-body italic text-sm text-zinc-500 dark:text-zinc-400">
+                © 2024 ARC Builders. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

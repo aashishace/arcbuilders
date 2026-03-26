@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   Home,
   Hammer,
@@ -14,6 +15,21 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { residentialServices, projects } from "@/lib/data";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Residential Building Services",
+  description:
+    "Residential building services by ARC Builders including custom homes, renovations, extensions, granny flats, and duplex projects in South East Queensland.",
+  path: "/residential",
+  keywords: [
+    "custom homes Brisbane",
+    "home renovations Logan",
+    "extensions Queensland",
+    "granny flat builder",
+  ],
+  images: ["/projects/8-vineyard-drive-greenbank/hero.webp"],
+});
 
 const iconMap: Record<string, LucideIcon> = {
   Home,

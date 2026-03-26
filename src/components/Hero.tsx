@@ -4,18 +4,24 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { companyInfo } from "@/lib/data";
+
+function shouldUseStaticHeroMode() {
+  if (typeof window === "undefined") {
+    return false;
+  }
+
+  const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  return Boolean(connection?.saveData) || prefersReducedMotion;
+}
 
 export default function Hero() {
   const videoRef = useRef<HTMLDivElement>(null);
-  const [useStaticHero, setUseStaticHero] = useState(false);
+  const [useStaticHero, setUseStaticHero] = useState(shouldUseStaticHeroMode);
 
   useEffect(() => {
-    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const shouldUseStatic = Boolean(connection?.saveData) || prefersReducedMotion;
-
-    if (shouldUseStatic) {
-      setUseStaticHero(true);
+    if (useStaticHero) {
       return;
     }
 
@@ -28,7 +34,7 @@ export default function Hero() {
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [useStaticHero]);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -61,19 +67,19 @@ export default function Hero() {
           )}
         </div>
         {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/70 via-[#1a1a1a]/40 to-[#1a1a1a]/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/60 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#1a1a1a]/70 via-[#1a1a1a]/40 to-[#1a1a1a]/80" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#1a1a1a]/60 to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 pt-28 lg:px-8">
+      <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 pt-20 pb-12 sm:pt-24 md:pt-28 lg:px-8 [@media(max-height:760px)]:justify-start [@media(max-height:760px)]:pt-24 [@media(max-height:760px)]:pb-6">
         <div className="mx-auto w-full max-w-7xl">
           {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mb-6 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent"
+            className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent sm:mb-6"
           >
             Aesthetic Residential & Commercial
           </motion.p>
@@ -83,11 +89,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="max-w-3xl text-5xl font-light leading-[1.1] tracking-tight text-white md:text-6xl lg:text-7xl"
+            className="max-w-3xl text-3xl font-light leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
           >
             Building
-            <span className="block font-normal text-accent"> Exceptional </span>
-            Homes with Precision
+            <span className="block font-normal text-accent"> Bespoke Homes with Precision </span>
           </motion.h1>
 
           {/* Subtext */}
@@ -95,11 +100,15 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
-            className="mt-6 max-w-lg font-sans text-base font-light leading-relaxed text-white/60 md:text-lg"
+            className="mt-3 max-w-xl font-sans text-sm font-light leading-relaxed text-white/60 sm:mt-6 sm:text-base md:text-lg"
           >
-            Custom homes, renovations, and Vastu-compliant builds for
-            Indian-Australian families. Transparent pricing, superior
-            craftsmanship, and a team that understands your vision.
+            <span className="hidden sm:inline">
+              Serving Brisbane, Logan, Rochedale, and South East Queensland with
+              thoughtfully designed homes, transparent pricing, and quality-first construction.
+            </span>
+            <span className="sm:hidden">
+              Serving Brisbane and South East Queensland with transparent pricing and quality-first construction.
+            </span>
           </motion.p>
 
           {/* CTA buttons */}
@@ -107,11 +116,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="mt-10 flex flex-wrap gap-4"
+            className="mt-7 flex flex-wrap gap-3 sm:mt-10 sm:gap-4"
           >
             <Link
               href="/projects"
-              className="group relative overflow-hidden border border-accent bg-accent px-8 py-3.5 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all duration-500"
+              className="group relative overflow-hidden border border-accent bg-accent px-6 py-3 font-sans text-xs font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all duration-500 sm:px-8 sm:py-3.5 sm:text-sm"
             >
               <span className="relative z-10 transition-colors duration-500 group-hover:text-accent">
                 View Projects
@@ -120,12 +129,9 @@ export default function Hero() {
             </Link>
             <Link
               href="/contact"
-              className="group relative overflow-hidden border border-white/30 px-8 py-3.5 font-sans text-sm font-semibold uppercase tracking-wider text-white transition-all duration-500 hover:border-accent"
+              className="inline-flex items-center border-b border-white/30 pb-1 font-sans text-xs font-semibold uppercase tracking-wider text-white/80 transition-all duration-300 hover:border-accent hover:text-accent sm:text-sm"
             >
-              <span className="relative z-10 transition-colors duration-500 group-hover:text-[#1a1a1a]">
-                Start Your Project
-              </span>
-              <div className="absolute inset-0 -translate-x-full bg-accent transition-transform duration-500 group-hover:translate-x-0" />
+              Talk To Our Team
             </Link>
           </motion.div>
 
@@ -134,15 +140,15 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.5 }}
-            className="mt-16 flex gap-12"
+            className="mt-8 hidden gap-6 sm:mt-10 sm:flex sm:gap-10 lg:mt-14 [@media(max-height:760px)]:hidden"
           >
             {[
-              { value: "10+", label: "Years Experience" },
-              { value: "200+", label: "Projects Completed" },
-              { value: "100%", label: "Client Satisfaction" },
+              { value: companyInfo.experience, label: "Years of Industry Experience" },
+              { value: "100+", label: "Successful Projects" },
+              { value: "100%", label: "Happy Handovers" },
             ].map((stat) => (
               <div key={stat.label} className="text-left">
-                <span className="text-2xl font-light text-accent md:text-3xl">
+                <span className="text-xl font-light text-accent md:text-3xl">
                   {stat.value}
                 </span>
                 <p className="mt-1 font-sans text-[10px] uppercase tracking-[0.2em] text-white/40">
@@ -159,7 +165,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 sm:block [@media(max-height:760px)]:hidden"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

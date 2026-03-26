@@ -26,7 +26,7 @@ export default function CTASection() {
             whileInView={{ width: 60 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="mx-auto mb-8 h-[1px] bg-accent"
+            className="mx-auto mb-8 h-px bg-accent"
           />
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Let&apos;s Build Together
@@ -56,14 +56,8 @@ export default function CTASection() {
               href="tel:0411878438"
               className="border border-white/20 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-wider text-white/70 transition-all duration-300 hover:border-accent hover:text-accent"
             >
-              Call 0411 878 438
+              Call Our Team
             </a>
-            <Link
-              href="/inclusions"
-              className="border border-accent/40 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-all duration-300 hover:border-accent hover:bg-accent hover:text-[#1a1a1a]"
-            >
-              Build Inclusion Sheet
-            </Link>
             <a
               href="https://wa.me/61411878438?text=Hi%20ARC%20Builders%2C%20I%27m%20interested%20in%20discussing%20a%20project."
               target="_blank"

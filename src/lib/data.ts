@@ -6,14 +6,14 @@ export const projects: Project[] = [
     id: "1",
     title: "Verona Residence",
     slug: "14-verona-st-pallara",
-    location: "Pallara, QLD 4110",
+    location: "Pallara, QLD",
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Full design & build â€” luxury family home",
+    scope: "Full design & build - luxury family home",
     description:
       "A beautifully crafted family residence in Pallara featuring modern architectural lines, premium finishes, and spacious open-plan living. Designed to embrace the Queensland lifestyle with seamless indoor-outdoor flow.",
-    heroImage: "/projects/14-verona-st-pallara/gallery-02.webp",
+    heroImage: "/projects/14-verona-st-pallara/gallery-01.webp",
     images: [
       "/projects/14-verona-st-pallara/gallery-01.webp",
       "/projects/14-verona-st-pallara/gallery-02.webp",
@@ -38,10 +38,10 @@ export const projects: Project[] = [
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Custom home â€” contemporary design & build",
+    scope: "Custom home - contemporary design & build",
     description:
       "A striking contemporary residence showcasing bold architectural design, high-end interiors, and expansive living spaces. Built with meticulous attention to detail and quality craftsmanship throughout.",
-    heroImage: "/projects/25-langford-st/gallery-02.webp",
+    heroImage: "/projects/25-langford-st/gallery-01.webp",
     images: [
       "/projects/25-langford-st/gallery-01.webp",
       "/projects/25-langford-st/gallery-02.webp",
@@ -66,10 +66,10 @@ export const projects: Project[] = [
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Full design & build â€” modern family home",
+    scope: "Full design & build - modern family home",
     description:
       "A sophisticated modern family home featuring clean architectural lines, premium material selections, and thoughtfully designed living spaces that maximise natural light and ventilation.",
-    heroImage: "/projects/49-herbert-st/gallery-03.webp",
+    heroImage: "/projects/49-herbert-st/gallery-01.webp",
     images: [
       "/projects/49-herbert-st/gallery-01.webp",
       "/projects/49-herbert-st/gallery-02.webp",
@@ -94,10 +94,10 @@ export const projects: Project[] = [
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Custom home â€” new build",
+    scope: "Custom home - new build",
     description:
       "A stunning custom home in the Spring Mountain estate featuring contemporary architecture, premium finishes, and generous living areas designed for modern family living in one of Brisbane's most sought-after growth corridors.",
-    heroImage: "/projects/3-brooklyn-st-spring-mountain/gallery-04.webp",
+    heroImage: "/projects/3-brooklyn-st-spring-mountain/gallery-01.webp",
     images: [
       "/projects/3-brooklyn-st-spring-mountain/gallery-01.webp",
       "/projects/3-brooklyn-st-spring-mountain/gallery-02.webp",
@@ -118,14 +118,14 @@ export const projects: Project[] = [
     id: "5",
     title: "Dart Residence",
     slug: "3-dart-ave-kingston",
-    location: "Kingston, QLD 4114",
+    location: "Kingston, QLD",
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Full design & build â€” family home",
+    scope: "Full design & build - family home",
     description:
       "A well-appointed family home in Kingston combining functional design with stylish contemporary finishes. Every space has been carefully planned to deliver comfort, practicality, and lasting quality.",
-    heroImage: "/projects/3-dart-ave-kingston/gallery-03.webp",
+    heroImage: "/projects/3-dart-ave-kingston/gallery-01.webp",
     images: [
       "/projects/3-dart-ave-kingston/gallery-01.webp",
       "/projects/3-dart-ave-kingston/gallery-02.webp",
@@ -150,10 +150,10 @@ export const projects: Project[] = [
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Full design & build â€” luxury home",
+    scope: "Full design & build - luxury home",
     description:
       "An impressive custom build in Mount Gravatt showcasing architectural excellence and superior craftsmanship. Featuring high ceilings, premium kitchen design, and beautifully appointed interiors throughout.",
-    heroImage: "/projects/3-stanley-st-mount-gravatt/gallery-03.webp",
+    heroImage: "/projects/3-stanley-st-mount-gravatt/gallery-01.webp",
     images: [
       "/projects/3-stanley-st-mount-gravatt/gallery-01.webp",
       "/projects/3-stanley-st-mount-gravatt/gallery-02.webp",
@@ -178,10 +178,10 @@ export const projects: Project[] = [
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Custom home â€” modern family build",
+    scope: "Custom home - modern family build",
     description:
       "A modern family home in Calamvale designed with thoughtful attention to space, light, and lifestyle. Featuring contemporary interiors, quality finishes, and functional living areas perfect for family life.",
-    heroImage: "/projects/35-ayesha-place-calamvale/gallery-11.webp",
+    heroImage: "/projects/35-ayesha-place-calamvale/gallery-01.webp",
     images: [
       "/projects/35-ayesha-place-calamvale/gallery-01.webp",
       "/projects/35-ayesha-place-calamvale/gallery-02.webp",
@@ -206,10 +206,10 @@ export const projects: Project[] = [
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Full design & build â€” acreage home",
+    scope: "Full design & build - acreage home",
     description:
       "A spacious acreage home in Greenbank set against lush surroundings. This build features expansive living areas, a chef-grade kitchen, and outdoor entertaining spaces that make the most of the tranquil semi-rural setting.",
-    heroImage: "/projects/8-vineyard-drive-greenbank/gallery-03.webp",
+    heroImage: "/projects/8-vineyard-drive-greenbank/gallery-01.webp",
     images: [
       "/projects/8-vineyard-drive-greenbank/gallery-01.webp",
       "/projects/8-vineyard-drive-greenbank/gallery-02.webp",
@@ -234,10 +234,10 @@ export const projects: Project[] = [
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
-    scope: "Full design & build â€” premium residence",
+    scope: "Full design & build - premium residence",
     description:
       "A premium custom residence showcasing ARC Builders' commitment to exceptional quality. This project features striking exterior design, luxurious interiors, and the finest material selections throughout.",
-    heroImage: "/projects/hi-def-project/gallery-03.webp",
+    heroImage: "/projects/hi-def-project/gallery-01.webp",
     images: [
       "/projects/hi-def-project/gallery-01.webp",
       "/projects/hi-def-project/gallery-02.webp",
@@ -262,7 +262,7 @@ export const residentialServices: Service[] = [
     id: "1",
     title: "Custom Homes",
     description:
-      "From concept to completion, we design and build bespoke homes tailored to your lifestyle â€” including Vastu-compliant designs for families who value traditional principles in a modern Australian home.",
+      "From concept to completion, we design and build bespoke homes tailored to your lifestyle, site, and budget.",
     icon: "Home",
     href: "/residential#custom-homes",
   },
@@ -286,7 +286,7 @@ export const residentialServices: Service[] = [
     id: "4",
     title: "Granny Flats & Duplex",
     description:
-      "Maximise your property's potential with dual-occupancy builds and self-contained granny flats â€” ideal for multi-generational families and investment properties.",
+      "Maximise your property's potential with dual-occupancy builds and self-contained granny flats.",
     icon: "Building2",
     href: "/residential#granny-flats",
   },
@@ -294,7 +294,7 @@ export const residentialServices: Service[] = [
     id: "5",
     title: "Designer Homes",
     description:
-      "Premium architectural homes with exceptional finishes. We specialise in multi-generational living, puja rooms, and designs that honour cultural values while embracing modern Australian living.",
+      "Premium architectural homes with exceptional finishes and cutting-edge design for the discerning homeowner.",
     icon: "Gem",
     href: "/residential#designer-homes",
   },
@@ -348,28 +348,28 @@ export const testimonials: Testimonial[] = [
   {
     id: "1",
     name: "Raj & Anita Patel",
-    role: "Vastu-Compliant Custom Home â€” Brisbane",
+    role: "Vastu-Compliant Custom Home - Brisbane",
     quote:
-      "ARC Builders understood exactly what we needed â€” a modern home that respects Vastu principles. From the north-east entrance to the kitchen placement, every detail was considered. Transparent pricing and beautiful craftsmanship.",
+      "ARC Builders understood exactly what we needed - a modern home that respects Vastu principles. From the north-east entrance to the kitchen placement, every detail was considered. Transparent pricing and beautiful craftsmanship.",
   },
   {
     id: "2",
     name: "Vikram & Sunita Mehta",
-    role: "Multi-Generational Home â€” Sunnybank Hills",
+    role: "Multi-Generational Home - Sunnybank Hills",
     quote:
       "We wanted a home where our parents and kids could live together comfortably, with Vastu-compliant design and a proper puja room. ARC delivered beyond our expectations. They truly understand Indian-Australian family needs.",
   },
   {
     id: "3",
     name: "Dr. Priya Sharma",
-    role: "Medical Centre â€” Brisbane South",
+    role: "Medical Centre - Brisbane South",
     quote:
       "Building a medical centre has strict requirements. ARC Builders navigated every regulation with expertise and delivered a facility our patients love. As an NRI, it was refreshing to work with a team that understood my vision.",
   },
   {
     id: "4",
     name: "Amit & Kavita Singh",
-    role: "Duplex Investment â€” Logan",
+    role: "Duplex Investment - Logan",
     quote:
       "As NRI investors, we needed a builder we could trust with our investment. ARC's transparent fixed-price contracts and regular updates gave us complete peace of mind. The duplex quality exceeded our expectations.",
   },
@@ -387,7 +387,7 @@ export const processSteps: ProcessStep[] = [
     id: 2,
     title: "Planning & Design",
     description:
-      "Our team develops detailed plans, provides transparent pricing upfront with no hidden costs, and manages all council approvals.",
+      "Our team develops detailed plans, provides upfront pricing, completes documentation, manages council approvals, and prepares for construction.",
   },
   {
     id: 3,
@@ -408,9 +408,6 @@ export const navLinks = [
 
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
-  { label: "Residential", href: "/residential" },
-  { label: "Inclusions", href: "/inclusions" },
-  { label: "Commercial", href: "/commercial" },
   { label: "Process", href: "/process" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
@@ -420,12 +417,13 @@ export const navLinks = [
 /* â”€â”€ Company info â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 export const companyInfo = {
   name: "ARC Builders",
-  fullName: "Aesthetic Residential Commercial Builders",
+  fullName: "Aesthetic Residential and Commercial Builders",
   phone: "0411 878 438",
   email: "info@arcbuilders.com.au",
-  address: "PO Box 1345, Sunnybank Hills QLD 4109",
-  experience: "10+",
-  tagline: "Builders with a difference",
+  address: "25 Langford Street, Eight Mile Plains QLD",
+  experience: "18+",
+  tagline:
+    "Custom Homes Designed for Modern Families - Trusted Builders in Brisbane, Logan & South East Queensland.",
   qbccLicence: "15090326",
   socials: {
     facebook: "#",
