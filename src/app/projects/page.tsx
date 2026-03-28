@@ -58,17 +58,6 @@ export default function ProjectsPage() {
             Explore our portfolio of residential and commercial builds across
             Queensland.
           </p>
-          <div className="mt-6 flex flex-wrap items-center gap-4">
-            <Link
-              href="/inclusions"
-              className="inline-flex items-center border border-accent/50 px-6 py-3 font-sans text-xs font-semibold uppercase tracking-wider text-accent transition-all duration-300 hover:border-accent hover:bg-accent hover:text-[#1a1a1a]"
-            >
-              Build Inclusion Sheet
-            </Link>
-            <p className="font-sans text-xs uppercase tracking-[0.18em] text-white/45">
-              Inclusions are documented with your project scope before construction starts.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -112,7 +101,7 @@ export default function ProjectsPage() {
                       <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a]/70 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-90" />
                       <div className="absolute bottom-0 left-0 right-0 p-6">
                         <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-accent">
-                          {(typeLabelMap[project.type] ?? project.type.replace(/-/g, " "))} · {project.year}
+                          {typeLabelMap[project.type] ?? project.type.replace(/-/g, " ")}
                         </p>
                         <h3 className="mt-2 text-lg font-light tracking-tight text-white">
                           {project.title}

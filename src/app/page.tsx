@@ -4,10 +4,8 @@ import Hero from "@/components/Hero";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import AboutPreview from "@/components/AboutPreview";
 import ServicesSection from "@/components/ServicesSection";
-import ServiceAreasSection from "@/components/ServiceAreasSection";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import HomeFaqSection, { homeFaqItems } from "@/components/HomeFaqSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { companyInfo } from "@/lib/data";
@@ -29,19 +27,6 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function HomePage() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: homeFaqItems.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
   const homeServiceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -51,7 +36,7 @@ export default function HomePage() {
       name: companyInfo.name,
       url: absoluteUrl("/"),
       telephone: companyInfo.phone,
-      areaServed: ["Brisbane", "Logan", "Rochedale", "South East Queensland"],
+      areaServed: ["Brisbane", "Logan", "South East Queensland"],
     },
   };
 
@@ -59,7 +44,7 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, homeServiceSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeServiceSchema) }}
       />
       <main>
         <Navbar />
@@ -67,10 +52,8 @@ export default function HomePage() {
         <FeaturedProjects />
         <AboutPreview />
         <ServicesSection />
-        <ServiceAreasSection />
         <ProcessTimeline />
         <TestimonialsSection />
-        <HomeFaqSection />
         <CTASection />
         <Footer />
       </main>

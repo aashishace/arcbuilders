@@ -57,7 +57,7 @@ export default function TestimonialsSection() {
                   <p className="font-sans text-base font-semibold text-accent">
                     {testimonials[current].name}
                   </p>
-                  <p className="mt-1 font-sans text-sm text-white/40">
+                  <p className="mt-1 font-sans text-sm uppercase tracking-[0.18em] text-white/40">
                     {testimonials[current].role}
                   </p>
                 </div>

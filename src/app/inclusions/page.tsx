@@ -6,13 +6,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {
   buildInclusionSummary,
-  buildTypeAdjustmentMap,
+  consultantPricingNotes,
   createDefaultSelections,
   explicitExclusions,
+  getPackagePricingGuide,
   getRowKey,
   inclusionSections,
   inclusionStatusMeta,
   inclusionPackages,
+  publicBasePricing,
   type BuildType,
   type InclusionPackage,
   type InclusionSelectionMap,
@@ -40,7 +42,7 @@ const initialFormState: FormState = {
   phone: "",
   suburb: "",
   buildType: "single-storey",
-  packageId: "signature",
+  packageId: "essential",
 };
 
 export default function InclusionsPage() {
@@ -55,6 +57,7 @@ export default function InclusionsPage() {
     () => buildInclusionSummary(form.packageId, form.buildType, selections),
     [form.packageId, form.buildType, selections]
   );
+  const pricingGuide = getPackagePricingGuide(form.packageId, form.buildType);
 
   function setRowSelection(sectionId: string, rowIndex: number, value: RowSelectionValue) {
     const key = getRowKey(sectionId, rowIndex);
@@ -144,12 +147,11 @@ export default function InclusionsPage() {
             <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Version 2.1</span>
           </div>
           <h1 className="max-w-5xl text-5xl font-light leading-[0.95] tracking-tight text-[#1a1a1a] md:text-7xl lg:text-8xl">
-            ARC Premium
-            <span className="block text-accent">Inclusion Builder</span>
+            Client Project
+            <span className="block text-accent">Selections</span>
           </h1>
           <p className="mt-6 max-w-3xl font-sans text-base leading-relaxed text-[#1a1a1a]/65 md:text-lg">
-            Build your own preliminary inclusion sheet with confidence. Mandatory compliance items are safely locked,
-            while selectable allowances and upgrades are clearly controlled.
+            This private page is shared after enquiry review so clients can confirm project selections clearly before consultant follow-up.
           </p>
 
           <div className="mt-8 grid gap-4 border border-[#1a1a1a]/10 bg-[#fafafa] p-5 md:grid-cols-3">
@@ -158,12 +160,12 @@ export default function InclusionsPage() {
               <p className="mt-2 text-sm text-[#1a1a1a]/70">Compliance-critical items are always locked and cannot be removed.</p>
             </div>
             <div>
-              <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-accent">Customer Friendly</p>
-              <p className="mt-2 text-sm text-[#1a1a1a]/70">Allowance and optional upgrade choices are fully visible and easy to compare.</p>
+              <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-accent">Selection Clarity</p>
+              <p className="mt-2 text-sm text-[#1a1a1a]/70">Allowance and optional inclusion pathways stay visible so the consultant review is faster and cleaner.</p>
             </div>
             <div>
-              <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-accent">Commercial Clarity</p>
-              <p className="mt-2 text-sm text-[#1a1a1a]/70">Real-time estimate updates with a clear indicative-only disclaimer.</p>
+              <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-accent">Consultant-Led Pricing</p>
+              <p className="mt-2 text-sm text-[#1a1a1a]/70">Base pricing is shown where approved. Final upgrade and tailored pricing is confirmed in meeting or on call.</p>
             </div>
           </div>
         </div>
@@ -183,7 +185,7 @@ export default function InclusionsPage() {
                 <p className="font-sans text-[11px] font-semibold uppercase tracking-[0.16em] text-[#1a1a1a]/55">How To Use</p>
                 <p className="mt-2 font-sans text-sm text-[#1a1a1a]/70">
                   Complete project details, choose build type and package, then set each allowance row to Standard or
-                  Upgrade. Locked rows are mandatory and cannot be removed.
+                  Include. Locked rows are mandatory and cannot be removed, and final pricing is reviewed with your consultant.
                 </p>
               </div>
 
@@ -252,10 +254,8 @@ export default function InclusionsPage() {
                     ))}
                   </div>
                   <p className="mt-3 font-sans text-xs text-[#1a1a1a]/60">
-                    Build type applies an indicative complexity adjustment to the estimate: {" "}
-                    <span className="font-semibold">Single {currency.format(buildTypeAdjustmentMap["single-storey"].amount)}</span>,{" "}
-                    <span className="font-semibold">Double {currency.format(buildTypeAdjustmentMap["double-storey"].amount)}</span>,{" "}
-                    <span className="font-semibold">Custom {currency.format(buildTypeAdjustmentMap.custom.amount)}</span>.
+                    Essential Living base pricing is available for approved single and double storey builds.
+                    Signature, Luxury, and fully custom pricing is confirmed after consultant review.
                   </p>
                 </div>
 
@@ -275,7 +275,15 @@ export default function InclusionsPage() {
                       >
                         <p className="font-semibold text-[#1a1a1a]">{pkg.name}</p>
                         <p className="mt-1 font-sans text-sm text-[#1a1a1a]/60">{pkg.description}</p>
-                        <p className="mt-2 font-sans text-sm font-semibold text-accent">{currency.format(pkg.basePrice)}</p>
+                        {pkg.id === form.packageId ? (
+                          <p className="mt-2 font-sans text-sm font-semibold text-accent">
+                            {pricingGuide.amount ? `${currency.format(pricingGuide.amount)} · ${pricingGuide.detail}` : pricingGuide.detail}
+                          </p>
+                        ) : pkg.id === "essential" ? (
+                          <p className="mt-2 font-sans text-sm font-semibold text-accent">Base pricing available for single and double storey builds</p>
+                        ) : (
+                          <p className="mt-2 font-sans text-sm font-semibold text-[#1a1a1a]/55">Pricing shared with consultant after scope review</p>
+                        )}
                       </button>
                     ))}
                   </div>
@@ -287,15 +295,15 @@ export default function InclusionsPage() {
               <section key={section.id} className="border border-[#1a1a1a]/10 bg-white p-6">
                 <h2 className="border-b border-[#1a1a1a]/10 pb-4 text-2xl font-light text-[#1a1a1a]">{section.title}</h2>
                 <div className="mt-5 overflow-x-auto">
-                  <table className="min-w-[1080px] w-full border-collapse">
+                  <table className="min-w-270 w-full border-collapse">
                     <thead>
                       <tr className="border-b border-[#1a1a1a]/10 text-left">
-                        <th className="min-w-[230px] px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Item</th>
-                        <th className="min-w-[120px] px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Status</th>
-                        <th className="min-w-[170px] px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Allowance</th>
-                        <th className="min-w-[190px] px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Upgrade Option</th>
-                        <th className="min-w-[170px] px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Notes</th>
-                        <th className="sticky right-0 min-w-[170px] bg-white px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/60 shadow-[-10px_0_12px_-12px_rgba(0,0,0,0.35)]">
+                        <th className="min-w-57.5 px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Item</th>
+                        <th className="min-w-30 px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Status</th>
+                        <th className="min-w-42.5 px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Allowance</th>
+                        <th className="min-w-47.5 px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Upgrade Option</th>
+                        <th className="min-w-42.5 px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/50">Notes</th>
+                        <th className="sticky right-0 min-w-42.5 bg-white px-3 py-3 font-sans text-[10px] uppercase tracking-[0.2em] text-[#1a1a1a]/60 shadow-[-10px_0_12px_-12px_rgba(0,0,0,0.35)]">
                           Your Choice
                         </th>
                       </tr>
@@ -311,7 +319,7 @@ export default function InclusionsPage() {
 
                         return (
                           <tr key={key} className="border-b border-[#1a1a1a]/8 align-top">
-                            <td className="px-3 py-4 font-semibold text-[#1a1a1a] break-words">{row.item}</td>
+                            <td className="px-3 py-4 font-semibold text-[#1a1a1a] wrap-break-word">{row.item}</td>
                             <td className="px-3 py-4">
                               <span
                                 className={`inline-flex whitespace-nowrap rounded-full px-2.5 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.12em] ${
@@ -321,9 +329,9 @@ export default function InclusionsPage() {
                                 {inclusionStatusMeta[currentDecision.status].label}
                               </span>
                             </td>
-                            <td className="px-3 py-4 font-sans text-sm leading-relaxed text-[#1a1a1a]/70 break-words">{row.allowance}</td>
-                            <td className="px-3 py-4 font-sans text-sm leading-relaxed text-[#1a1a1a]/70 break-words">{row.upgradeOption}</td>
-                            <td className="px-3 py-4 font-sans text-sm italic leading-relaxed text-[#1a1a1a]/65 break-words">{row.notes}</td>
+                            <td className="px-3 py-4 font-sans text-sm leading-relaxed text-[#1a1a1a]/70 wrap-break-word">{row.allowance}</td>
+                            <td className="px-3 py-4 font-sans text-sm leading-relaxed text-[#1a1a1a]/70 wrap-break-word">{row.upgradeOption}</td>
+                            <td className="px-3 py-4 font-sans text-sm italic leading-relaxed text-[#1a1a1a]/65 wrap-break-word">{row.notes}</td>
                             <td className="sticky right-0 bg-white px-3 py-4 shadow-[-10px_0_12px_-12px_rgba(0,0,0,0.35)]">
                               {row.selectionMode === "fixed" ? (
                                 <span className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-[#1a1a1a]/45">Locked</span>
@@ -371,9 +379,6 @@ export default function InclusionsPage() {
                                   {currentDecision.status === "upgrade" ? "Selected" : "Include"}
                                 </button>
                               )}
-                              {currentDecision.costImpact > 0 && (
-                                <p className="mt-2 font-sans text-xs text-accent">+{currency.format(currentDecision.costImpact)}</p>
-                              )}
                             </td>
                           </tr>
                         );
@@ -402,8 +407,8 @@ export default function InclusionsPage() {
 
           <aside className="space-y-6 lg:col-span-4">
             <div className="sticky top-28 border border-[#1a1a1a]/10 bg-white p-6">
-              <h3 className="text-2xl font-light text-[#1a1a1a]">Estimate Snapshot</h3>
-              <p className="mt-1 font-sans text-sm text-[#1a1a1a]/60">Indicative only. Final tender and contract terms apply.</p>
+              <h3 className="text-2xl font-light text-[#1a1a1a]">Pricing and Selection Snapshot</h3>
+              <p className="mt-1 font-sans text-sm text-[#1a1a1a]/60">Base pricing is shown only where approved. Final selections and pricing are confirmed with your consultant.</p>
 
               <div className="mt-5 space-y-2 border-b border-[#1a1a1a]/10 pb-4">
                 <div className="flex items-center justify-between">
@@ -411,37 +416,57 @@ export default function InclusionsPage() {
                   <span className="font-sans text-sm font-semibold text-[#1a1a1a]">{summary.selectedPackage.name}</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="font-sans text-sm text-[#1a1a1a]/70">Base price</span>
-                  <span className="font-sans text-sm font-semibold text-[#1a1a1a]">{currency.format(summary.selectedPackage.basePrice)}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="font-sans text-sm text-[#1a1a1a]/70">Build type adjustment</span>
-                  <span className="font-sans text-sm font-semibold text-[#1a1a1a]">{currency.format(summary.buildTypeAdjustment)}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="font-sans text-sm text-[#1a1a1a]/70">User-selected upgrades</span>
-                  <span className="font-sans text-sm font-semibold text-[#1a1a1a]">{currency.format(summary.upgradesTotal)}</span>
+                  <span className="font-sans text-sm text-[#1a1a1a]/70">Build type</span>
+                  <span className="font-sans text-sm font-semibold text-[#1a1a1a]">{form.buildType === "single-storey" ? "Single Storey" : form.buildType === "double-storey" ? "Double Storey" : "Custom"}</span>
                 </div>
               </div>
 
-              <div className="mt-4 flex items-center justify-between">
-                <span className="font-sans text-xs uppercase tracking-[0.2em] text-[#1a1a1a]/55">Estimated Total</span>
-                <span className="text-3xl font-light text-accent">{currency.format(summary.estimatedTotal)}</span>
+              <div className="mt-4 rounded-[1.25rem] border border-accent/20 bg-[#fffaf0] p-4">
+                <p className="font-sans text-xs uppercase tracking-[0.2em] text-[#1a1a1a]/55">Selected pricing guide</p>
+                <p className="mt-2 text-lg font-light text-[#1a1a1a]">{pricingGuide.label}</p>
+                <p className="mt-1 font-sans text-sm text-[#1a1a1a]/65">{pricingGuide.detail}</p>
+                {pricingGuide.amount ? (
+                  <p className="mt-4 text-3xl font-light text-accent">{currency.format(pricingGuide.amount)}</p>
+                ) : (
+                  <p className="mt-4 font-sans text-sm font-semibold text-accent">Discuss pricing with consultant</p>
+                )}
               </div>
 
               <div className="mt-6 border-t border-[#1a1a1a]/10 pt-4">
-                <p className="font-sans text-xs uppercase tracking-[0.2em] text-[#1a1a1a]/55">Selected Upgrades</p>
+                <p className="font-sans text-xs uppercase tracking-[0.2em] text-[#1a1a1a]/55">Official base pricing</p>
+                <ul className="mt-3 space-y-3">
+                  {publicBasePricing.map((item) => (
+                    <li key={item.label} className="flex items-start justify-between gap-4 text-sm text-[#1a1a1a]/75">
+                      <div>
+                        <span className="block font-semibold text-[#1a1a1a]">{item.label}</span>
+                        <span className="font-sans text-xs text-[#1a1a1a]/55">{item.detail}</span>
+                      </div>
+                      <span className="font-semibold text-accent">{currency.format(item.amount)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="mt-4 space-y-2">
+                  {consultantPricingNotes.map((note) => (
+                    <li key={note} className="font-sans text-sm leading-relaxed text-[#1a1a1a]/60">
+                      - {note}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-6 border-t border-[#1a1a1a]/10 pt-4">
+                <p className="font-sans text-xs uppercase tracking-[0.2em] text-[#1a1a1a]/55">Selections for consultant review</p>
                 {summary.selectedUpgrades.length ? (
                   <ul className="mt-2 space-y-2">
                     {summary.selectedUpgrades.map((item) => (
                       <li key={item.key} className="text-sm text-[#1a1a1a]/75">
                         <span className="font-semibold">{item.item}</span>
-                        <span className="block font-sans text-xs text-accent">+{currency.format(item.costImpact)}</span>
+                        <span className="block font-sans text-xs text-[#1a1a1a]/50">{item.sectionTitle}</span>
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="mt-2 font-sans text-sm text-[#1a1a1a]/60">No optional upgrades selected.</p>
+                  <p className="mt-2 font-sans text-sm text-[#1a1a1a]/60">No additional selections marked yet.</p>
                 )}
               </div>
 
@@ -462,7 +487,7 @@ export default function InclusionsPage() {
                     className="h-4 w-4 border-[#1a1a1a]/20"
                     type="checkbox"
                   />
-                  I understand final selections are confirmed in written tender.
+                  I understand final pricing and selections are confirmed with my consultant and written tender.
                 </label>
               </div>
 
@@ -479,7 +504,7 @@ export default function InclusionsPage() {
                   onClick={generatePdf}
                   className="border border-accent bg-accent px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#1a1a1a] transition-colors hover:bg-[#1a1a1a] hover:text-accent disabled:cursor-not-allowed disabled:opacity-70"
                 >
-                  {isGenerating ? "Generating PDF..." : "Download PDF Summary"}
+                  {isGenerating ? "Generating PDF..." : "Download Inclusion Summary"}
                 </button>
                 <Link
                   href="/contact"

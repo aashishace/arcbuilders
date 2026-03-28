@@ -62,12 +62,6 @@ export default function ServiceAreasSection() {
             >
               Book Consultation
             </Link>
-            <Link
-              href="/inclusions"
-              className="inline-flex border border-[#1a1a1a]/20 px-7 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-[#1a1a1a]/70 transition-all duration-300 hover:border-accent hover:text-accent"
-            >
-              Review Inclusions
-            </Link>
           </div>
         </ScrollReveal>
       </div>

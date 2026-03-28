@@ -6,16 +6,14 @@ import { companyInfo } from "@/lib/data";
 
 export default function AboutPreview() {
   return (
-    <section className="relative overflow-hidden bg-[#1a1a1a] py-24 lg:py-32">
-      {/* Gold accent decoration */}
-      <div className="absolute right-0 top-0 h-full w-[1px] bg-gradient-to-b from-transparent via-accent/20 to-transparent" />
+    <section className="relative overflow-hidden bg-[#151515] py-24 lg:py-32">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,225,105,0.12),_transparent_32%)]" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
-          {/* Left image block */}
           <ScrollReveal variant="fadeLeft">
             <div className="relative">
-              <div className="relative aspect-[4/5] overflow-hidden">
+              <div className="relative aspect-4/5 overflow-hidden rounded-[1.75rem]">
                 <div
                   className="h-full w-full bg-cover bg-center"
                   style={{
@@ -23,9 +21,9 @@ export default function AboutPreview() {
                       "url(/projects/3-stanley-st-mount-gravatt/hero.webp)",
                   }}
                 />
+                <div className="absolute inset-0 bg-linear-to-t from-[#0e0e0e]/55 via-transparent to-transparent" />
               </div>
-              {/* Floating stat card */}
-              <div className="absolute -bottom-6 -right-6 border border-accent/20 bg-[#111111] p-8 md:-right-12">
+              <div className="absolute -bottom-6 right-4 rounded-[1.25rem] border border-accent/20 bg-[#111111] p-8 shadow-[0_30px_80px_rgba(0,0,0,0.35)] md:-right-8">
                 <span className="text-5xl font-light text-accent">{companyInfo.experience}</span>
                 <p className="mt-1 font-sans text-xs uppercase tracking-[0.2em] text-white/40">
                   Years of<br />Excellence
@@ -34,47 +32,61 @@ export default function AboutPreview() {
             </div>
           </ScrollReveal>
 
-          {/* Right content */}
-          <div>
+          <div className="relative z-10">
             <ScrollReveal variant="fadeRight">
               <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
                 About ARC Builders
               </p>
               <h2 className="mt-4 text-4xl font-light leading-[1.2] tracking-tight text-white md:text-5xl">
-                Entrust Your Vision
-                <span className="block text-accent">To Our Team</span>
+                Custom Homes Built With
+                <span className="block text-accent">Clarity and Care</span>
               </h2>
             </ScrollReveal>
 
             <ScrollReveal variant="fadeRight" delay={0.2}>
-              <p className="mt-6 font-sans text-base leading-relaxed text-white/50">
-                At ARC Builders we have been in the industry for over 18 years, with an
-                experienced team driven to deliver excellence in customer service. We
-                specialise in Vastu-compliant homes, multi-generational living, and builds
-                tailored to Indian-Australian families. Transparent upfront pricing with
-                no hidden costs.
+              <p className="mt-6 font-sans text-base leading-relaxed text-white/68">
+                At ARC Builders, we bring over 18 years of experience delivering high-quality
+                custom homes in Brisbane, Logan, and South East Queensland. Our expert team is
+                committed to exceptional customer service, offering a seamless and transparent
+                building experience from design to completion.
               </p>
-              <p className="mt-4 font-sans text-base leading-relaxed text-white/50">
-                Unlike others that only provide set design and build, we customise our
-                plans to reflect your unique vision. Builders with a difference.
+              <p className="mt-4 font-sans text-base leading-relaxed text-white/68">
+                We specialise in custom home design, multi-generational homes, and
+                Vastu-inspired home planning, creating functional, spacious homes tailored for
+                modern families who value comfort, connection, and long-term living.
+              </p>
+              <p className="mt-4 font-sans text-base leading-relaxed text-white/68">
+                With fixed pricing, transparent quotes, and no hidden costs, you can build
+                with confidence knowing exactly what to expect. Unlike standard project
+                builders, we offer fully customised home designs so your home reflects your
+                lifestyle, preferences, and future needs.
               </p>
             </ScrollReveal>
 
             <ScrollReveal variant="fadeRight" delay={0.3}>
-              <div className="mt-8 grid grid-cols-2 gap-6">
+              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {[
-                  { label: "Transparent Pricing", desc: "No hidden costs, upfront quotes" },
-                  { label: "Custom Design", desc: "Tailored to your unique vision" },
-                  { label: "Quality Builds", desc: "Highest standards of craftsmanship" },
-                  { label: "On-Time Delivery", desc: "Reliable project timelines" },
+                  { label: "18+ Years", desc: "Experienced custom home delivery across Queensland" },
+                  { label: "Transparent Quotes", desc: "Fixed pricing and clear scope without hidden costs" },
+                  { label: "Custom Planning", desc: "Fully personalised homes for modern family living" },
+                  { label: "Specialist Design", desc: "Multi-generational and Vastu-inspired home planning" },
                 ].map((item) => (
-                  <div key={item.label} className="border-l border-accent/30 pl-4">
+                  <div key={item.label} className="rounded-[1.25rem] border border-white/8 bg-white/[0.03] p-5">
                     <h4 className="font-sans text-sm font-semibold text-white">
                       {item.label}
                     </h4>
-                    <p className="mt-1 font-sans text-xs text-white/40">{item.desc}</p>
+                    <p className="mt-2 font-sans text-sm leading-relaxed text-white/45">{item.desc}</p>
                   </div>
                 ))}
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal variant="fadeRight" delay={0.35}>
+              <div className="mt-8 rounded-[1.5rem] border border-accent/20 bg-accent/10 p-5">
+                <p className="font-sans text-sm leading-relaxed text-white/78">
+                  ARC Builders - trusted custom home builders in Queensland, delivering
+                  personalised homes with clarity, quality, and a difference.
+                </p>
               </div>
             </ScrollReveal>
 

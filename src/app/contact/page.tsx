@@ -159,7 +159,7 @@ export default function ContactPage() {
                 {/* Map placeholder */}
                 <div className="mt-10 aspect-4/3 overflow-hidden border border-[#1a1a1a]/5 bg-[#e5e5e5]">
                   <iframe
-                    src="https://www.google.com/maps?q=25+Langford+Street,+Eight+Mile+Plains+QLD,+Australia&output=embed"
+                    src="https://www.google.com/maps?q=25+Langford+Street,+Eight+Mile+Plains+QLD+4113,+Australia&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -185,7 +185,7 @@ export default function ContactPage() {
                       Your project details are prepared. Click below to open your default email app with a pre-filled enquiry draft.
                     </p>
                     <p className="mt-2 max-w-md font-sans text-sm text-[#1a1a1a]/40">
-                      If your email app did not open, send us a message at {companyInfo.email} or call {companyInfo.phone}.
+                      Once we receive your enquiry, our team can send your private project selections link to this email address. If your email app did not open, send us a message at {companyInfo.email} or call {companyInfo.phone}.
                     </p>
                     <a
                       href={mailtoLink}
@@ -335,7 +335,7 @@ export default function ContactPage() {
                         <div className="absolute inset-0 -translate-x-full bg-[#1a1a1a] transition-transform duration-500 group-hover:translate-x-0" />
                       </button>
                       <p className="text-center font-sans text-xs text-[#1a1a1a]/40">
-                        This form opens your default email app so you can review and send your enquiry details directly.
+                        This form opens your default email app so you can review and send your enquiry details directly. Private project selections are shared after enquiry review.
                       </p>
                     </div>
                   </form>

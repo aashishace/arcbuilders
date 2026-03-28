@@ -88,9 +88,10 @@ export default function RootLayout({
     email: companyInfo.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: companyInfo.address,
-      addressLocality: "Brisbane",
+      streetAddress: companyInfo.streetAddress,
+      addressLocality: companyInfo.suburb,
       addressRegion: "QLD",
+      postalCode: companyInfo.postcode,
       addressCountry: "AU",
     },
     areaServed: siteConfig.serviceAreas,

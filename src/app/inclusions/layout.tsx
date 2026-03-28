@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Build Inclusions and Pricing Clarity",
+  title: "Client Project Selections",
   description:
-    "Review ARC Builders inclusion options, allowances, and upgrade selections for transparent project planning before construction starts.",
+    "Private ARC Builders project selections shared after enquiry review.",
   path: "/inclusions",
-  keywords: ["home build inclusions", "construction allowances", "transparent builder pricing"],
+  keywords: ["private project selections", "client build selections", "arc builders client link"],
   images: ["/hero.webp"],
+  noIndex: true,
 });
 
 export default function InclusionsLayout({ children }: { children: React.ReactNode }) {

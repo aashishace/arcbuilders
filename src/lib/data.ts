@@ -34,7 +34,7 @@ export const projects: Project[] = [
     id: "2",
     title: "Langford Residence",
     slug: "25-langford-st",
-    location: "Brisbane, QLD",
+    location: "Eight Mile Plains, QLD",
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     id: "3",
     title: "Herbert Residence",
     slug: "49-herbert-st",
-    location: "Brisbane, QLD",
+    location: "Camp Hill, QLD",
     type: "custom-home",
     year: "2024",
     architect: "ARC Design Studio",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Stanley Residence",
+    title: "Santley Street Residence",
     slug: "3-stanley-st-mount-gravatt",
     location: "Mount Gravatt, QLD",
     type: "custom-home",
@@ -343,28 +343,28 @@ export const commercialServices: Service[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Raj & Anita Patel",
+    name: "Jaswinder Paul and Reet",
     role: "Vastu-Compliant Custom Home - Brisbane",
     quote:
       "ARC Builders understood exactly what we needed - a modern home that respects Vastu principles. From the north-east entrance to the kitchen placement, every detail was considered. Transparent pricing and beautiful craftsmanship.",
   },
   {
     id: "2",
-    name: "Vikram & Sunita Mehta",
+    name: "Randeep Panwar",
     role: "Multi-Generational Home - Sunnybank Hills",
     quote:
       "We wanted a home where our parents and kids could live together comfortably, with Vastu-compliant design and a proper puja room. ARC delivered beyond our expectations. They truly understand Indian-Australian family needs.",
   },
   {
     id: "3",
-    name: "Dr. Priya Sharma",
+    name: "Dr Amer Chowdry",
     role: "Medical Centre - Brisbane South",
     quote:
       "Building a medical centre has strict requirements. ARC Builders navigated every regulation with expertise and delivered a facility our patients love. As an NRI, it was refreshing to work with a team that understood my vision.",
   },
   {
     id: "4",
-    name: "Amit & Kavita Singh",
+    name: "Amer Malik",
     role: "Duplex Investment - Logan",
     quote:
       "As NRI investors, we needed a builder we could trust with our investment. ARC's transparent fixed-price contracts and regular updates gave us complete peace of mind. The duplex quality exceeded our expectations.",
@@ -416,7 +416,10 @@ export const companyInfo = {
   fullName: "Aesthetic Residential and Commercial Builders",
   phone: "0411 878 438",
   email: "info@arcbuilders.com.au",
-  address: "25 Langford Street, Eight Mile Plains QLD",
+  address: "25 Langford Street, Eight Mile Plains QLD 4113",
+  streetAddress: "25 Langford Street",
+  suburb: "Eight Mile Plains",
+  postcode: "4113",
   experience: "18+",
   tagline:
     "Custom Homes Designed for Modern Families - Trusted Builders in Brisbane, Logan & South East Queensland.",

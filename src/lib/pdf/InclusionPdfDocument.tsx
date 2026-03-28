@@ -6,12 +6,15 @@ import {
   View,
 } from "@react-pdf/renderer";
 import {
+  consultantPricingNotes,
   explicitExclusions,
   inclusionStatusMeta,
+  publicBasePricing,
   type InclusionRowDecision,
 } from "@/lib/inclusions";
 
 export type SelectedPackage = {
+  id?: string;
   name: string;
   basePrice: number;
   highlights: string[];
@@ -327,9 +330,9 @@ export function InclusionPdfDocument(payload: InclusionPdfPayload) {
       <Page size="A4" style={styles.page}>
         <View style={styles.headerRow}>
           <View style={styles.headerMain}>
-            <Text style={styles.title}>Selection and Commercial Summary</Text>
+            <Text style={styles.title}>Selection Summary and Pricing Notes</Text>
             <Text style={styles.subtitle}>
-              The summary below captures your selected upgrades and indicative commercial impact.
+              The summary below captures your selected inclusions and the approved public pricing guidance.
             </Text>
           </View>
           <View style={styles.brand}>
@@ -348,15 +351,15 @@ export function InclusionPdfDocument(payload: InclusionPdfPayload) {
         </View>
 
         <View style={styles.sectionWrap}>
-          <Text style={styles.sectionHeading}>Selected Upgrades</Text>
+          <Text style={styles.sectionHeading}>Selections for Consultant Review</Text>
           {payload.selectedUpgrades.length ? (
             payload.selectedUpgrades.map((item) => (
               <Text key={item.key} style={styles.bullet}>
-                - {item.item} ({item.sectionTitle}) +{formatCurrency(item.costImpact)}
+                - {item.item} ({item.sectionTitle})
               </Text>
             ))
           ) : (
-            <Text style={styles.bullet}>- No optional upgrades selected.</Text>
+            <Text style={styles.bullet}>- No additional selections marked.</Text>
           )}
         </View>
 
@@ -368,21 +371,27 @@ export function InclusionPdfDocument(payload: InclusionPdfPayload) {
         </View>
 
         <View style={styles.summaryPanel}>
-          <Text style={styles.summaryTitle}>Base Package</Text>
-          <Text>{formatCurrency(payload.selectedPackage.basePrice)}</Text>
-          <Text style={[styles.summaryTitle, { marginTop: 6 }]}>Build Type Adjustment</Text>
-          <Text>{formatCurrency(payload.buildTypeAdjustment || 0)}</Text>
-          <Text style={[styles.summaryTitle, { marginTop: 6 }]}>Selected Upgrade Impact</Text>
-          <Text>{formatCurrency(payload.upgradesTotal || 0)}</Text>
-          <Text style={[styles.summaryTitle, { marginTop: 8 }]}>Indicative Build Estimate</Text>
-          <Text style={styles.totalValue}>{formatCurrency(payload.estimatedTotal)}</Text>
+          <Text style={styles.summaryTitle}>Selected Package</Text>
+          <Text>{payload.selectedPackage.name}</Text>
+          <Text style={[styles.summaryTitle, { marginTop: 6 }]}>Build Type</Text>
+          <Text>{payload.buildType || "Custom"}</Text>
+          <Text style={[styles.summaryTitle, { marginTop: 8 }]}>Official Base Pricing</Text>
+          {publicBasePricing.map((item) => (
+            <Text key={item.label} style={styles.bullet}>
+              - {item.label}: {formatCurrency(item.amount)} ({item.detail})
+            </Text>
+          ))}
+          <Text style={[styles.summaryTitle, { marginTop: 8 }]}>Consultant Pricing Notes</Text>
+          {consultantPricingNotes.map((note) => (
+            <Text key={note} style={styles.bullet}>- {note}</Text>
+          ))}
         </View>
 
         <View style={styles.legalBlock}>
           <Text style={styles.legalText}>
             Disclaimer: This document is a preliminary inclusion schedule and does not replace the final signed building
-            contract, engineering certification, or statutory approvals. Any request that varies from the final tender
-            may impact both project cost and timeline and requires written approval before execution.
+            contract, engineering certification, or statutory approvals. Final pricing, tailored inclusions, and any
+            requested upgrades are confirmed during consultant review and formal tender documentation.
           </Text>
           <Text style={[styles.legalText, { marginTop: 5 }]}> 
             Product availability and supplier ranges may vary. Equivalent substitutions may be applied where required.

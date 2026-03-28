@@ -13,14 +13,13 @@ export default function Footer() {
     { Icon: Youtube, href: companyInfo.socials.youtube },
   ].filter(({ href }) => href && href !== "#");
 
-  const footerServices = [
+  const footerServices: Array<{ label: string; href?: string }> = [
     { label: "Custom Homes" },
     { label: "Renovations" },
     { label: "Extensions" },
     { label: "Granny Flats" },
     { label: "Shop Fitouts" },
     { label: "Medical Centres" },
-    { label: "Build Inclusion Sheet", href: "/inclusions" },
   ];
 
   return (

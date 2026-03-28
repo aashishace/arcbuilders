@@ -52,13 +52,67 @@ export const buildTypeAdjustmentMap: Record<BuildType, { label: string; amount: 
   },
   "double-storey": {
     label: "Double Storey",
-    amount: 18000,
+    amount: 152000,
   },
   custom: {
-    label: "Custom Build",
-    amount: 32000,
+    label: "Complete Custom",
+    amount: 0,
   },
 };
+
+export const publicBasePricing = [
+  {
+    label: "Single Storey Essential Living",
+    amount: 284000,
+    detail: "Base price - 180 sqm",
+  },
+  {
+    label: "Double Storey Essential Living",
+    amount: 436000,
+    detail: "Base price - 220 sqm",
+  },
+];
+
+export function getPackagePricingGuide(
+  packageId: InclusionPackage["id"],
+  buildType: BuildType
+) {
+  if (buildType === "custom") {
+    return {
+      amount: null,
+      label: "Custom Build",
+      detail: "Complete custom pricing is prepared after your consultant meeting.",
+    };
+  }
+
+  if (packageId === "essential") {
+    if (buildType === "double-storey") {
+      return {
+        amount: 436000,
+        label: "Double Storey Essential Living",
+        detail: "Base price - 220 sqm",
+      };
+    }
+
+    return {
+      amount: 284000,
+      label: "Single Storey Essential Living",
+      detail: "Base price - 180 sqm",
+    };
+  }
+
+  return {
+    amount: null,
+    label: packageId === "signature" ? "Signature Family" : "Luxury Statement",
+    detail: "Pricing is finalised with your consultant after scope review.",
+  };
+}
+
+export const consultantPricingNotes = [
+  "Signature Family and Luxury Statement pricing is shared after consultant review.",
+  "Additional inclusions and upgrade selections are priced during your consultant meeting or call.",
+  "Custom homes are fully tailored and priced after design consultation.",
+];
 
 export const inclusionStatusMeta: Record<
   InclusionStatus,
@@ -87,7 +141,7 @@ export const inclusionPackages: InclusionPackage[] = [
     id: "essential",
     name: "Essential Living",
     description: "Practical and efficient inclusions for value-focused builds.",
-    basePrice: 340000,
+    basePrice: 284000,
     highlights: [
       "Engineer-certified slab and structural framing",
       "Builder range finishes with compliant specification",
@@ -98,7 +152,7 @@ export const inclusionPackages: InclusionPackage[] = [
   {
     id: "signature",
     name: "Signature Family",
-    description: "Balanced package with higher-spec finishes and flexibility.",
+    description: "Balanced package with higher-spec finishes and consultant-led pricing.",
     basePrice: 385000,
     highlights: [
       "Upgraded cabinetry and kitchen specification",
@@ -110,7 +164,7 @@ export const inclusionPackages: InclusionPackage[] = [
   {
     id: "luxury",
     name: "Luxury Statement",
-    description: "Design-led premium package for high-end custom homes.",
+    description: "Design-led premium package with pricing finalised after scope review.",
     basePrice: 450000,
     highlights: [
       "High-spec kitchen and bathroom inclusions",

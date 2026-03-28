@@ -7,10 +7,19 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { BlogPost } from "@/lib/types";
 
+const blogCategories = [
+  "Home design and inspiration",
+  "Building process and tips",
+  "Cost budgeting and finance",
+  "Projects and case studies",
+  "Sustainability and material",
+  "Industry updates",
+] as const;
+
 export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
   const categories = [
     "All",
-    ...Array.from(new Set(posts.map((p) => p.category))),
+    ...blogCategories,
   ];
   const [activeCategory, setActiveCategory] = useState("All");
 
@@ -45,7 +54,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
             href={`/blog/${filtered[0].slug}`}
             className="group grid overflow-hidden bg-white md:grid-cols-2"
           >
-            <div className="relative aspect-[16/10] overflow-hidden md:aspect-auto">
+            <div className="relative aspect-16/10 overflow-hidden md:aspect-auto">
               <Image
                 src={filtered[0].heroImage}
                 alt={filtered[0].title}
@@ -99,7 +108,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                 href={`/blog/${post.slug}`}
                 className="group flex flex-col overflow-hidden bg-white transition-shadow duration-500 hover:shadow-xl"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative aspect-16/10 overflow-hidden">
                   <Image
                     src={post.heroImage}
                     alt={post.title}
@@ -143,6 +152,19 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
             </ScrollReveal>
           ))}
         </div>
+      )}
+
+      {filtered.length === 0 && (
+        <ScrollReveal className="mt-12">
+          <div className="border border-[#1a1a1a]/10 bg-white px-8 py-12 text-center">
+            <h2 className="text-2xl font-light tracking-tight text-[#1a1a1a]">
+              Articles Coming Soon
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl font-sans text-sm leading-relaxed text-[#1a1a1a]/55">
+              We are currently preparing content for this category. Check back soon or browse another topic.
+            </p>
+          </div>
+        </ScrollReveal>
       )}
     </>
   );
