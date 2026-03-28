@@ -2,13 +2,13 @@
 title: "Step-by-Step Guide to Building a House in Queensland"
 slug: step-by-step-guide-to-building-a-house-in-qld
 excerpt: "A practical Queensland home building roadmap, from block assessment and design through approvals, construction, handover, and maintenance planning."
-metaDescription: "Use this step-by-step guide to building a house in QLD with practical milestones for Brisbane, Greenbank, Springfield, and wider South East Queensland households."
+metaDescription: "Use this step-by-step guide to building a house in QLD with practical milestones for Brisbane, Rochedale, Greenbank, and Springfield households."
 targetKeyword: "step by step guide to building a house in qld"
 suburbIntent:
   - Brisbane
+  - Rochedale
   - Greenbank
   - Springfield
-  - South East Queensland
 category: "Building process and tips"
 author: "ARC Builders Team"
 date: "2026-03-27"
@@ -17,7 +17,7 @@ heroImage: "/projects/49-herbert-st/hero.webp"
 tags:
   - step by step guide to building a house in qld
   - qld home building process
-  - south east queensland home build guide
+  - rochedale home build guide
   - greenbank construction timeline
   - springfield first home build
 ---

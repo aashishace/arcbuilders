@@ -5,6 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { companyInfo } from "@/lib/data";
 
+const heroFallbackImage = "/projects/25-langford-st/hero.webp";
+
 export default function Hero() {
   const mediaRef = useRef<HTMLDivElement>(null);
   const videoElementRef = useRef<HTMLVideoElement>(null);
@@ -155,7 +157,7 @@ export default function Hero() {
                   <div
                     className="h-full w-full"
                     style={{
-                      backgroundImage: "url(/hero.webp)",
+                      backgroundImage: `url(${heroFallbackImage})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
@@ -168,7 +170,7 @@ export default function Hero() {
                     muted
                     playsInline
                     preload="auto"
-                    poster="/videos/hero-langford-poster.jpg"
+                    poster={heroFallbackImage}
                     aria-hidden="true"
                     onError={() => setUseStaticHero(true)}
                     className="h-full w-full object-cover"

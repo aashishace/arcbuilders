@@ -14,10 +14,12 @@ import { absoluteUrl, createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Custom Home Builder in Brisbane and South East Queensland",
   description:
-    "ARC Builders designs and builds custom homes, Vastu-aware layouts, renovations, and multi-generational residences with transparent pricing across Brisbane and South East Queensland.",
+    "ARC Builders designs and builds custom homes, Vastu-aware layouts, renovations, and multi-generational residences with transparent pricing across Brisbane, Logan, Rochedale, and South East Queensland.",
   path: "/",
   keywords: [
     "custom home builder Brisbane",
+    "builder Logan Queensland",
+    "custom home builder Rochedale",
     "custom home builder South East Queensland",
     "Vastu compliant home builder",
     "multi-generational home builder",
@@ -36,7 +38,7 @@ export default function HomePage() {
       name: companyInfo.name,
       url: absoluteUrl("/"),
       telephone: companyInfo.phone,
-      areaServed: ["Brisbane", "South East Queensland"],
+      areaServed: ["Brisbane", "Logan", "Rochedale", "South East Queensland"],
     },
   };
 

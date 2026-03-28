@@ -2,13 +2,13 @@
 title: "Steel Frame vs Timber Frame: Which Is Better for Your Home?"
 slug: steel-frame-vs-timber-frame-which-is-better
 excerpt: "Choosing between steel and timber framing is not only about cost. This guide compares strength, durability, flexibility, thermal performance, and long-term practicality for Queensland homes."
-metaDescription: "Steel frame vs timber frame in Queensland: compare durability, thermal behavior, and cost considerations for builds in Brisbane, Mount Gravatt, Eight Mile Plains, and South East Queensland."
+metaDescription: "Steel frame vs timber frame in Queensland: compare durability, thermal behavior, and cost considerations for builds in Logan, Mount Gravatt, and Brisbane suburbs."
 targetKeyword: "steel frame vs timber frame which is better"
 suburbIntent:
-  - Brisbane
+  - Logan
   - Mount Gravatt
+  - Brisbane
   - Eight Mile Plains
-  - South East Queensland
 category: "Sustainability and material"
 author: "ARC Builders Team"
 date: "2026-03-27"
@@ -18,7 +18,7 @@ tags:
   - steel frame vs timber frame which is better
   - steel frame vs timber frame queensland
   - mount gravatt home frame selection
-  - south east queensland structural frame choice
+  - logan structural frame choice
   - brisbane building frame materials
 ---
 

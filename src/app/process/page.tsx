@@ -9,7 +9,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Our Building Process",
   description:
-    "Understand ARC Builders' step-by-step process from consultation and design to construction and handover for projects in Brisbane and South East Queensland.",
+    "Understand ARC Builders' step-by-step process from consultation and design to construction and handover for projects in Brisbane, Logan, Rochedale, and South East Queensland.",
   path: "/process",
   keywords: ["home building process", "custom home timeline", "builder process Brisbane"],
   images: ["/projects/hi-def-project/hero.webp"],

@@ -4,7 +4,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Project Portfolio",
   description:
-    "Browse ARC Builders project portfolio featuring custom homes and quality builds delivered across Brisbane and South East Queensland.",
+    "Browse ARC Builders project portfolio featuring custom homes and quality builds delivered across Brisbane, Logan, Rochedale, and South East Queensland.",
   path: "/projects",
   keywords: ["builder portfolio Brisbane", "custom home projects", "completed homes Queensland"],
   images: ["/projects/14-verona-st-pallara/hero.webp"],

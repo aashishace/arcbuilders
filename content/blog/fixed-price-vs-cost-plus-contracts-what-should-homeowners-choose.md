@@ -2,13 +2,13 @@
 title: "Fixed Price vs Cost Plus Contracts: What Should Homeowners Choose?"
 slug: fixed-price-vs-cost-plus-contracts-what-should-homeowners-choose
 excerpt: "Both fixed price and cost plus contracts can work, but risk distribution is very different. Learn how each model affects certainty, flexibility, and final cost outcomes."
-metaDescription: "Fixed price vs cost plus contracts for homeowners in Brisbane, South East Queensland, and Springfield: understand risk, budget certainty, and when each contract model fits."
+metaDescription: "Fixed price vs cost plus contracts for homeowners in Brisbane, Logan, and Springfield: understand risk, budget certainty, and when each contract model fits."
 targetKeyword: "fixed price vs cost plus contracts what should homeowners choose"
 suburbIntent:
   - Brisbane
+  - Logan
   - Springfield
   - Calamvale
-  - South East Queensland
 category: "Cost budgeting and finance"
 author: "ARC Builders Team"
 date: "2026-03-27"
@@ -18,7 +18,7 @@ tags:
   - fixed price vs cost plus contracts what should homeowners choose
   - fixed price vs cost plus queensland
   - brisbane building contract advice
-  - south east queensland homeowner contract choice
+  - logan homeowner contract choice
   - springfield build contract planning
 ---
 

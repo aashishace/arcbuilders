@@ -9,11 +9,13 @@ export const siteConfig = {
   description: companyInfo.tagline,
   url: normalizedSiteUrl,
   locale: "en_AU",
-  serviceAreas: ["Brisbane", "South East Queensland"],
+  serviceAreas: ["Brisbane", "Logan", "Rochedale", "South East Queensland"],
 };
 
 export const defaultKeywords = [
   "custom home builder Brisbane",
+  "builder Logan",
+  "custom home builder Rochedale",
   "custom home builder South East Queensland",
   "home builder South East Queensland",
   "Vastu home builder Australia",
