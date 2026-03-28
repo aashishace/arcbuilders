@@ -12,6 +12,7 @@ import {
   publicBasePricing,
   type InclusionRowDecision,
 } from "@/lib/inclusions";
+import { companyInfo } from "@/lib/data";
 
 export type SelectedPackage = {
   id?: string;
@@ -400,7 +401,7 @@ export function InclusionPdfDocument(payload: InclusionPdfPayload) {
         </View>
 
         <Text style={styles.footerLine}>
-          ARC Builders | PO Box 1345, Sunnybank Hills QLD 4109 | 0411 878 438 | info@arcbuilders.com.au
+          {`${companyInfo.name} | ${companyInfo.address} | ${companyInfo.phone} | ${companyInfo.email}`}
         </Text>
       </Page>
     </Document>

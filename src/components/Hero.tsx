@@ -5,20 +5,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { companyInfo } from "@/lib/data";
 
-function shouldUseStaticHeroMode() {
-  if (typeof window === "undefined") {
-    return false;
-  }
-
-  const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  return Boolean(connection?.saveData) || prefersReducedMotion;
-}
-
 export default function Hero() {
   const mediaRef = useRef<HTMLDivElement>(null);
   const videoElementRef = useRef<HTMLVideoElement>(null);
-  const [useStaticHero, setUseStaticHero] = useState(shouldUseStaticHeroMode);
+  const [useStaticHero, setUseStaticHero] = useState(false);
 
   useEffect(() => {
     if (useStaticHero) {
@@ -37,20 +27,41 @@ export default function Hero() {
   }, [useStaticHero]);
 
   useEffect(() => {
-    if (useStaticHero || !videoElementRef.current) {
+    const videoElement = videoElementRef.current;
+
+    if (!videoElement) {
       return;
     }
 
-    const videoElement = videoElementRef.current;
     const applyPlaybackRate = () => {
+      videoElement.muted = true;
+      videoElement.defaultMuted = true;
       videoElement.playbackRate = 0.85;
     };
 
-    applyPlaybackRate();
-    videoElement.addEventListener("loadedmetadata", applyPlaybackRate);
+    const attemptPlayback = () => {
+      applyPlaybackRate();
+      const playPromise = videoElement.play();
+      if (playPromise) {
+        playPromise
+          .then(() => setUseStaticHero(false))
+          .catch(() => setUseStaticHero(true));
+      }
+    };
 
-    return () => videoElement.removeEventListener("loadedmetadata", applyPlaybackRate);
-  }, [useStaticHero]);
+    applyPlaybackRate();
+    if (videoElement.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+      attemptPlayback();
+    }
+
+    videoElement.addEventListener("loadedmetadata", applyPlaybackRate);
+    videoElement.addEventListener("canplay", attemptPlayback);
+
+    return () => {
+      videoElement.removeEventListener("loadedmetadata", applyPlaybackRate);
+      videoElement.removeEventListener("canplay", attemptPlayback);
+    };
+  }, []);
 
   return (
     <section className="relative overflow-hidden bg-[#211d17] pb-6 pt-20 sm:pb-8 sm:pt-24 lg:pt-28">
@@ -156,7 +167,7 @@ export default function Hero() {
                     loop
                     muted
                     playsInline
-                    preload="metadata"
+                    preload="auto"
                     poster="/videos/hero-langford-poster.jpg"
                     aria-hidden="true"
                     onError={() => setUseStaticHero(true)}

@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "About ARC Builders",
   description:
-    "Learn about ARC Builders, our 18+ years of experience, transparent building approach, and commitment to quality homes across Brisbane and Logan.",
+    "Learn about ARC Builders, our 18+ years of experience, transparent building approach, and commitment to quality homes across Brisbane and South East Queensland.",
   path: "/about",
   keywords: ["about ARC Builders", "Brisbane builder team", "quality home builder Queensland"],
   images: ["/projects/25-langford-st/hero.webp"],

@@ -4,7 +4,7 @@
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Verona Residence",
+    title: "Aurelia Residence",
     slug: "14-verona-st-pallara",
     location: "Pallara, QLD",
     type: "custom-home",
@@ -32,7 +32,7 @@ export const projects: Project[] = [
   },
   {
     id: "2",
-    title: "Langford Residence",
+    title: "Solstice Residence",
     slug: "25-langford-st",
     location: "Eight Mile Plains, QLD",
     type: "custom-home",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "Herbert Residence",
+    title: "Lumiere Residence",
     slug: "49-herbert-st",
     location: "Camp Hill, QLD",
     type: "custom-home",
@@ -88,7 +88,7 @@ export const projects: Project[] = [
   },
   {
     id: "4",
-    title: "Brooklyn Residence",
+    title: "Evercrest Residence",
     slug: "3-brooklyn-st-spring-mountain",
     location: "Spring Mountain, QLD",
     type: "custom-home",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
   },
   {
     id: "5",
-    title: "Dart Residence",
+    title: "Willowmere Residence",
     slug: "3-dart-ave-kingston",
     location: "Kingston, QLD",
     type: "custom-home",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Santley Street Residence",
+    title: "Halcyon Residence",
     slug: "3-stanley-st-mount-gravatt",
     location: "Mount Gravatt, QLD",
     type: "custom-home",
@@ -172,7 +172,7 @@ export const projects: Project[] = [
   },
   {
     id: "7",
-    title: "Ayesha Residence",
+    title: "Elmsworth Residence",
     slug: "35-ayesha-place-calamvale",
     location: "Calamvale, QLD",
     type: "custom-home",
@@ -196,7 +196,7 @@ export const projects: Project[] = [
   },
   {
     id: "8",
-    title: "Vineyard Residence",
+    title: "Oakmont Residence",
     slug: "8-vineyard-drive-greenbank",
     location: "Greenbank, QLD",
     type: "custom-home",
@@ -224,7 +224,7 @@ export const projects: Project[] = [
   },
   {
     id: "9",
-    title: "Premium Custom Build",
+    title: "Celeste Residence",
     slug: "hi-def-project",
     location: "Brisbane, QLD",
     type: "custom-home",
@@ -343,31 +343,38 @@ export const commercialServices: Service[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Jaswinder Paul and Reet",
-    role: "Vastu-Compliant Custom Home - Brisbane",
+    name: "Jaswinder & Reet",
+    role: "Custom Family Home",
     quote:
-      "ARC Builders understood exactly what we needed - a modern home that respects Vastu principles. From the north-east entrance to the kitchen placement, every detail was considered. Transparent pricing and beautiful craftsmanship.",
+      "Building our home with ARC Builders happened during one of the most important times of our lives. We were preparing to welcome our baby, and their team became a source of calm and reassurance. They didn't just build us a house; they created a warm, safe space where our new journey as a family could begin. We are deeply grateful to ARC Builders for turning such a special chapter of our lives into a truly beautiful experience.",
   },
   {
     id: "2",
-    name: "Randeep Panwar",
-    role: "Multi-Generational Home - Sunnybank Hills",
+    name: "Dr Tarun",
+    role: "Renovation Project",
     quote:
-      "We wanted a home where our parents and kids could live together comfortably, with Vastu-compliant design and a proper puja room. ARC delivered beyond our expectations. They truly understand Indian-Australian family needs.",
+      "Our renovation journey with ARC Builders was nothing short of exceptional. They transformed our existing space with a refined approach, blending modern design with practical functionality. The project was managed with precision and a strong sense of organisation, ensuring timelines were met without compromising on quality. We are extremely satisfied and would highly recommend ARC Builders for any renovation project.",
   },
   {
     id: "3",
-    name: "Dr Amer Chowdry",
-    role: "Medical Centre - Brisbane South",
+    name: "Randeep Panwar",
+    role: "Vastu-Aligned Custom Home",
     quote:
-      "Building a medical centre has strict requirements. ARC Builders navigated every regulation with expertise and delivered a facility our patients love. As an NRI, it was refreshing to work with a team that understood my vision.",
+      "ARC Builders brought our vision of a culturally inspired, Vastu-aligned home to life with remarkable precision. The finished home embodies a perfect sense of balance, warmth, and individuality that truly reflects who we are. We would highly recommend ARC Builders to anyone seeking a home that blends tradition with modern elegance.",
   },
   {
     id: "4",
     name: "Amer Malik",
-    role: "Duplex Investment - Logan",
+    role: "Modern Family Home",
     quote:
-      "As NRI investors, we needed a builder we could trust with our investment. ARC's transparent fixed-price contracts and regular updates gave us complete peace of mind. The duplex quality exceeded our expectations.",
+      "Building our home with ARC Builders was an exceptional experience. They understood the essence of modern family living, creating a space that balances openness, functionality, and refined design. Delivered with precision, clear communication, and impeccable attention to detail, the entire process was seamless.",
+  },
+  {
+    id: "5",
+    name: "Amer Chowdry",
+    role: "Medical Centre Development",
+    quote:
+      "Engaging ARC Builders for our medical centre was a truly outstanding experience. Their professionalism, transparent communication, and disciplined adherence to timelines ensured a seamless and stress-free process. ARC Builders have delivered a space that reflects excellence in every sense, and we would confidently recommend them for commercial and specialised developments.",
   },
 ];
 
@@ -415,14 +422,14 @@ export const companyInfo = {
   name: "ARC Builders",
   fullName: "Aesthetic Residential and Commercial Builders",
   phone: "0411 878 438",
-  email: "info@arcbuilders.com.au",
+  email: "admin@arcbuilders.com.au",
   address: "25 Langford Street, Eight Mile Plains QLD 4113",
   streetAddress: "25 Langford Street",
   suburb: "Eight Mile Plains",
   postcode: "4113",
   experience: "18+",
   tagline:
-    "Custom Homes Designed for Modern Families - Trusted Builders in Brisbane, Logan & South East Queensland.",
+    "Custom Homes Designed for Modern Families - Trusted Builders in Brisbane & South East Queensland.",
   qbccLicence: "15090326",
   socials: {
     facebook: "#",

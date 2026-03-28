@@ -2,13 +2,13 @@
 title: "How Much Does It Cost to Build a House in Brisbane in 2026?"
 slug: how-much-does-it-cost-to-build-a-house-in-brisbane-2026
 excerpt: "Planning a new home in 2026? This Brisbane-focused cost guide explains realistic build ranges, what drives price changes, and how to set a smart budget before signing a contract."
-metaDescription: "How much does it cost to build a house in Brisbane in 2026? See realistic pricing factors and budget ranges for Brisbane, Pallara, Calamvale, and Logan families."
+metaDescription: "How much does it cost to build a house in Brisbane in 2026? See realistic pricing factors and budget ranges for Brisbane, Pallara, Calamvale, and South East Queensland families."
 targetKeyword: "how much does it cost to build a house in brisbane in 2026"
 suburbIntent:
   - Brisbane
   - Pallara
   - Calamvale
-  - Logan
+  - South East Queensland
 category: "Cost budgeting and finance"
 author: "ARC Builders Team"
 date: "2026-03-27"
@@ -19,14 +19,14 @@ tags:
   - build cost brisbane
   - pallara home build cost
   - calamvale construction budget
-  - logan custom home pricing
+  - south east queensland custom home pricing
 ---
 
 If you are searching for how much does it cost to build a house in Brisbane in 2026, you are asking the right question at the right time.
 
 In most first meetings, families already have one number in mind, but that number usually includes only the building contract and misses site works, approvals, and external works. That gap is where stress begins.
 
-The practical answer for 2026: many Brisbane and Logan corridor builds are landing around **$2,300 to $4,200+ per square metre** depending on site complexity, design detail, and finish level. A clean, flat block with efficient planning sits lower. A highly customised home with premium selections sits higher.
+The practical answer for 2026: many Brisbane and South East Queensland builds are landing around **$2,300 to $4,200+ per square metre** depending on site complexity, design detail, and finish level. A clean, flat block with efficient planning sits lower. A highly customised home with premium selections sits higher.
 
 ## The Real Conversation We Have with Clients
 
@@ -112,4 +112,4 @@ Both homes might look similar in brochure form, but final spend can diverge mate
 
 Good budgeting is not about cutting quality everywhere. It is about clarity, sequencing, and making decisions at the right stage.
 
-If you are planning in Brisbane, Pallara, Calamvale, or Logan and want a realistic cost conversation, [contact ARC Builders](/contact) for a project-specific cost roadmap.
+If you are planning in Brisbane, Pallara, Calamvale, or elsewhere in South East Queensland and want a realistic cost conversation, [contact ARC Builders](/contact) for a project-specific cost roadmap.

@@ -19,7 +19,7 @@ const dmSerif = DM_Serif_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "ARC Builders | Custom Home Builder in Brisbane & Logan",
+    default: "ARC Builders | Custom Home Builder in Brisbane & South East Queensland",
     template: "%s | ARC Builders",
   },
   description: siteConfig.description,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "ARC Builders | Custom Home Builder in Brisbane & Logan",
+    title: "ARC Builders | Custom Home Builder in Brisbane & South East Queensland",
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ARC Builders | Custom Home Builder in Brisbane & Logan",
+    title: "ARC Builders | Custom Home Builder in Brisbane & South East Queensland",
     description: siteConfig.description,
     images: [absoluteUrl("/hero.webp")],
   },

@@ -46,7 +46,7 @@ export default function AboutPreview() {
             <ScrollReveal variant="fadeRight" delay={0.2}>
               <p className="mt-6 font-sans text-base leading-relaxed text-white/68">
                 At ARC Builders, we bring over 18 years of experience delivering high-quality
-                custom homes in Brisbane, Logan, and South East Queensland. Our expert team is
+                custom homes in Brisbane and South East Queensland. Our expert team is
                 committed to exceptional customer service, offering a seamless and transparent
                 building experience from design to completion.
               </p>

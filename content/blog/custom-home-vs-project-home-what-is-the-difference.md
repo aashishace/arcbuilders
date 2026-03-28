@@ -2,13 +2,13 @@
 title: "Custom Home vs Project Home: What Is the Real Difference?"
 slug: custom-home-vs-project-home-what-is-the-difference
 excerpt: "Confused between custom homes and project homes? This guide explains cost, flexibility, timelines, inclusions, and which option fits different homeowner goals in Queensland."
-metaDescription: "Custom home vs project home explained for Brisbane and Logan suburbs, including Pallara, Calamvale, and Rochedale families choosing design flexibility and budget fit."
+metaDescription: "Custom home vs project home explained for Brisbane and South East Queensland homeowners, including Pallara and Calamvale families choosing design flexibility and budget fit."
 targetKeyword: "custom home vs project home what is the difference"
 suburbIntent:
   - Brisbane
-  - Logan
   - Pallara
-  - Rochedale
+  - Calamvale
+  - South East Queensland
 category: "Home design and inspiration"
 author: "ARC Builders Team"
 date: "2026-03-27"
@@ -18,8 +18,8 @@ tags:
   - custom home vs project home what is the difference
   - custom home vs project home brisbane
   - pallara custom home builder
-  - rochedale project home comparison
-  - logan home design decisions
+  - south east queensland project home comparison
+  - brisbane home design decisions
 ---
 
 Many homeowners ask this early: should we choose a custom home or a project home? The right answer depends on how much flexibility you need, how unique your site is, and how closely you want the home to reflect your lifestyle.

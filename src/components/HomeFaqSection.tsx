@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal";
 
 const faqs = [
   {
-    question: "Do you build Vastu-compliant homes in Brisbane and Logan?",
+    question: "Do you build Vastu-compliant homes in Brisbane and South East Queensland?",
     answer:
       "Yes. ARC Builders works with families who want Vastu-aware layouts while still meeting Australian codes, site conditions, and modern lifestyle needs.",
   },
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Which areas do you service?",
     answer:
-      "Primary service areas include Brisbane, Logan, Rochedale, and greater South East Queensland for residential and selected commercial projects.",
+      "Primary service areas include Brisbane and greater South East Queensland for residential and selected commercial projects.",
   },
 ];
 

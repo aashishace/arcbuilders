@@ -7,12 +7,12 @@ const areaCards = [
     focus: "Custom homes, duplex builds, and high-end family residences",
   },
   {
-    name: "Logan",
+    name: "Brisbane Southside",
     focus: "Renovations, extensions, and practical multi-generational homes",
   },
   {
-    name: "Rochedale & Southside",
-    focus: "Premium custom builds with modern layouts and Vastu options",
+    name: "Eight Mile Plains",
+    focus: "Premium custom builds with modern layouts, Vastu options, and clear consultant guidance",
   },
   {
     name: "South East Queensland",
@@ -29,7 +29,7 @@ export default function ServiceAreasSection() {
             Local Expertise
           </p>
           <h2 className="mt-3 text-4xl font-light tracking-tight text-[#1a1a1a] md:text-5xl">
-            Custom Home Builder in <span className="text-accent">Brisbane & Logan</span>
+            Custom Home Builder in <span className="text-accent">Brisbane & South East Queensland</span>
           </h2>
           <p className="mt-4 max-w-3xl font-sans text-base leading-relaxed text-[#1a1a1a]/60">
             ARC Builders supports Indian-Australian and local families with custom homes, Vastu-aware planning,

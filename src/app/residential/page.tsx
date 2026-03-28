@@ -24,7 +24,7 @@ export const metadata: Metadata = createPageMetadata({
   path: "/residential",
   keywords: [
     "custom homes Brisbane",
-    "home renovations Logan",
+    "home renovations South East Queensland",
     "extensions Queensland",
     "granny flat builder",
   ],
