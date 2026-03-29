@@ -342,7 +342,7 @@ export default function InclusionsPage() {
                                     onClick={() => setRowSelection(section.id, rowIndex, "allowance")}
                                     className={`rounded border px-2.5 py-1.5 font-sans text-[10px] font-semibold uppercase tracking-[0.12em] shadow-sm transition-all duration-150 active:scale-[0.98] ${
                                       currentDecision.status === "allowance"
-                                        ? "border-accent bg-[#fff7cf] text-[#695300] shadow-[0_0_0_2px_rgba(255,225,105,0.38)]"
+                                        ? "border-accent bg-[#f6efe3] text-[#6b5330] shadow-[0_0_0_2px_rgba(198,168,125,0.32)]"
                                         : "border-[#1a1a1a]/20 bg-white text-[#1a1a1a]/70 hover:border-accent hover:bg-accent/10"
                                     }`}
                                   >

@@ -67,7 +67,7 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-[#211d17] pb-6 pt-20 sm:pb-8 sm:pt-24 lg:pt-28">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,225,105,0.16),transparent_38%),linear-gradient(180deg,#2b251d_0%,#1d1914_24%,#efe6d8_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(198,168,125,0.16),transparent_38%),linear-gradient(180deg,#2b251d_0%,#1d1914_24%,#efe6d8_100%)]" />
       <div className="relative mx-auto max-w-385 px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-4xl bg-[#f4ead7] shadow-[0_40px_120px_rgba(11,9,5,0.34)]">
           <div className="grid min-h-[calc(100vh-7.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
@@ -77,7 +77,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-[#b88e2d] sm:mb-6"
+                  className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent-dark sm:mb-6"
                 >
                   Aesthetic Residential & Commercial
                 </motion.p>
@@ -89,7 +89,7 @@ export default function Hero() {
                   className="max-w-3xl text-4xl font-light leading-[0.98] tracking-tight text-[#171511] sm:text-5xl md:text-6xl xl:text-7xl"
                 >
                   Building
-                  <span className="block text-[#c89f43]">Bespoke Homes with Precision</span>
+                  <span className="block text-accent-dark">Bespoke Homes with Precision</span>
                 </motion.h1>
 
                 <motion.p

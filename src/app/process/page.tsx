@@ -21,7 +21,7 @@ export default function ProcessPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex h-[50vh] min-h-[400px] items-end overflow-hidden bg-[#1a1a1a]">
+      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#1a1a1a]">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
@@ -29,7 +29,7 @@ export default function ProcessPage() {
               "url(/projects/hi-def-project/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a] via-transparent to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             How We Work
@@ -67,7 +67,7 @@ export default function ProcessPage() {
                     <h3 className="text-2xl font-light tracking-tight text-[#1a1a1a]">
                       {step.title}
                     </h3>
-                    <div className="mt-3 h-[1px] w-12 bg-accent" />
+                    <div className="mt-3 h-px w-12 bg-accent" />
                   </div>
 
                   {/* Description */}
@@ -89,7 +89,7 @@ export default function ProcessPage() {
                             key={item}
                             className="flex items-center gap-3 font-sans text-sm text-[#1a1a1a]/50"
                           >
-                            <span className="h-1 w-1 flex-shrink-0 bg-accent" />
+                            <span className="h-1 w-1 shrink-0 bg-accent" />
                             {item}
                           </li>
                         ))}
@@ -107,7 +107,7 @@ export default function ProcessPage() {
                             key={item}
                             className="flex items-center gap-3 font-sans text-sm text-[#1a1a1a]/50"
                           >
-                            <span className="h-1 w-1 flex-shrink-0 bg-accent" />
+                            <span className="h-1 w-1 shrink-0 bg-accent" />
                             {item}
                           </li>
                         ))}
@@ -116,7 +116,7 @@ export default function ProcessPage() {
                     {step.id === 3 && (
                       <ul className="mt-6 space-y-2">
                         {[
-                          "Experienced tradespeople & project management",
+                          "Experienced trades & project management",
                           "Regular progress updates & site meetings",
                           "Quality assurance at every stage",
                           "On-time delivery commitment",
@@ -125,7 +125,7 @@ export default function ProcessPage() {
                             key={item}
                             className="flex items-center gap-3 font-sans text-sm text-[#1a1a1a]/50"
                           >
-                            <span className="h-1 w-1 flex-shrink-0 bg-accent" />
+                            <span className="h-1 w-1 shrink-0 bg-accent" />
                             {item}
                           </li>
                         ))}
@@ -143,7 +143,7 @@ export default function ProcessPage() {
                             key={item}
                             className="flex items-center gap-3 font-sans text-sm text-[#1a1a1a]/50"
                           >
-                            <span className="h-1 w-1 flex-shrink-0 bg-accent" />
+                            <span className="h-1 w-1 shrink-0 bg-accent" />
                             {item}
                           </li>
                         ))}

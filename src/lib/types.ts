@@ -8,6 +8,7 @@ export interface Project {
   architect?: string;
   scope?: string;
   description: string;
+  projectNarrative: string;
   heroImage: string;
   images: string[];
   featured: boolean;

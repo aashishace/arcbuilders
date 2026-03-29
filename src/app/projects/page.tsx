@@ -9,7 +9,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { projects } from "@/lib/data";
 
 const typeLabelMap: Record<string, string> = {
-  "custom-home": "Custom Homes",
+  "custom-home": "Custom",
   renovation: "Renovations",
   extension: "Extensions",
   duplex: "Duplex",
@@ -100,10 +100,7 @@ export default function ProjectsPage() {
                       />
                       <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a]/70 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-90" />
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-accent">
-                          {typeLabelMap[project.type] ?? project.type.replace(/-/g, " ")}
-                        </p>
-                        <h3 className="mt-2 text-lg font-light tracking-tight text-white">
+                          <h3 className="text-lg font-light tracking-tight text-white">
                           {project.title}
                         </h3>
                         <p className="mt-1 font-sans text-xs text-white/50">

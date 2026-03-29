@@ -2,6 +2,7 @@ $ErrorActionPreference = 'Stop'
 
 $srcRoot = 'D:\Downloaded Data\ARC STUFF\_extracted'
 $dstRoot = 'D:\26WEBProject\ARCBUILDER\public\projects'
+$maxProjectImages = 10
 
 $map = @(
   @{ slug='14-verona-st-pallara'; src='14 Verona St, Pallara QLD 4110' },
@@ -61,26 +62,29 @@ foreach ($m in $map) {
       $hashSeen[$h] = $true
       [void]$selected.Add($f)
     }
-    if ($selected.Count -ge 12) { break }
+    if ($selected.Count -ge $maxProjectImages) { break }
   }
 
   if ($selected.Count -eq 0) {
     throw "No usable images found for $($m.slug)"
   }
 
-  if ($selected.Count -lt 12) {
+  if ($selected.Count -lt $maxProjectImages) {
     Write-Output "WARN $($m.slug): only $($selected.Count) unique files found"
   }
 
-  $max = [Math]::Min(12, $selected.Count)
-  for ($i = 0; $i -lt $max; $i++) {
-    $n = $i + 1
-    $out = Join-Path $dst ("gallery-{0:D2}.webp" -f $n)
-    ffmpeg -y -loglevel error -i $selected[$i].FullName -vf "scale='min(2200,iw)':-2" -q:v 12 $out
-  }
+  Get-ChildItem -Path $dst -File -Filter '*.webp' -ErrorAction SilentlyContinue |
+    Where-Object { $_.BaseName -eq 'hero' -or $_.BaseName -like 'gallery-*' } |
+    Remove-Item -Force
 
   $heroOut = Join-Path $dst 'hero.webp'
   ffmpeg -y -loglevel error -i $selected[0].FullName -vf "scale='min(2200,iw)':-2" -q:v 10 $heroOut
 
-  Write-Output "Updated $($m.slug): hero=$($selected[0].Name) written=$max"
+  $galleryMax = [Math]::Min($maxProjectImages - 1, $selected.Count - 1)
+  for ($i = 1; $i -le $galleryMax; $i++) {
+    $out = Join-Path $dst ("gallery-{0:D2}.webp" -f $i)
+    ffmpeg -y -loglevel error -i $selected[$i].FullName -vf "scale='min(2200,iw)':-2" -q:v 12 $out
+  }
+
+  Write-Output "Updated $($m.slug): hero=$($selected[0].Name) gallery=$galleryMax total=$($galleryMax + 1)"
 }

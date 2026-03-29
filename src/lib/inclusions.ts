@@ -124,7 +124,7 @@ export const inclusionStatusMeta: Record<
   },
   allowance: {
     label: "Allowance",
-    className: "bg-[#fff4df] text-[#6f4f08] border border-[#f0ddb6]",
+    className: "bg-[#f6efe3] text-[#6b5330] border border-[#d9c1a1]",
   },
   upgrade: {
     label: "Upgrade",

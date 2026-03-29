@@ -11,9 +11,7 @@ import { projects } from "@/lib/data";
 
 export default function ProjectDetailClient({ slug }: { slug: string }) {
   const project = projects.find((p) => p.slug === slug);
-  const galleryImages = project
-    ? [project.heroImage, ...project.images.filter((img) => img !== project.heroImage)]
-    : [];
+  const galleryImages = project ? project.images : [];
 
   if (!project) {
     return (
@@ -56,7 +54,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
               Back to Projects
             </Link>
             <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
-              {project.type.replace("-", " ")}
+              {project.location}
             </p>
             <h1 className="mt-3 text-4xl font-light tracking-tight text-white md:text-6xl">
               {project.title}
@@ -116,9 +114,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                 {project.description}
               </p>
               <p className="mt-4 font-sans text-base leading-relaxed text-[#1a1a1a]/60">
-                Every aspect of this project was carefully considered — from the initial
-                consultation and transparent quoting through to construction and final
-                handover. Our team ensured quality craftsmanship at every stage.
+                {project.projectNarrative}
               </p>
             </ScrollReveal>
           </div>

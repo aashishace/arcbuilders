@@ -62,7 +62,7 @@ export default function FeaturedProjects() {
                       className="translate-y-2 transition-transform duration-500 group-hover:translate-y-0"
                     >
                       <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-accent">
-                        {project.type.replace("-", " ")} · {project.location}
+                        {project.location}
                       </p>
                       <h3 className="mt-2 text-2xl font-light tracking-tight text-white">
                         {project.title}

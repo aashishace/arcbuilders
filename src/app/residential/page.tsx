@@ -52,7 +52,7 @@ export default function ResidentialPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex h-[50vh] min-h-[400px] items-end overflow-hidden bg-[#1a1a1a]">
+      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#1a1a1a]">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
@@ -60,7 +60,7 @@ export default function ResidentialPage() {
               "url(/projects/8-vineyard-drive-greenbank/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a] via-transparent to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Residential
@@ -122,7 +122,7 @@ export default function ResidentialPage() {
                   href={`/projects/${project.slug}`}
                   className="group block overflow-hidden"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-4/3 overflow-hidden">
                     <Image
                       src={project.heroImage}
                       alt={project.title}
@@ -130,10 +130,10 @@ export default function ResidentialPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                       sizes="33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a]/70 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-90" />
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-accent">
-                        {project.type.replace("-", " ")}
+                        {project.location}
                       </p>
                       <h3 className="mt-1 text-lg font-light text-white">
                         {project.title}

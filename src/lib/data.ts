@@ -1,5 +1,11 @@
 ﻿import { Project, Service, Testimonial, ProcessStep } from "./types";
 
+const buildProjectGallery = (slug: string, galleryCount = 9) =>
+  Array.from(
+    { length: galleryCount },
+    (_, index) => `/projects/${slug}/gallery-${String(index + 1).padStart(2, "0")}.webp`
+  );
+
 /* â”€â”€ Projects â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 export const projects: Project[] = [
   {
@@ -13,21 +19,10 @@ export const projects: Project[] = [
     scope: "Full design & build - luxury family home",
     description:
       "A beautifully crafted family residence in Pallara featuring modern architectural lines, premium finishes, and spacious open-plan living. Designed to embrace the Queensland lifestyle with seamless indoor-outdoor flow.",
-    heroImage: "/projects/14-verona-st-pallara/gallery-01.webp",
-    images: [
-      "/projects/14-verona-st-pallara/gallery-01.webp",
-      "/projects/14-verona-st-pallara/gallery-02.webp",
-      "/projects/14-verona-st-pallara/gallery-03.webp",
-      "/projects/14-verona-st-pallara/gallery-04.webp",
-      "/projects/14-verona-st-pallara/gallery-05.webp",
-      "/projects/14-verona-st-pallara/gallery-06.webp",
-      "/projects/14-verona-st-pallara/gallery-07.webp",
-      "/projects/14-verona-st-pallara/gallery-08.webp",
-      "/projects/14-verona-st-pallara/gallery-09.webp",
-      "/projects/14-verona-st-pallara/gallery-10.webp",
-      "/projects/14-verona-st-pallara/gallery-11.webp",
-      "/projects/14-verona-st-pallara/gallery-12.webp",
-    ],
+    projectNarrative:
+      "Planned as a refined family residence, Aurelia Residence balances calm interiors, warm timber tones, and generous glazing to create a home that feels open, bright, and easy to live in every day.",
+    heroImage: "/projects/14-verona-st-pallara/hero.webp",
+    images: buildProjectGallery("14-verona-st-pallara"),
     featured: true,
   },
   {
@@ -41,21 +36,10 @@ export const projects: Project[] = [
     scope: "Custom home - contemporary design & build",
     description:
       "A striking contemporary residence showcasing bold architectural design, high-end interiors, and expansive living spaces. Built with meticulous attention to detail and quality craftsmanship throughout.",
-    heroImage: "/projects/25-langford-st/gallery-01.webp",
-    images: [
-      "/projects/25-langford-st/gallery-01.webp",
-      "/projects/25-langford-st/gallery-02.webp",
-      "/projects/25-langford-st/gallery-03.webp",
-      "/projects/25-langford-st/gallery-04.webp",
-      "/projects/25-langford-st/gallery-05.webp",
-      "/projects/25-langford-st/gallery-06.webp",
-      "/projects/25-langford-st/gallery-07.webp",
-      "/projects/25-langford-st/gallery-08.webp",
-      "/projects/25-langford-st/gallery-09.webp",
-      "/projects/25-langford-st/gallery-10.webp",
-      "/projects/25-langford-st/gallery-11.webp",
-      "/projects/25-langford-st/gallery-12.webp",
-    ],
+    projectNarrative:
+      "From the dark joinery and sculpted kitchen detailing to the layered living zones, Solstice Residence was delivered as a contemporary home with strong visual impact and practical spaces for modern family routines.",
+    heroImage: "/projects/25-langford-st/hero.webp",
+    images: buildProjectGallery("25-langford-st"),
     featured: true,
   },
   {
@@ -69,21 +53,10 @@ export const projects: Project[] = [
     scope: "Full design & build - modern family home",
     description:
       "A sophisticated modern family home featuring clean architectural lines, premium material selections, and thoughtfully designed living spaces that maximise natural light and ventilation.",
-    heroImage: "/projects/49-herbert-st/gallery-01.webp",
-    images: [
-      "/projects/49-herbert-st/gallery-01.webp",
-      "/projects/49-herbert-st/gallery-02.webp",
-      "/projects/49-herbert-st/gallery-03.webp",
-      "/projects/49-herbert-st/gallery-04.webp",
-      "/projects/49-herbert-st/gallery-05.webp",
-      "/projects/49-herbert-st/gallery-06.webp",
-      "/projects/49-herbert-st/gallery-07.webp",
-      "/projects/49-herbert-st/gallery-08.webp",
-      "/projects/49-herbert-st/gallery-09.webp",
-      "/projects/49-herbert-st/gallery-10.webp",
-      "/projects/49-herbert-st/gallery-11.webp",
-      "/projects/49-herbert-st/gallery-12.webp",
-    ],
+    projectNarrative:
+      "Every decision on Lumiere Residence centred on light, proportion, and finish quality, resulting in a home that feels elegant, welcoming, and highly functional for day-to-day family living.",
+    heroImage: "/projects/49-herbert-st/hero.webp",
+    images: buildProjectGallery("49-herbert-st"),
     featured: true,
   },
   {
@@ -97,21 +70,10 @@ export const projects: Project[] = [
     scope: "Custom home - new build",
     description:
       "A stunning custom home in the Spring Mountain estate featuring contemporary architecture, premium finishes, and generous living areas designed for modern family living in one of Brisbane's most sought-after growth corridors.",
-    heroImage: "/projects/3-brooklyn-st-spring-mountain/gallery-01.webp",
-    images: [
-      "/projects/3-brooklyn-st-spring-mountain/gallery-01.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-02.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-03.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-04.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-05.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-06.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-07.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-08.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-09.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-10.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-11.webp",
-      "/projects/3-brooklyn-st-spring-mountain/gallery-12.webp",
-    ],
+    projectNarrative:
+      "Set within Spring Mountain, Evercrest Residence was shaped to make the most of its estate setting with modern street appeal, efficient planning, and flexible living areas that support a growing household.",
+    heroImage: "/projects/3-brooklyn-st-spring-mountain/hero.webp",
+    images: buildProjectGallery("3-brooklyn-st-spring-mountain"),
     featured: false,
   },
   {
@@ -125,21 +87,10 @@ export const projects: Project[] = [
     scope: "Full design & build - family home",
     description:
       "A well-appointed family home in Kingston combining functional design with stylish contemporary finishes. Every space has been carefully planned to deliver comfort, practicality, and lasting quality.",
-    heroImage: "/projects/3-dart-ave-kingston/gallery-01.webp",
-    images: [
-      "/projects/3-dart-ave-kingston/gallery-01.webp",
-      "/projects/3-dart-ave-kingston/gallery-02.webp",
-      "/projects/3-dart-ave-kingston/gallery-03.webp",
-      "/projects/3-dart-ave-kingston/gallery-04.webp",
-      "/projects/3-dart-ave-kingston/gallery-05.webp",
-      "/projects/3-dart-ave-kingston/gallery-06.webp",
-      "/projects/3-dart-ave-kingston/gallery-07.webp",
-      "/projects/3-dart-ave-kingston/gallery-08.webp",
-      "/projects/3-dart-ave-kingston/gallery-09.webp",
-      "/projects/3-dart-ave-kingston/gallery-10.webp",
-      "/projects/3-dart-ave-kingston/gallery-11.webp",
-      "/projects/3-dart-ave-kingston/gallery-12.webp",
-    ],
+    projectNarrative:
+      "Willowmere Residence focused on liveability first, with a practical layout, durable finishes, and comfortable shared spaces that make the home as functional as it is visually polished.",
+    heroImage: "/projects/3-dart-ave-kingston/hero.webp",
+    images: buildProjectGallery("3-dart-ave-kingston"),
     featured: false,
   },
   {
@@ -153,21 +104,10 @@ export const projects: Project[] = [
     scope: "Full design & build - luxury home",
     description:
       "An impressive custom build in Mount Gravatt showcasing architectural excellence and superior craftsmanship. Featuring high ceilings, premium kitchen design, and beautifully appointed interiors throughout.",
-    heroImage: "/projects/3-stanley-st-mount-gravatt/gallery-01.webp",
-    images: [
-      "/projects/3-stanley-st-mount-gravatt/gallery-01.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-02.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-03.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-04.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-05.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-06.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-07.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-08.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-09.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-10.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-11.webp",
-      "/projects/3-stanley-st-mount-gravatt/gallery-12.webp",
-    ],
+    projectNarrative:
+      "Halcyon Residence combines elevated detailing with strong everyday usability, bringing together feature ceilings, bespoke kitchen elements, and carefully resolved interiors in a confidently finished family home.",
+    heroImage: "/projects/3-stanley-st-mount-gravatt/hero.webp",
+    images: buildProjectGallery("3-stanley-st-mount-gravatt"),
     featured: true,
   },
   {
@@ -181,17 +121,10 @@ export const projects: Project[] = [
     scope: "Custom home - modern family build",
     description:
       "A modern family home in Calamvale designed with thoughtful attention to space, light, and lifestyle. Featuring contemporary interiors, quality finishes, and functional living areas perfect for family life.",
-    heroImage: "/projects/35-ayesha-place-calamvale/gallery-01.webp",
-    images: [
-      "/projects/35-ayesha-place-calamvale/gallery-01.webp",
-      "/projects/35-ayesha-place-calamvale/gallery-02.webp",
-      "/projects/35-ayesha-place-calamvale/gallery-03.webp",
-      "/projects/35-ayesha-place-calamvale/gallery-07.webp",
-      "/projects/35-ayesha-place-calamvale/gallery-09.webp",
-      "/projects/35-ayesha-place-calamvale/gallery-10.webp",
-      "/projects/35-ayesha-place-calamvale/gallery-11.webp",
-      "/projects/35-ayesha-place-calamvale/gallery-12.webp",
-    ],
+    projectNarrative:
+      "Designed for relaxed family living, Elmsworth Residence pairs contemporary styling with thoughtful zoning, quality joinery, and bright internal spaces that feel connected from front to rear.",
+    heroImage: "/projects/35-ayesha-place-calamvale/hero.webp",
+    images: buildProjectGallery("35-ayesha-place-calamvale"),
     featured: false,
   },
   {
@@ -205,21 +138,10 @@ export const projects: Project[] = [
     scope: "Full design & build - acreage home",
     description:
       "A spacious acreage home in Greenbank set against lush surroundings. This build features expansive living areas, a chef-grade kitchen, and outdoor entertaining spaces that make the most of the tranquil semi-rural setting.",
-    heroImage: "/projects/8-vineyard-drive-greenbank/gallery-01.webp",
-    images: [
-      "/projects/8-vineyard-drive-greenbank/gallery-01.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-02.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-03.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-04.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-05.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-06.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-07.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-08.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-09.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-10.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-11.webp",
-      "/projects/8-vineyard-drive-greenbank/gallery-12.webp",
-    ],
+    projectNarrative:
+      "With its acreage context in mind, Oakmont Residence was composed around spacious entertaining, expansive sight lines, and a layout that feels generous, grounded, and well suited to semi-rural living.",
+    heroImage: "/projects/8-vineyard-drive-greenbank/hero.webp",
+    images: buildProjectGallery("8-vineyard-drive-greenbank"),
     featured: true,
   },
   {
@@ -233,21 +155,10 @@ export const projects: Project[] = [
     scope: "Full design & build - premium residence",
     description:
       "A premium custom residence showcasing ARC Builders' commitment to exceptional quality. This project features striking exterior design, luxurious interiors, and the finest material selections throughout.",
-    heroImage: "/projects/hi-def-project/gallery-01.webp",
-    images: [
-      "/projects/hi-def-project/gallery-01.webp",
-      "/projects/hi-def-project/gallery-02.webp",
-      "/projects/hi-def-project/gallery-03.webp",
-      "/projects/hi-def-project/gallery-04.webp",
-      "/projects/hi-def-project/gallery-05.webp",
-      "/projects/hi-def-project/gallery-06.webp",
-      "/projects/hi-def-project/gallery-07.webp",
-      "/projects/hi-def-project/gallery-08.webp",
-      "/projects/hi-def-project/gallery-09.webp",
-      "/projects/hi-def-project/gallery-10.webp",
-      "/projects/hi-def-project/gallery-11.webp",
-      "/projects/hi-def-project/gallery-12.webp",
-    ],
+    projectNarrative:
+      "Celeste Residence was curated as a premium showcase project, pairing bold presentation with luxurious finishes and a strong focus on craftsmanship, flow, and everyday comfort.",
+    heroImage: "/projects/hi-def-project/hero.webp",
+    images: buildProjectGallery("hi-def-project"),
     featured: false,
   },
 ];
@@ -364,14 +275,14 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "4",
-    name: "Dr Amer Malik",
+    name: "Dr Amer Malik and Dr Anum Cheema",
     role: "Modern Family Home",
     quote:
       "Building our home with ARC Builders was an exceptional experience. They understood the essence of modern family living, creating a space that balances openness, functionality, and refined design. Delivered with precision, clear communication, and impeccable attention to detail, the entire process was seamless.",
   },
   {
     id: "5",
-    name: "Amer Chowdry",
+    name: "Amer Chowdry and Dr Maimuna Akbar",
     role: "Medical Centre Development",
     quote:
       "Engaging ARC Builders for our medical centre was a truly outstanding experience. Their professionalism, transparent communication, and disciplined adherence to timelines ensured a seamless and stress-free process. ARC Builders have delivered a space that reflects excellence in every sense, and we would confidently recommend them for commercial and specialised developments.",
@@ -396,7 +307,7 @@ export const processSteps: ProcessStep[] = [
     id: 3,
     title: "Construction",
     description:
-      "Experienced tradespeople bring your project to life with meticulous craftsmanship, regular updates, and on-time delivery.",
+      "Experienced trades bring your project to life with meticulous craftsmanship, regular updates, and on-time delivery.",
   },
   {
     id: 4,

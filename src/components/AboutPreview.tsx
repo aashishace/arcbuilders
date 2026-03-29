@@ -7,7 +7,7 @@ import { companyInfo } from "@/lib/data";
 export default function AboutPreview() {
   return (
     <section className="relative overflow-hidden bg-[#151515] py-24 lg:py-32">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,225,105,0.12),_transparent_32%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(198,168,125,0.12),transparent_32%)]" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -39,7 +39,7 @@ export default function AboutPreview() {
               </p>
               <h2 className="mt-4 text-4xl font-light leading-[1.2] tracking-tight text-white md:text-5xl">
                 Custom Homes Built With
-                <span className="block text-accent">Clarity and Care</span>
+                <span className="block text-accent">Precision and Care</span>
               </h2>
             </ScrollReveal>
 
@@ -71,7 +71,7 @@ export default function AboutPreview() {
                   { label: "Custom Planning", desc: "Fully personalised homes for modern family living" },
                   { label: "Specialist Design", desc: "Multi-generational and Vastu-inspired home planning" },
                 ].map((item) => (
-                  <div key={item.label} className="rounded-[1.25rem] border border-white/8 bg-white/[0.03] p-5">
+                  <div key={item.label} className="rounded-[1.25rem] border border-white/8 bg-white/3 p-5">
                     <h4 className="font-sans text-sm font-semibold text-white">
                       {item.label}
                     </h4>
@@ -82,10 +82,10 @@ export default function AboutPreview() {
             </ScrollReveal>
 
             <ScrollReveal variant="fadeRight" delay={0.35}>
-              <div className="mt-8 rounded-[1.5rem] border border-accent/20 bg-accent/10 p-5">
+              <div className="mt-8 rounded-3xl border border-accent/20 bg-accent/10 p-5">
                 <p className="font-sans text-sm leading-relaxed text-white/78">
                   ARC Builders - trusted custom home builders in Queensland, delivering
-                  personalised homes with clarity, quality, and a difference.
+                  personalised homes with precision, quality, and a difference.
                 </p>
               </div>
             </ScrollReveal>

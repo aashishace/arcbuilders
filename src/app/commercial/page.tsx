@@ -39,7 +39,7 @@ export default function CommercialPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex h-[50vh] min-h-[400px] items-end overflow-hidden bg-[#1a1a1a]">
+      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#1a1a1a]">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
@@ -47,7 +47,7 @@ export default function CommercialPage() {
               "url(/projects/3-stanley-st-mount-gravatt/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a] via-transparent to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
           <h1 className="mt-3 text-5xl font-light tracking-tight text-white md:text-6xl">
             Commercial <span className="text-accent">Services</span>
@@ -71,7 +71,7 @@ export default function CommercialPage() {
                     id={service.href.split("#")[1]}
                     className="group flex gap-6 border border-[#1a1a1a]/5 bg-white p-8 transition-all duration-500 hover:border-accent/30 hover:shadow-xl"
                   >
-                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-[#1a1a1a]">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-[#1a1a1a]">
                       <Icon size={24} />
                     </div>
                     <div>
@@ -109,7 +109,7 @@ export default function CommercialPage() {
                     href={`/projects/${project.slug}`}
                     className="group block overflow-hidden"
                   >
-                    <div className="relative aspect-[16/9] overflow-hidden">
+                    <div className="relative aspect-video overflow-hidden">
                       <Image
                         src={project.heroImage}
                         alt={project.title}
@@ -117,10 +117,10 @@ export default function CommercialPage() {
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                         sizes="50vw"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+                      <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a]/70 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-90" />
                       <div className="absolute bottom-0 left-0 right-0 p-6">
                         <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-accent">
-                          {project.type.replace("-", " ")} · {project.location}
+                          {project.location}
                         </p>
                         <h3 className="mt-1 text-lg font-light text-white">
                           {project.title}
