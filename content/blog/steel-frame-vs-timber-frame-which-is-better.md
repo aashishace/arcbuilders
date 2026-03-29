@@ -28,13 +28,12 @@ There is no one-size-fits-all winner in the steel-versus-timber debate. The righ
 
 ### Steel Frame
 - Manufactured to consistent dimensions.
-- Non-combustible and not susceptible to termites.
+- Not easily flammable and less susceptible to termites.
 - Can be useful for certain structural spans and precision-driven assemblies.
 
 ### Timber Frame
 - Widely used in residential construction.
 - Generally easier to modify on site.
-- Often preferred for thermal behavior and practical service adjustments.
 
 ## Key Decision Factors
 

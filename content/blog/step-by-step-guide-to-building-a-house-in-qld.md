@@ -26,10 +26,11 @@ Building in Queensland becomes much easier when you know the sequence and decisi
 
 ## Step 1: Confirm Your Block and Feasibility
 
-Before sketches, confirm what is actually possible on your land.
+Before design, confirm what is actually possible on your land.
 
 - Check overlays, easements, and frontage constraints.
-- Review slope, soil expectations, and stormwater considerations.
+- Review slope, soil test reports, and stormwater considerations such as discharge points.
+- Check for acoustic, BAL rating, and covenant requirements.
 - Understand orientation for light, heat, and natural ventilation.
 - Discuss likely build envelope and setbacks.
 
@@ -68,11 +69,12 @@ The more resolved your selections, the fewer surprises in contract stage.
 
 ## Step 5: Approvals and Certifications
 
-Queensland projects usually require coordinated approvals.
+Queensland projects usually require coordinated approvals from multiple authorities and consultants.
 
-- Private certifier and council-related requirements are addressed.
-- Energy efficiency and compliance documentation is completed.
-- Any site-specific reports are lodged as needed.
+- Building approval through a certifier and council process.
+- Plumbing approval from the relevant authority.
+- Energy efficiency and compliance approvals.
+- Covenant approval from the developer where applicable.
 
 Approval timing varies by project complexity and local conditions.
 
@@ -91,11 +93,12 @@ A transparent contract protects both homeowner and builder.
 Typical sequence includes:
 
 1. Site preparation and slab/foundations.
-2. Frame and roof structure.
-3. Lock-up stage (windows, doors, external envelope).
+2. Frame, wall framing, subfloor, and trusses.
+3. Roof structure.
 4. Services rough-in (electrical, plumbing, HVAC as applicable).
-5. Internal linings, cabinetry, tiling, and fit-off.
-6. Final finishes, practical completion checks, and rectification.
+5. Lock-up stage (windows, doors, external envelope).
+6. Internal linings, waterproofing, cabinetry, tiling, and fit-off.
+7. Final finishes, practical completion checks, and rectification if required.
 
 Regular site updates and documented decision logs keep everyone aligned.
 
@@ -115,10 +118,10 @@ Good owners plan for ongoing performance.
 
 - Schedule seasonal maintenance checks.
 - Keep records of paint codes, products, and fixtures.
-- Monitor drainage and external elements in heavy weather periods.
+- Monitor drainage and external elements in heavy weather conditions.
 
 ## Final Word
 
-Queensland builds run best when decisions are made in the right order. A disciplined process reduces stress, protects budget, and improves delivery quality.
+Building projects run best when decisions are made in the right order. A disciplined process reduces stress, protects budget, and improves delivery quality.
 
 If you are planning your next build, [talk to ARC Builders](/contact) for a practical, step-based planning discussion.

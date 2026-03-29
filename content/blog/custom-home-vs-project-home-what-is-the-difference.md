@@ -63,7 +63,7 @@ Custom home: high flexibility.
 ## 2. Site Response
 
 Project home: best for straightforward blocks.
-Custom home: stronger outcomes on sloping, narrow, or complex sites.
+Custom home: stronger outcomes on sloping, split-level sites, land with easements, narrow blocks, or complex access conditions.
 
 ## 3. Inclusions and Upgrades
 

@@ -26,20 +26,20 @@ If you are searching for how much does it cost to build a house in Brisbane in 2
 
 In most first meetings, families already have one number in mind, but that number usually includes only the building contract and misses site works, approvals, and external works. That gap is where stress begins.
 
-The practical answer for 2026: many Brisbane and South East Queensland builds are landing around **$2,300 to $4,200+ per square metre** depending on site complexity, design detail, and finish level. A clean, flat block with efficient planning sits lower. A highly customised home with premium selections sits higher.
+The practical answer for 2026: many Brisbane and South East Queensland builds are landing around **$1,600 to $3,500 per square metre** depending on site complexity, design detail, and finish level. A clean, flat block with efficient planning sits lower. A highly customised home with premium selections sits higher.
 
 ## The Real Conversation We Have with Clients
 
 Most homeowners do not ask for the cheapest home. They ask for a home that feels right and does not financially spiral halfway through construction.
 
-In suburbs like Pallara, Calamvale, and nearby growth areas, the biggest budget differences usually come from decisions made before construction starts.
+Across Brisbane and South East Queensland, the biggest budget differences usually come from decisions made before construction starts.
 
 ## What Moves Cost Up or Down
 
 ### 1. Site and Earthworks
-- Slope, retaining, stormwater paths, and access all affect early costs.
+- Slope, split levels, land with easements, retaining, stormwater paths, and access all affect early costs.
 - Soil class and footing requirements can materially change structural spend.
-- Tight access sites can increase labour and delivery time.
+- Tight-access or busy-road sites can increase labour and delivery time.
 
 ### 2. Design Geometry
 - Bigger homes cost more, but shape also matters.
@@ -47,7 +47,7 @@ In suburbs like Pallara, Calamvale, and nearby growth areas, the biggest budget 
 - Simpler geometry often delivers better value per square metre.
 
 ### 3. Specifications and Selections
-- Kitchens, cabinetry, tiles, glazing, stone, and tapware can swing budget significantly.
+- Kitchens, cabinetry, tiles, glazing, stone, tapware, and similar finish items can swing budget significantly.
 - Two homes with similar floor area can end up far apart in final cost due to selection standards.
 
 ### 4. Structural and Engineering Requirements
@@ -55,7 +55,7 @@ In suburbs like Pallara, Calamvale, and nearby growth areas, the biggest budget 
 - Complex engineering is not bad; it just needs to be priced transparently upfront.
 
 ### 5. Compliance and Documentation
-- Energy compliance, certifier conditions, and council-linked requirements can add items many owners forget to include in their first budget draft.
+- Energy and certification compliance, acoustic requirements, bushfire and wind ratings, plus council and covenant-related conditions can add items many owners forget to include in their first budget draft.
 
 ## Indicative 2026 Budget Thinking (Guide Only)
 
@@ -88,8 +88,6 @@ Before signing, ask every builder:
 
 - What exactly is included and excluded?
 - Which items are allowances or provisional sums?
-- Are selections detailed enough to represent my taste and quality level?
-- What are the most common variation triggers in similar projects?
 
 ## Quick Example: Why Two Similar Homes Price Differently
 
@@ -112,4 +110,4 @@ Both homes might look similar in brochure form, but final spend can diverge mate
 
 Good budgeting is not about cutting quality everywhere. It is about clarity, sequencing, and making decisions at the right stage.
 
-If you are planning in Brisbane, Pallara, Calamvale, or elsewhere in South East Queensland and want a realistic cost conversation, [contact ARC Builders](/contact) for a project-specific cost roadmap.
+If you are planning in Brisbane or elsewhere in South East Queensland and want a realistic cost conversation, [contact ARC Builders](/contact) for a project-specific cost roadmap.
