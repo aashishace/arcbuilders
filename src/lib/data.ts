@@ -22,7 +22,7 @@ export const projects: Project[] = [
     projectNarrative:
       "Planned as a refined family residence, Aurelia Residence balances calm interiors, warm timber tones, and generous glazing to create a home that feels open, bright, and easy to live in every day.",
     heroImage: "/projects/14-verona-st-pallara/hero.webp",
-    images: buildProjectGallery("14-verona-st-pallara"),
+    images: buildProjectGallery("14-verona-st-pallara", 11),
     featured: true,
   },
   {
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     projectNarrative:
       "From the dark joinery and sculpted kitchen detailing to the layered living zones, Solstice Residence was delivered as a contemporary home with strong visual impact and practical spaces for modern family routines.",
     heroImage: "/projects/25-langford-st/hero.webp",
-    images: buildProjectGallery("25-langford-st"),
+    images: buildProjectGallery("25-langford-st", 13),
     featured: true,
   },
   {
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     projectNarrative:
       "Every decision on Lumiere Residence centred on light, proportion, and finish quality, resulting in a home that feels elegant, welcoming, and highly functional for day-to-day family living.",
     heroImage: "/projects/49-herbert-st/hero.webp",
-    images: buildProjectGallery("49-herbert-st"),
+    images: buildProjectGallery("49-herbert-st", 15),
     featured: true,
   },
   {
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     projectNarrative:
       "Set within Spring Mountain, Evercrest Residence was shaped to make the most of its estate setting with modern street appeal, efficient planning, and flexible living areas that support a growing household.",
     heroImage: "/projects/3-brooklyn-st-spring-mountain/hero.webp",
-    images: buildProjectGallery("3-brooklyn-st-spring-mountain"),
+    images: buildProjectGallery("3-brooklyn-st-spring-mountain", 6),
     featured: false,
   },
   {
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     projectNarrative:
       "Willowmere Residence focused on liveability first, with a practical layout, durable finishes, and comfortable shared spaces that make the home as functional as it is visually polished.",
     heroImage: "/projects/3-dart-ave-kingston/hero.webp",
-    images: buildProjectGallery("3-dart-ave-kingston"),
+    images: buildProjectGallery("3-dart-ave-kingston", 7),
     featured: false,
   },
   {
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     projectNarrative:
       "Halcyon Residence combines elevated detailing with strong everyday usability, bringing together feature ceilings, bespoke kitchen elements, and carefully resolved interiors in a confidently finished family home.",
     heroImage: "/projects/3-stanley-st-mount-gravatt/hero.webp",
-    images: buildProjectGallery("3-stanley-st-mount-gravatt"),
+    images: buildProjectGallery("3-stanley-st-mount-gravatt", 13),
     featured: true,
   },
   {
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     projectNarrative:
       "Designed for relaxed family living, Elmsworth Residence pairs contemporary styling with thoughtful zoning, quality joinery, and bright internal spaces that feel connected from front to rear.",
     heroImage: "/projects/35-ayesha-place-calamvale/hero.webp",
-    images: buildProjectGallery("35-ayesha-place-calamvale"),
+    images: buildProjectGallery("35-ayesha-place-calamvale", 10),
     featured: false,
   },
   {
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     projectNarrative:
       "With its acreage context in mind, Oakmont Residence was composed around spacious entertaining, expansive sight lines, and a layout that feels generous, grounded, and well suited to semi-rural living.",
     heroImage: "/projects/8-vineyard-drive-greenbank/hero.webp",
-    images: buildProjectGallery("8-vineyard-drive-greenbank"),
+    images: buildProjectGallery("8-vineyard-drive-greenbank", 7),
     featured: true,
   },
   {
@@ -158,7 +158,7 @@ export const projects: Project[] = [
     projectNarrative:
       "Celeste Residence was curated as a premium showcase project, pairing bold presentation with luxurious finishes and a strong focus on craftsmanship, flow, and everyday comfort.",
     heroImage: "/projects/hi-def-project/hero.webp",
-    images: buildProjectGallery("hi-def-project"),
+    images: buildProjectGallery("hi-def-project", 9),
     featured: false,
   },
 ];
@@ -261,7 +261,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "2",
-    name: "Dr Tarunveer Bakshi",
+    name: "Dr Tarunveer Bakshi & Dr Inderpreet Kaur",
     role: "Custom Home Abode",
     quote:
       "Our home build journey with ARC Builders was nothing short of exceptional. They brought our abode to life with a refined approach, blending modern design with practical functionality. The project was managed with precision and a strong sense of organisation, ensuring timelines were met without compromising on quality. We are extremely satisfied and would highly recommend ARC Builders for any custom home build.",

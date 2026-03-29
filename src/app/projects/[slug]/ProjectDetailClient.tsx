@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, MapPin, Calendar, Ruler, User } from "lucide-react";
+import { ArrowLeft, MapPin, Ruler, User } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
@@ -76,7 +76,6 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                 <ul className="space-y-5">
                   {[
                     { Icon: MapPin, label: "Location", value: project.location },
-                    { Icon: Calendar, label: "Year", value: project.year },
                     {
                       Icon: Ruler,
                       label: "Scope",

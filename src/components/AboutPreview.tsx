@@ -6,8 +6,8 @@ import { companyInfo } from "@/lib/data";
 
 export default function AboutPreview() {
   return (
-    <section className="relative overflow-hidden bg-[#151515] py-24 lg:py-32">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(198,168,125,0.12),transparent_32%)]" />
+    <section className="relative overflow-hidden bg-[#1d1914] py-24 lg:py-32">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(198,168,125,0.16),transparent_38%),radial-gradient(circle_at_bottom_left,rgba(198,168,125,0.08),transparent_50%)]" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -18,12 +18,12 @@ export default function AboutPreview() {
                   className="h-full w-full bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "url(/projects/3-stanley-st-mount-gravatt/hero.webp)",
+                      "url(/projects/3-dart-ave-kingston/hero.webp)",
                   }}
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-[#0e0e0e]/55 via-transparent to-transparent" />
               </div>
-              <div className="absolute -bottom-6 right-4 rounded-[1.25rem] border border-accent/20 bg-[#111111] p-8 shadow-[0_30px_80px_rgba(0,0,0,0.35)] md:-right-8">
+              <div className="absolute -bottom-6 right-4 rounded-[1.25rem] border border-accent/20 bg-[#1a1610] p-8 shadow-[0_30px_80px_rgba(0,0,0,0.35)] md:-right-8">
                 <span className="text-5xl font-light text-accent">{companyInfo.experience}</span>
                 <p className="mt-1 font-sans text-xs uppercase tracking-[0.2em] text-white/40">
                   Years of<br />Excellence
