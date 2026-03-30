@@ -4,6 +4,7 @@ import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { companyInfo } from "@/lib/data";
 import { absoluteUrl, defaultKeywords, siteConfig } from "@/lib/seo";
+import { maintenanceModeEnabled } from "@/lib/site-state";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -122,13 +123,15 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           {children}
         </div>
-        <WhatsAppButton />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify([organizationSchema, websiteSchema]),
-          }}
-        />
+        {!maintenanceModeEnabled && <WhatsAppButton />}
+        {!maintenanceModeEnabled && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify([organizationSchema, websiteSchema]),
+            }}
+          />
+        )}
       </body>
     </html>
   );
