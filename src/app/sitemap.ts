@@ -2,8 +2,13 @@ import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { projects } from "@/lib/data";
 import { absoluteUrl } from "@/lib/seo";
+import { maintenanceModeEnabled } from "@/lib/site-state";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  if (maintenanceModeEnabled) {
+    return [];
+  }
+
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
