@@ -16,7 +16,7 @@ export default function CTASection() {
               "url(/projects/3-brooklyn-st-spring-mountain/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-[#1a1a1a]/85" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.88)_0%,rgba(255,255,255,0.84)_44%,rgba(249,246,240,0.90)_100%)]" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
@@ -31,11 +31,11 @@ export default function CTASection() {
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Let&apos;s Build Together
           </p>
-          <h2 className="mt-4 text-4xl font-light leading-[1.2] tracking-tight text-white md:text-5xl lg:text-6xl">
+          <h2 className="mt-4 text-4xl font-light leading-[1.2] tracking-tight text-[#0a0a0a] md:text-5xl lg:text-6xl">
             Ready to Build Your
             <span className="block text-accent">Dream Home?</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-xl font-sans text-base text-white/50">
+          <p className="mx-auto mt-6 max-w-xl font-sans text-base text-[#0a0a0a]/58">
             Whether it&apos;s a custom home, renovation, or commercial project, our team
             delivers quality builds with transparent pricing and no hidden surprises.
           </p>
@@ -45,16 +45,15 @@ export default function CTASection() {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="group relative overflow-hidden border border-accent bg-accent px-10 py-4 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all duration-500"
+              className="group relative overflow-hidden border border-accent bg-white/90 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-all duration-500 hover:bg-accent/8"
             >
-              <span className="relative z-10 transition-colors duration-500 group-hover:text-accent">
+              <span className="relative z-10 transition-colors duration-500 group-hover:text-[#0a0a0a]">
                 Start Your Project
               </span>
-              <div className="absolute inset-0 -translate-x-full bg-[#1a1a1a] transition-transform duration-500 group-hover:translate-x-0" />
             </Link>
             <a
               href="tel:0411878438"
-              className="border border-white/20 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-wider text-white/70 transition-all duration-300 hover:border-accent hover:text-accent"
+              className="border border-black/12 bg-white/72 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-wider text-[#0a0a0a]/68 transition-all duration-300 hover:border-accent hover:text-accent"
             >
               Call Our Team
             </a>

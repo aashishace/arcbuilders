@@ -46,14 +46,14 @@ export default function ProcessTimeline() {
                       i % 2 === 0 ? "lg:pr-16 lg:text-right" : "lg:pl-16 lg:text-left"
                     }`}
                   >
-                    <div className="border border-[#1a1a1a]/5 bg-[#fafafa] p-8 transition-all duration-500 hover:border-accent/30 hover:shadow-lg">
+                    <div className="border border-black/8 bg-[#fafafa] p-8 transition-all duration-500 hover:border-accent/30 hover:shadow-[0_18px_45px_rgba(0,0,0,0.08)]">
                       <span className="font-sans text-5xl font-light text-accent/20">
                         0{step.id}
                       </span>
-                      <h3 className="mt-2 font-sans text-xl font-semibold text-[#1a1a1a]">
+                      <h3 className="mt-2 font-sans text-xl font-semibold text-[#0a0a0a]">
                         {step.title}
                       </h3>
-                      <p className="mt-3 font-sans text-sm leading-relaxed text-[#1a1a1a]/50">
+                      <p className="mt-3 font-sans text-sm leading-relaxed text-[#0a0a0a]/55">
                         {step.description}
                       </p>
                     </div>

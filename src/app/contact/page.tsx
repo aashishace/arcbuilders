@@ -72,23 +72,23 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#1a1a1a]">
+      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#f7f5ef]">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-16"
           style={{
             backgroundImage:
               "url(/projects/49-herbert-st/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#f7f5ef] via-[#f7f5ef]/65 to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Get In Touch
           </p>
-          <h1 className="mt-3 text-5xl font-light tracking-tight text-white md:text-6xl">
+          <h1 className="mt-3 text-5xl font-light tracking-tight text-[#0a0a0a] md:text-6xl">
             Start Your <span className="text-accent">Project</span>
           </h1>
-          <p className="mt-4 max-w-xl font-sans text-base text-white/50">
+          <p className="mt-4 max-w-xl font-sans text-base text-[#0a0a0a]/58">
             Ready to build? Contact us for an obligation-free consultation and quote.
           </p>
         </div>
@@ -189,7 +189,7 @@ export default function ContactPage() {
                     </p>
                     <a
                       href={mailtoLink}
-                      className="mt-8 border border-accent bg-accent px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all hover:bg-transparent hover:text-accent"
+                      className="mt-8 border border-accent bg-white px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-all hover:bg-accent/8 hover:text-[#0a0a0a]"
                     >
                       Open Email App
                     </a>
@@ -206,7 +206,7 @@ export default function ContactPage() {
                           message: "",
                         });
                       }}
-                      className="mt-8 border border-accent px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-[#1a1a1a]"
+                      className="mt-8 border border-accent px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-all hover:bg-accent/8 hover:text-[#0a0a0a]"
                     >
                       Submit Another Enquiry
                     </button>
@@ -332,7 +332,7 @@ export default function ContactPage() {
                           size={14}
                           className="relative z-10 transition-colors duration-500 group-hover:text-accent"
                         />
-                        <div className="absolute inset-0 -translate-x-full bg-[#1a1a1a] transition-transform duration-500 group-hover:translate-x-0" />
+                        <div className="absolute inset-0 -translate-x-full bg-accent/10 transition-transform duration-500 group-hover:translate-x-0" />
                       </button>
                       <p className="text-center font-sans text-xs text-[#1a1a1a]/40">
                         This form opens your default email app so you can review and send your enquiry details directly. Private project selections are shared after enquiry review.

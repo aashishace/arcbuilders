@@ -14,11 +14,11 @@ export default function TestimonialsSection() {
     setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="relative bg-[#1a1a1a] py-24 lg:py-32">
+    <section className="relative bg-[#fafafa] py-24 lg:py-32">
       {/* Subtle texture */}
       <div className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(198,168,125,0.3) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(191,143,0,0.25) 1px, transparent 0)`,
           backgroundSize: "40px 40px",
         }}
       />
@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
             <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
               Testimonials
             </p>
-            <h2 className="mt-3 text-4xl font-light tracking-tight text-white md:text-5xl">
+            <h2 className="mt-3 text-4xl font-light tracking-tight text-[#0a0a0a] md:text-5xl">
               What Our <span className="text-accent">Clients</span> Say
             </h2>
           </div>
@@ -50,14 +50,14 @@ export default function TestimonialsSection() {
                 transition={{ duration: 0.5 }}
                 className="mt-8"
               >
-                <p className="font-serif text-xl leading-relaxed text-white/70 italic md:text-2xl">
+                <p className="font-serif text-xl leading-relaxed text-[#0a0a0a]/72 italic md:text-2xl">
                   &ldquo;{testimonials[current].quote}&rdquo;
                 </p>
                 <div className="mt-8">
                   <p className="font-sans text-base font-semibold text-accent">
                     {testimonials[current].name}
                   </p>
-                  <p className="mt-1 font-sans text-sm uppercase tracking-[0.18em] text-white/40">
+                  <p className="mt-1 font-sans text-sm uppercase tracking-[0.18em] text-[#0a0a0a]/42">
                     {testimonials[current].role}
                   </p>
                 </div>
@@ -68,7 +68,7 @@ export default function TestimonialsSection() {
             <div className="mt-10 flex items-center justify-center gap-6">
               <button
                 onClick={prev}
-                className="flex h-10 w-10 items-center justify-center border border-white/10 text-white/40 transition-all duration-300 hover:border-accent hover:text-accent"
+                className="flex h-10 w-10 items-center justify-center border border-black/10 text-[#0a0a0a]/40 transition-all duration-300 hover:border-accent hover:text-accent"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft size={16} />
@@ -83,7 +83,7 @@ export default function TestimonialsSection() {
                     className={`h-1.5 transition-all duration-300 ${
                       i === current
                         ? "w-8 bg-accent"
-                        : "w-1.5 bg-white/20 hover:bg-white/40"
+                        : "w-1.5 bg-black/15 hover:bg-black/28"
                     }`}
                     aria-label={`Go to testimonial ${i + 1}`}
                   />
@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
 
               <button
                 onClick={next}
-                className="flex h-10 w-10 items-center justify-center border border-white/10 text-white/40 transition-all duration-300 hover:border-accent hover:text-accent"
+                className="flex h-10 w-10 items-center justify-center border border-black/10 text-[#0a0a0a]/40 transition-all duration-300 hover:border-accent hover:text-accent"
                 aria-label="Next testimonial"
               >
                 <ChevronRight size={16} />

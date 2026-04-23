@@ -38,23 +38,23 @@ export default function ProjectsPage() {
       <Navbar />
 
       {/* Hero banner */}
-      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#1a1a1a]">
+      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#f7f5ef]">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 bg-cover bg-center opacity-18"
           style={{
             backgroundImage:
               "url(/projects/14-verona-st-pallara/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#f7f5ef] via-[#f7f5ef]/65 to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Portfolio
           </p>
-          <h1 className="mt-3 text-5xl font-light tracking-tight text-white md:text-6xl">
+          <h1 className="mt-3 text-5xl font-light tracking-tight text-[#0a0a0a] md:text-6xl">
             Our <span className="text-accent">Projects</span>
           </h1>
-          <p className="mt-4 max-w-xl font-sans text-base text-white/50">
+          <p className="mt-4 max-w-xl font-sans text-base text-[#0a0a0a]/58">
             Explore our portfolio of residential and commercial builds across
             Queensland.
           </p>
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
                 onClick={() => setActiveFilter(f.value)}
                 className={`rounded-full border px-5 py-2 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] transition-all duration-300 ${
                   activeFilter === f.value
-                    ? "border-accent bg-accent text-[#1a1a1a]"
+                    ? "border-accent bg-[#fff7df] text-accent"
                     : "border-[#1a1a1a]/15 bg-white text-[#1a1a1a]/65 hover:border-accent hover:text-accent"
                 }`}
               >
@@ -121,7 +121,7 @@ export default function ProjectsPage() {
               </p>
               <Link
                 href="/contact"
-                className="mt-6 inline-flex border border-accent bg-accent px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-[#1a1a1a] transition-all duration-300 hover:bg-transparent hover:text-accent"
+                className="mt-6 inline-flex border border-accent bg-white px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-accent transition-all duration-300 hover:bg-accent/8 hover:text-[#0a0a0a]"
               >
                 Discuss Your Project
               </Link>

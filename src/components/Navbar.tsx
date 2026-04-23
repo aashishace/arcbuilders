@@ -25,7 +25,7 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-[#1a1a1a]/95 py-2 shadow-lg backdrop-blur-md"
+            ? "border-b border-black/8 bg-white/92 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.06)] backdrop-blur-md"
             : "bg-transparent py-3"
         )}
       >
@@ -52,7 +52,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="group relative whitespace-nowrap text-[13px] font-semibold uppercase tracking-widest text-white transition-colors hover:text-accent"
+                className="group relative whitespace-nowrap text-[13px] font-semibold uppercase tracking-widest text-accent transition-colors hover:text-[#0a0a0a]"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
@@ -64,14 +64,14 @@ export default function Navbar() {
           <div className="hidden shrink-0 items-center gap-4 xl:flex">
             <a
               href={`tel:${companyInfo.phone}`}
-              className="hidden items-center gap-2 text-sm text-white/90 transition-colors hover:text-accent 2xl:flex"
+              className="hidden items-center gap-2 text-sm text-[#0a0a0a]/80 transition-colors hover:text-accent 2xl:flex"
             >
               <Phone size={14} />
               {companyInfo.phone}
             </a>
             <Link
               href="/contact"
-              className="rounded-none border border-accent bg-accent px-6 py-2.5 text-sm font-semibold tracking-wider text-[#1a1a1a] transition-all duration-300 hover:bg-transparent hover:text-accent"
+              className="rounded-none border border-accent bg-white/90 px-6 py-2.5 text-sm font-semibold tracking-wider text-accent transition-all duration-300 hover:bg-accent/8 hover:text-[#0a0a0a]"
             >
               START PROJECT
             </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="relative z-10 text-white xl:hidden"
+            className="relative z-10 text-accent xl:hidden"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -96,7 +96,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-[#1a1a1a]/98 backdrop-blur-lg xl:hidden"
+            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-white/96 backdrop-blur-lg xl:hidden"
           >
             {topNavLinks.map((link, i) => (
               <motion.div
@@ -108,7 +108,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-2xl font-light tracking-wider text-white transition-colors hover:text-accent"
+                  className="text-2xl font-light tracking-wider text-accent transition-colors hover:text-[#0a0a0a]"
                 >
                   {link.label}
                 </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-4 inline-block border border-accent bg-accent px-8 py-3 text-sm font-semibold tracking-wider text-[#1a1a1a] transition-all duration-300 hover:bg-transparent hover:text-accent"
+                className="mt-4 inline-block border border-accent bg-white px-8 py-3 text-sm font-semibold tracking-wider text-accent transition-all duration-300 hover:bg-accent/8 hover:text-[#0a0a0a]"
               >
                 START YOUR PROJECT
               </Link>

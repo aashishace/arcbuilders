@@ -1,4 +1,4 @@
-export const maintenanceModeEnabled = true;
+export const maintenanceModeEnabled = false;
 
 export const maintenanceDetails = {
   badge: "Temporarily Offline",

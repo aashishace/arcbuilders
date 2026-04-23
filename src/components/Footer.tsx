@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-[#111111] text-white">
+    <footer className="relative border-t border-black/8 bg-white text-[#0a0a0a]">
       {/* Gold accent line */}
       <div className="h-px bg-linear-to-r from-transparent via-accent to-transparent" />
 
@@ -41,7 +41,7 @@ export default function Footer() {
                 unoptimized
               />
             </Link>
-            <p className="mt-4 font-sans text-sm leading-relaxed text-white/50">
+            <p className="mt-4 font-sans text-sm leading-relaxed text-[#0a0a0a]/55">
               {companyInfo.tagline}
             </p>
             {validSocialLinks.length > 0 && (
@@ -52,7 +52,7 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-9 w-9 items-center justify-center border border-white/10 text-white/40 transition-all duration-300 hover:border-accent hover:text-accent"
+                    className="flex h-9 w-9 items-center justify-center border border-black/10 text-[#0a0a0a]/45 transition-all duration-300 hover:border-accent hover:text-accent"
                   >
                     <Icon size={15} />
                   </a>
@@ -71,7 +71,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-sans text-sm text-white/50 transition-colors hover:text-accent"
+                    className="font-sans text-sm text-[#0a0a0a]/55 transition-colors hover:text-accent"
                   >
                     {link.label}
                   </Link>
@@ -91,12 +91,12 @@ export default function Footer() {
                   {service.href ? (
                     <Link
                       href={service.href}
-                      className="font-sans text-sm text-white/50 transition-colors hover:text-accent"
+                      className="font-sans text-sm text-[#0a0a0a]/55 transition-colors hover:text-accent"
                     >
                       {service.label}
                     </Link>
                   ) : (
-                    <span className="font-sans text-sm text-white/50">{service.label}</span>
+                    <span className="font-sans text-sm text-[#0a0a0a]/55">{service.label}</span>
                   )}
                 </li>
               ))}
@@ -111,13 +111,13 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
-                <span className="font-sans text-sm text-white/50">{companyInfo.address}</span>
+                <span className="font-sans text-sm text-[#0a0a0a]/55">{companyInfo.address}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="shrink-0 text-accent" />
                 <a
                   href={`tel:${companyInfo.phone}`}
-                  className="font-sans text-sm text-white/50 transition-colors hover:text-accent"
+                  className="font-sans text-sm text-[#0a0a0a]/55 transition-colors hover:text-accent"
                 >
                   {companyInfo.phone}
                 </a>
@@ -126,7 +126,7 @@ export default function Footer() {
                 <Mail size={16} className="shrink-0 text-accent" />
                 <a
                   href={`mailto:${companyInfo.email}`}
-                  className="font-sans text-sm text-white/50 transition-colors hover:text-accent"
+                  className="font-sans text-sm text-[#0a0a0a]/55 transition-colors hover:text-accent"
                 >
                   {companyInfo.email}
                 </a>
@@ -134,14 +134,14 @@ export default function Footer() {
             </ul>
 
             {/* QBCC Licence Badge */}
-            <div className="mt-8 border border-accent/20 bg-accent/5 p-4">
+            <div className="mt-8 border border-accent/20 bg-[#faf7f0] p-4">
               <div className="flex items-center gap-3">
                 <ShieldCheck size={24} className="shrink-0 text-accent" />
                 <div>
                   <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-accent">
                     QBCC Licensed Builder
                   </p>
-                  <p className="mt-1 font-sans text-lg font-bold tracking-wider text-white">
+                  <p className="mt-1 font-sans text-lg font-bold tracking-wider text-[#0a0a0a]">
                     {companyInfo.qbccLicence}
                   </p>
                 </div>
@@ -151,20 +151,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-black/8 pt-8 md:flex-row">
           <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
-            <p className="font-sans text-xs text-white/30">
+            <p className="font-sans text-xs text-[#0a0a0a]/45">
               © {new Date().getFullYear()} {companyInfo.fullName}. All rights reserved.
             </p>
-            <span className="hidden text-white/10 md:inline">|</span>
-            <p className="font-sans text-xs text-white/30">
+            <span className="hidden text-black/10 md:inline">|</span>
+            <p className="font-sans text-xs text-[#0a0a0a]/45">
               QBCC Licence: <span className="font-semibold text-accent/70">{companyInfo.qbccLicence}</span>
             </p>
           </div>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             aria-label="Back to top"
-            className="flex h-10 w-10 items-center justify-center border border-white/10 text-white/30 transition-all duration-300 hover:border-accent hover:text-accent"
+            className="flex h-10 w-10 items-center justify-center border border-black/10 text-[#0a0a0a]/40 transition-all duration-300 hover:border-accent hover:text-accent"
           >
             <ArrowUp size={16} />
           </button>

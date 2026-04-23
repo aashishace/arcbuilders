@@ -39,20 +39,23 @@ export default function CommercialPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#1a1a1a]">
+      <section className="relative flex h-[50vh] min-h-100 items-end overflow-hidden bg-[#f7f5ef]">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 bg-cover bg-center opacity-18"
           style={{
             backgroundImage:
               "url(/projects/3-stanley-st-mount-gravatt/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-linear-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#f7f5ef] via-[#f7f5ef]/65 to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
-          <h1 className="mt-3 text-5xl font-light tracking-tight text-white md:text-6xl">
+          <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
+            Commercial
+          </p>
+          <h1 className="mt-3 text-5xl font-light tracking-tight text-[#0a0a0a] md:text-6xl">
             Commercial <span className="text-accent">Services</span>
           </h1>
-          <p className="mt-4 max-w-xl font-sans text-base text-white/50">
+          <p className="mt-4 max-w-xl font-sans text-base text-[#0a0a0a]/58">
             Shop fitouts, medical centres, childcare construction, and
             commercial buildings delivered to the highest standards.
           </p>

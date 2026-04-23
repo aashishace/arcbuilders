@@ -12,29 +12,23 @@
 }
 
 :root {
-  --background: #fafafa;
-  --foreground: #1a1a1a;
-  --primary: #1a1a1a;
-  --accent: #C6A87D;
-  --accent-light: #D8C19D;
-  --accent-dark: #A37F52;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1a1a;
-    --foreground: #fafafa;
-    --primary: #fafafa;
-    --accent: #C6A87D;
-    --accent-light: #D8C19D;
-    --accent-dark: #A37F52;
-  }
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --primary: #0a0a0a;
+  --accent: #bf8f00;
+  --accent-light: #d5bb6b;
+  --accent-dark: #8f6b00;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--accent) 18%, white);
+  color: var(--foreground);
 }
 
 h1, h2, h3, h4, h5, h6, .font-serif {

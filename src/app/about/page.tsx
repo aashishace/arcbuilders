@@ -22,20 +22,20 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex h-[50vh] min-h-[400px] items-end overflow-hidden bg-[#1a1a1a]">
+      <section className="relative flex h-[50vh] min-h-[400px] items-end overflow-hidden bg-[#f7f5ef]">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-16"
           style={{
             backgroundImage:
               "url(/projects/25-langford-st/hero.webp)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f7f5ef] via-[#f7f5ef]/65 to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 lg:px-8">
           <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Our Story
           </p>
-          <h1 className="mt-3 text-5xl font-light tracking-tight text-white md:text-6xl">
+          <h1 className="mt-3 text-5xl font-light tracking-tight text-[#0a0a0a] md:text-6xl">
             About <span className="text-accent">ARC Builders</span>
           </h1>
         </div>
@@ -112,14 +112,14 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="bg-[#1a1a1a] py-20 lg:py-28">
+      <section className="bg-[#fafafa] py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center">
               <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-accent">
                 What Drives Us
               </p>
-              <h2 className="mt-3 text-4xl font-light tracking-tight text-white md:text-5xl">
+              <h2 className="mt-3 text-4xl font-light tracking-tight text-[#0a0a0a] md:text-5xl">
                 Our <span className="text-accent">Values</span>
               </h2>
             </div>
@@ -153,14 +153,14 @@ export default function AboutPage() {
               },
             ].map((value, i) => (
               <ScrollReveal key={value.title} delay={i * 0.1}>
-                <div className="group border border-white/5 p-8 text-center transition-all duration-500 hover:border-accent/30">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-[#1a1a1a]">
+                <div className="group border border-black/8 bg-white p-8 text-center transition-all duration-500 hover:border-accent/30 hover:shadow-[0_18px_45px_rgba(0,0,0,0.08)]">
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent/8 group-hover:text-[#0a0a0a]">
                     <value.Icon size={24} />
                   </div>
-                  <h3 className="mt-6 font-sans text-lg font-semibold text-white">
+                  <h3 className="mt-6 font-sans text-lg font-semibold text-[#0a0a0a]">
                     {value.title}
                   </h3>
-                  <p className="mt-3 font-sans text-sm leading-relaxed text-white/40">
+                  <p className="mt-3 font-sans text-sm leading-relaxed text-[#0a0a0a]/52">
                     {value.description}
                   </p>
                 </div>

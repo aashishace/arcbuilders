@@ -17,9 +17,9 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
     return (
       <main>
         <Navbar />
-        <section className="flex min-h-screen items-center justify-center bg-[#1a1a1a]">
+        <section className="flex min-h-screen items-center justify-center bg-[#fafafa]">
           <div className="text-center">
-            <h1 className="text-4xl font-light text-white">Project Not Found</h1>
+            <h1 className="text-4xl font-light text-[#0a0a0a]">Project Not Found</h1>
             <Link href="/projects" className="mt-6 inline-block text-accent underline">
               Back to Projects
             </Link>
@@ -43,7 +43,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-[#1a1a1a]/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/38 via-[#0a0a0a]/14 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0">
           <div className="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
             <Link

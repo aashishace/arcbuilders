@@ -154,7 +154,7 @@ export default function BlogDetailClient({
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-[#1a1a1a]/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/42 via-[#0a0a0a]/16 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0">
           <div className="mx-auto max-w-4xl px-6 pb-12 lg:px-8">
             <Link
