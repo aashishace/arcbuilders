@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Inter, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { companyInfo } from "@/lib/data";
+import { commercialServices, companyInfo, residentialServices } from "@/lib/data";
 import { absoluteUrl, defaultKeywords, siteConfig } from "@/lib/seo";
 import { maintenanceModeEnabled } from "@/lib/site-state";
 
@@ -79,6 +79,20 @@ export default function RootLayout({
   const socialProfiles = Object.values(companyInfo.socials).filter((url) => url && url !== "#");
   const basePhone = companyInfo.phone.replace(/\s+/g, "");
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  const formattedPhone = `+61${basePhone.replace(/^0/, "")}`;
+  const serviceOffers = [...residentialServices, ...commercialServices].map((service) => ({
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name: service.title,
+      description: service.description,
+      provider: {
+        "@id": `${siteConfig.url}/#organization`,
+      },
+      areaServed: siteConfig.serviceAreas,
+      url: absoluteUrl(service.href),
+    },
+  }));
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -87,8 +101,13 @@ export default function RootLayout({
     name: siteConfig.name,
     legalName: companyInfo.fullName,
     url: siteConfig.url,
-    telephone: `+61${basePhone.replace(/^0/, "")}`,
+    telephone: formattedPhone,
     email: companyInfo.email,
+    identifier: {
+      "@type": "PropertyValue",
+      name: "QBCC Licence",
+      value: companyInfo.qbccLicence,
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: companyInfo.streetAddress,
@@ -100,7 +119,30 @@ export default function RootLayout({
     areaServed: siteConfig.serviceAreas,
     image: absoluteUrl("/hero.webp"),
     logo: absoluteUrl("/logo-tight.webp"),
-    sameAs: socialProfiles,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      telephone: formattedPhone,
+      email: companyInfo.email,
+      areaServed: "AU",
+      availableLanguage: ["en"],
+    },
+    knowsAbout: [
+      "Custom homes",
+      "Home renovations",
+      "Home extensions",
+      "Multi-generational homes",
+      "Duplex projects",
+      "Commercial fitouts",
+      "Medical centre construction",
+      "Transparent construction pricing",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "ARC Builders services",
+      itemListElement: serviceOffers,
+    },
+    ...(socialProfiles.length > 0 ? { sameAs: socialProfiles } : {}),
   };
 
   const websiteSchema = {
@@ -111,11 +153,6 @@ export default function RootLayout({
     name: `${siteConfig.name} Website`,
     publisher: {
       "@id": `${siteConfig.url}/#organization`,
-    },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${siteConfig.url}/blog?query={search_term_string}`,
-      "query-input": "required name=search_term_string",
     },
   };
 

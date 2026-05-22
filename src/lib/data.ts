@@ -373,6 +373,7 @@ export const navLinks = [
 
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
+  { label: "Locations", href: "/locations" },
   { label: "Process", href: "/process" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },

@@ -21,10 +21,10 @@ Use it when setting up ARC Builders on Google Business Profile, Instagram, Faceb
 - Public tagline: `Custom Homes Designed for Modern Families - Trusted Builders in Brisbane & South East Queensland.`
 - Phone: `0411 878 438`
 - Email: `admin@arcbuilders.com.au`
-- Website: `https://www.arcbuilders.com.au/`
-- Contact page: `https://www.arcbuilders.com.au/contact`
-- Projects page: `https://www.arcbuilders.com.au/projects`
-- Blog page: `https://www.arcbuilders.com.au/blog`
+- Website: `https://arcbuilders.com.au/`
+- Contact page: `https://arcbuilders.com.au/contact`
+- Projects page: `https://arcbuilders.com.au/projects`
+- Blog page: `https://arcbuilders.com.au/blog`
 - WhatsApp link: `https://wa.me/61411878438?text=Hi%20ARC%20Builders%2C%20I%27m%20interested%20in%20discussing%20a%20project.`
 - Address: `25 Langford Street, Eight Mile Plains QLD 4113`
 - QBCC Licence: `15090326`
@@ -111,8 +111,8 @@ Have these ready before creating channels:
   - `Renovation Contractor`
   - `Commercial Builder` if available
 - Phone: `0411 878 438`
-- Website: `https://www.arcbuilders.com.au/`
-- Appointment link: `https://www.arcbuilders.com.au/contact`
+- Website: `https://arcbuilders.com.au/`
+- Appointment link: `https://arcbuilders.com.au/contact`
 - Address: `25 Langford Street, Eight Mile Plains QLD 4113`
 
 ### Service areas to paste
@@ -391,7 +391,7 @@ Thank you for your kind words and for trusting ARC Builders with your project. W
 - Category: `Construction Company`
 - Contact email: `admin@arcbuilders.com.au`
 - Contact phone: `0411 878 438`
-- Link in bio: `https://www.arcbuilders.com.au/contact`
+- Link in bio: `https://arcbuilders.com.au/contact`
 
 ### Instagram bio option 1
 
@@ -459,7 +459,7 @@ We work across Brisbane and South East Queensland. Send us your suburb and proje
 ### Quick reply - consultation
 
 ```text
-You can enquire directly through our contact page here: https://www.arcbuilders.com.au/contact
+You can enquire directly through our contact page here: https://arcbuilders.com.au/contact
 ```
 
 ### 9-post starter grid for Instagram
@@ -650,9 +650,9 @@ If you want a team that values structure as much as craftsmanship, talk to us ab
 - Category: `Construction Company`
 - Phone: `0411 878 438`
 - Email: `admin@arcbuilders.com.au`
-- Website: `https://www.arcbuilders.com.au/`
+- Website: `https://arcbuilders.com.au/`
 - CTA button: `Contact Us`
-- CTA link: `https://www.arcbuilders.com.au/contact`
+- CTA link: `https://arcbuilders.com.au/contact`
 
 ### Facebook intro
 
@@ -675,7 +675,7 @@ We create custom homes, renovations, extensions and selected commercial projects
 
 If you are planning a project and want a team that values clarity, quality and practical guidance from day one, contact us through our website.
 
-https://www.arcbuilders.com.au/contact
+https://arcbuilders.com.au/contact
 ```
 
 ## 7. LinkedIn Company Page Setup
@@ -684,7 +684,7 @@ https://www.arcbuilders.com.au/contact
 
 - Company name: `ARC Builders`
 - Public URL: `linkedin.com/company/arcbuildersau` if available
-- Website: `https://www.arcbuilders.com.au/`
+- Website: `https://arcbuilders.com.au/`
 - Industry: `Construction`
 - Company size: choose actual size
 - Location: `Brisbane, Queensland, Australia`
@@ -729,7 +729,7 @@ If you are planning a project, feel free to connect with us here or contact us t
 
 - Channel name: `ARC Builders`
 - Handle: `@arcbuildersau`
-- Website link: `https://www.arcbuilders.com.au/`
+- Website link: `https://arcbuilders.com.au/`
 
 ### YouTube channel description
 
@@ -742,8 +742,8 @@ Our focus is on transparent pricing, quality-first delivery and helping homeowne
 
 If you are planning a project, visit our website or contact our team directly.
 
-Website: https://www.arcbuilders.com.au/
-Contact: https://www.arcbuilders.com.au/contact
+Website: https://arcbuilders.com.au/
+Contact: https://arcbuilders.com.au/contact
 ```
 
 ### Playlist names
@@ -772,13 +772,13 @@ Thanks for watching ARC Builders.
 We deliver custom homes, renovations, extensions and selected commercial construction across Brisbane and South East Queensland.
 
 If you are planning a project and want to speak with our team, start here:
-https://www.arcbuilders.com.au/contact
+https://arcbuilders.com.au/contact
 
 Explore more projects:
-https://www.arcbuilders.com.au/projects
+https://arcbuilders.com.au/projects
 
 Read our blog:
-https://www.arcbuilders.com.au/blog
+https://arcbuilders.com.au/blog
 
 Phone: 0411 878 438
 Email: admin@arcbuilders.com.au
@@ -796,7 +796,7 @@ Transparent pricing.
 
 ### CTA link
 
-`https://www.arcbuilders.com.au/contact`
+`https://arcbuilders.com.au/contact`
 
 ### First 10 TikTok hook lines
 
@@ -921,37 +921,37 @@ Hi [Name], just following up on your enquiry. If you would like to move forward,
 ### Website referral reply
 
 ```text
-The best next step is to submit your details through our contact page so our team can review the project properly: https://www.arcbuilders.com.au/contact
+The best next step is to submit your details through our contact page so our team can review the project properly: https://arcbuilders.com.au/contact
 ```
 
 ## 13. Best Links To Use By Platform
 
 ### Google Business Profile
 
-- Main link: `https://www.arcbuilders.com.au/`
-- Appointment link: `https://www.arcbuilders.com.au/contact`
+- Main link: `https://arcbuilders.com.au/`
+- Appointment link: `https://arcbuilders.com.au/contact`
 
 ### Instagram
 
-- Link in bio: `https://www.arcbuilders.com.au/contact`
+- Link in bio: `https://arcbuilders.com.au/contact`
 
 ### Facebook
 
-- CTA button: `https://www.arcbuilders.com.au/contact`
+- CTA button: `https://arcbuilders.com.au/contact`
 
 ### LinkedIn
 
-- Website: `https://www.arcbuilders.com.au/`
+- Website: `https://arcbuilders.com.au/`
 
 ### YouTube
 
-- Main website: `https://www.arcbuilders.com.au/`
-- Contact: `https://www.arcbuilders.com.au/contact`
-- Projects: `https://www.arcbuilders.com.au/projects`
+- Main website: `https://arcbuilders.com.au/`
+- Contact: `https://arcbuilders.com.au/contact`
+- Projects: `https://arcbuilders.com.au/projects`
 
 ### TikTok
 
-- Link in bio: `https://www.arcbuilders.com.au/contact`
+- Link in bio: `https://arcbuilders.com.au/contact`
 
 ## 14. Final Setup Order
 
