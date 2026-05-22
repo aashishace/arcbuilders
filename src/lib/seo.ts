@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { companyInfo } from "./data";
 
-const normalizedSiteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.arcbuilders.com.au").replace(/\/+$/, "");
+const normalizedSiteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://arcbuilders.com.au").replace(/\/+$/, "");
 
 export const siteConfig = {
   name: companyInfo.name,

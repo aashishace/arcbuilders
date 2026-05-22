@@ -2,13 +2,13 @@ backend:
   name: github
   repo: aashishace/arcbuilders
   branch: main
-  base_url: https://www.arcbuilders.com.au
+  base_url: https://arcbuilders.com.au
   auth_endpoint: /api/auth
 
 publish_mode: editorial_workflow
 media_folder: "public/uploads"
 public_folder: "/uploads"
-site_url: https://www.arcbuilders.com.au
+site_url: https://arcbuilders.com.au
 
 collections:
   - name: blog

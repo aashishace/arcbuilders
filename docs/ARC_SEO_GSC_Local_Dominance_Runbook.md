@@ -8,15 +8,15 @@ This runbook covers the non-code work required after deploying the SEO updates.
 2. Verify the property through DNS ownership.
    - TXT record generated on 22 May 2026:
    - `google-site-verification=ShBcZLFv3CnPiZbKka9e1ZG0ibYs8FlJ-WO3Yo8M1fs`
-3. Submit `https://www.arcbuilders.com.au/sitemap.xml`.
+3. Submit `https://arcbuilders.com.au/sitemap.xml`.
 4. Use URL Inspection and request indexing for:
-   - `https://www.arcbuilders.com.au/`
-   - `https://www.arcbuilders.com.au/projects`
-   - `https://www.arcbuilders.com.au/projects/17-ormskirk-st-calamvale`
-   - `https://www.arcbuilders.com.au/projects/25-binnalong-st-rochedale-south`
-   - `https://www.arcbuilders.com.au/projects/18-skye-court-bahrs-scrub`
-   - `https://www.arcbuilders.com.au/residential`
-   - `https://www.arcbuilders.com.au/contact`
+   - `https://arcbuilders.com.au/`
+   - `https://arcbuilders.com.au/projects`
+   - `https://arcbuilders.com.au/projects/17-ormskirk-st-calamvale`
+   - `https://arcbuilders.com.au/projects/25-binnalong-st-rochedale-south`
+   - `https://arcbuilders.com.au/projects/18-skye-court-bahrs-scrub`
+   - `https://arcbuilders.com.au/residential`
+   - `https://arcbuilders.com.au/contact`
    - top-performing blog URLs
    - all `/locations/...` pages
 5. Weekly: review Performance by query, page, country, device and search appearance.
@@ -28,7 +28,7 @@ Use the same NAP everywhere:
 - Name: `ARC Builders`
 - Phone: `0411 878 438`
 - Email: `admin@arcbuilders.com.au`
-- Website: `https://www.arcbuilders.com.au/`
+- Website: `https://arcbuilders.com.au/`
 - Address: `25 Langford Street, Eight Mile Plains QLD 4113`
 - Primary category: `Custom Home Builder`
 - Secondary categories: `Home Builder`, `Construction Company`, `Renovation Contractor`

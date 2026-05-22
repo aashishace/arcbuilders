@@ -23,7 +23,7 @@ export default function BlogDetailClient({
   const shareUrl =
     typeof window !== "undefined"
       ? window.location.href
-      : `https://www.arcbuilders.com.au/blog/${post.slug}`;
+      : `https://arcbuilders.com.au/blog/${post.slug}`;
 
   useEffect(() => {
     trackEvent("blog_article_view", {
