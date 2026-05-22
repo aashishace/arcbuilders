@@ -5,6 +5,13 @@ import { maintenanceModeEnabled } from "@/lib/site-state";
 const PUBLIC_FILE = /\.[^/]+$/;
 
 export function proxy(request: NextRequest) {
+  if (request.nextUrl.hostname === "arcbuilders.com.au") {
+    const canonicalUrl = request.nextUrl.clone();
+    canonicalUrl.hostname = "www.arcbuilders.com.au";
+    canonicalUrl.protocol = "https";
+    return NextResponse.redirect(canonicalUrl, 308);
+  }
+
   if (!maintenanceModeEnabled) {
     return NextResponse.next();
   }

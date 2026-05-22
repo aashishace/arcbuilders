@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Youtube, ArrowUp, Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
 import { companyInfo, navLinks } from "@/lib/data";
+import { localAreas } from "@/lib/local-areas";
 
 export default function Footer() {
   const validSocialLinks = [
@@ -14,13 +15,17 @@ export default function Footer() {
   ].filter(({ href }) => href && href !== "#");
 
   const footerServices: Array<{ label: string; href?: string }> = [
-    { label: "Custom Homes" },
-    { label: "Renovations" },
-    { label: "Extensions" },
-    { label: "Granny Flats" },
-    { label: "Shop Fitouts" },
-    { label: "Medical Centres" },
+    { label: "Custom Homes", href: "/residential#custom-homes" },
+    { label: "Renovations", href: "/residential#renovations" },
+    { label: "Extensions", href: "/residential#extensions" },
+    { label: "Granny Flats", href: "/residential#granny-flats" },
+    { label: "Shop Fitouts", href: "/commercial#shop-fitouts" },
+    { label: "Medical Centres", href: "/commercial#medical-centres" },
   ];
+
+  const footerAreas = localAreas.filter((area) =>
+    ["brisbane-southside", "logan", "rochedale", "calamvale", "pallara", "greenbank"].includes(area.slug)
+  );
 
   return (
     <footer className="relative border-t border-black/8 bg-white text-[#0a0a0a]">
@@ -28,7 +33,7 @@ export default function Footer() {
       <div className="h-px bg-linear-to-r from-transparent via-accent to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-flex items-center">
@@ -52,6 +57,8 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-gtm-event="social_profile_click"
+                    data-gtm-source="footer"
                     className="flex h-9 w-9 items-center justify-center border border-black/10 text-[#0a0a0a]/45 transition-all duration-300 hover:border-accent hover:text-accent"
                   >
                     <Icon size={15} />
@@ -117,6 +124,8 @@ export default function Footer() {
                 <Phone size={16} className="shrink-0 text-accent" />
                 <a
                   href={`tel:${companyInfo.phone}`}
+                  data-gtm-event="phone_click"
+                  data-gtm-source="footer"
                   className="font-sans text-sm text-[#0a0a0a]/55 transition-colors hover:text-accent"
                 >
                   {companyInfo.phone}
@@ -126,6 +135,8 @@ export default function Footer() {
                 <Mail size={16} className="shrink-0 text-accent" />
                 <a
                   href={`mailto:${companyInfo.email}`}
+                  data-gtm-event="email_click"
+                  data-gtm-source="footer"
                   className="font-sans text-sm text-[#0a0a0a]/55 transition-colors hover:text-accent"
                 >
                   {companyInfo.email}
@@ -147,6 +158,33 @@ export default function Footer() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Service areas */}
+          <div>
+            <h4 className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              Service Areas
+            </h4>
+            <ul className="space-y-3">
+              {footerAreas.map((area) => (
+                <li key={area.slug}>
+                  <Link
+                    href={`/locations/${area.slug}`}
+                    className="font-sans text-sm text-[#0a0a0a]/55 transition-colors hover:text-accent"
+                  >
+                    {area.name}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  href="/locations"
+                  className="font-sans text-sm font-semibold text-accent/80 transition-colors hover:text-accent"
+                >
+                  View All Areas
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 

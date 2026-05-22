@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, MapPin, Ruler, User } from "lucide-react";
@@ -8,10 +9,28 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { projects } from "@/lib/data";
+import { trackEvent } from "@/lib/analytics";
+import { localAreas } from "@/lib/local-areas";
 
 export default function ProjectDetailClient({ slug }: { slug: string }) {
   const project = projects.find((p) => p.slug === slug);
   const galleryImages = project ? project.images : [];
+  const relatedArea = project
+    ? localAreas.find((area) => project.location.toLowerCase().includes(area.name.toLowerCase()))
+    : undefined;
+
+  useEffect(() => {
+    if (!project) {
+      return;
+    }
+
+    trackEvent("project_page_view", {
+      project_slug: project.slug,
+      project_title: project.title,
+      project_location: project.location,
+      project_type: project.type,
+    });
+  }, [project]);
 
   if (!project) {
     return (
@@ -115,6 +134,24 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
               <p className="mt-4 font-sans text-base leading-relaxed text-[#1a1a1a]/60">
                 {project.projectNarrative}
               </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href="/contact"
+                  data-gtm-event="project_contact_click"
+                  data-gtm-source={project.slug}
+                  className="inline-flex border border-accent bg-accent px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-[#1a1a1a] transition-all duration-300 hover:bg-transparent hover:text-accent"
+                >
+                  Discuss a Similar Build
+                </Link>
+                {relatedArea && (
+                  <Link
+                    href={`/locations/${relatedArea.slug}`}
+                    className="inline-flex border border-[#1a1a1a]/15 px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-[#1a1a1a]/60 transition-all duration-300 hover:border-accent hover:text-accent"
+                  >
+                    View {relatedArea.name} Builder Page
+                  </Link>
+                )}
+              </div>
             </ScrollReveal>
           </div>
         </div>
@@ -144,7 +181,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                 >
                   <Image
                     src={img}
-                    alt={`${project.title} — Image ${i + 1}`}
+                    alt={`${project.title} in ${project.location} - gallery image ${i + 1}`}
                     fill
                     className="object-cover transition-transform duration-700 hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 80vw"
@@ -156,7 +193,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection analyticsSource={`${project.slug}_project_cta`} />
       <Footer />
     </main>
   );

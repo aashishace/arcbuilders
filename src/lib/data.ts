@@ -161,6 +161,57 @@ export const projects: Project[] = [
     images: buildProjectGallery("hi-def-project", 9),
     featured: false,
   },
+  {
+    id: "10",
+    title: "Ormskirk Residence",
+    slug: "17-ormskirk-st-calamvale",
+    location: "Calamvale, QLD",
+    type: "custom-home",
+    year: "2026",
+    architect: "ARC Design Studio",
+    scope: "Custom home - completed family residence",
+    description:
+      "A contemporary Calamvale residence with a strong street presence, considered internal planning, and refined finishes throughout. The home balances family functionality with clean architectural presentation.",
+    projectNarrative:
+      "Ormskirk Residence was shaped around a polished everyday living experience, bringing together confident exterior form, practical zoning, and carefully finished interiors suited to modern family life.",
+    heroImage: "/projects/17-ormskirk-st-calamvale/hero.webp",
+    images: buildProjectGallery("17-ormskirk-st-calamvale", 29),
+    featured: false,
+  },
+  {
+    id: "11",
+    title: "Binnalong Residence",
+    slug: "25-binnalong-st-rochedale-south",
+    location: "Rochedale South, QLD",
+    type: "custom-home",
+    year: "2026",
+    architect: "ARC Design Studio",
+    scope: "Custom home - full build",
+    description:
+      "A thoughtfully completed Rochedale South home featuring crisp exterior detailing, warm interior selections, and practical living spaces designed for comfort, durability, and day-to-day ease.",
+    projectNarrative:
+      "Binnalong Residence brings a composed, functional approach to the family home, with a gallery that follows the project from its exterior presence through to finished internal spaces and key living zones.",
+    heroImage: "/projects/25-binnalong-st-rochedale-south/hero.webp",
+    images: buildProjectGallery("25-binnalong-st-rochedale-south", 30),
+    featured: false,
+  },
+  {
+    id: "12",
+    title: "Skye Court Residence",
+    slug: "18-skye-court-bahrs-scrub",
+    location: "Bahrs Scrub, QLD",
+    type: "custom-home",
+    year: "2026",
+    architect: "ARC Design Studio",
+    scope: "Custom home - new residence",
+    description:
+      "A fresh custom residence in Bahrs Scrub with bright internal spaces, contemporary finishes, and a clean, practical layout designed to support relaxed family living.",
+    projectNarrative:
+      "Skye Court Residence captures ARC Builders' focus on liveable design, resolved detailing, and polished presentation, with a gallery that highlights both the home's finished exterior and internal flow.",
+    heroImage: "/projects/18-skye-court-bahrs-scrub/hero.webp",
+    images: buildProjectGallery("18-skye-court-bahrs-scrub", 21),
+    featured: false,
+  },
 ];
 
 /* â”€â”€ Services â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */

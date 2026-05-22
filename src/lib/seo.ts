@@ -9,7 +9,19 @@ export const siteConfig = {
   description: companyInfo.tagline,
   url: normalizedSiteUrl,
   locale: "en_AU",
-  serviceAreas: ["Brisbane", "Logan", "Rochedale", "South East Queensland"],
+  serviceAreas: [
+    "Brisbane",
+    "Brisbane Southside",
+    "Logan",
+    "Rochedale",
+    "Calamvale",
+    "Pallara",
+    "Greenbank",
+    "Eight Mile Plains",
+    "Mount Gravatt",
+    "Bahrs Scrub",
+    "South East Queensland",
+  ],
 };
 
 export const defaultKeywords = [
@@ -18,7 +30,6 @@ export const defaultKeywords = [
   "custom home builder Rochedale",
   "custom home builder South East Queensland",
   "home builder South East Queensland",
-  "Vastu home builder Australia",
   "Indian Australian home builder",
   "multi-generational home builder",
   "duplex builder Queensland",

@@ -8,20 +8,27 @@ import ProcessTimeline from "@/components/ProcessTimeline";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import ServiceAreasSection from "@/components/ServiceAreasSection";
 import { companyInfo } from "@/lib/data";
 import { absoluteUrl, createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Custom Home Builder in Brisbane and South East Queensland",
+  title: "Custom Home Builder Brisbane & South East Queensland | ARC Builders",
   description:
-    "ARC Builders designs and builds custom homes, Vastu-aware layouts, renovations, and multi-generational residences with transparent pricing across Brisbane, Logan, Rochedale, and South East Queensland.",
+    "ARC Builders designs and builds custom homes, renovations and premium family residences with clear pricing across Brisbane, Logan, Rochedale and South East Queensland.",
   path: "/",
   keywords: [
     "custom home builder Brisbane",
+    "custom home builder Brisbane Southside",
     "builder Logan Queensland",
     "custom home builder Rochedale",
+    "custom home builder Calamvale",
+    "custom home builder Pallara",
+    "custom home builder Greenbank",
+    "custom home builder Eight Mile Plains",
+    "custom home builder Mount Gravatt",
+    "custom home builder Bahrs Scrub",
     "custom home builder South East Queensland",
-    "Vastu compliant home builder",
     "multi-generational home builder",
     "transparent pricing home builder",
   ],
@@ -54,12 +61,12 @@ export default function HomePage() {
         <FeaturedProjects />
         <AboutPreview />
         <ServicesSection />
+        <ServiceAreasSection />
         <ProcessTimeline />
         <TestimonialsSection />
-        <CTASection />
+        <CTASection analyticsSource="homepage_cta" />
         <Footer />
       </main>
     </>
   );
 }
-

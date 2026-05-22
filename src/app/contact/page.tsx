@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { companyInfo } from "@/lib/data";
+import { trackEvent } from "@/lib/analytics";
 import { MapPin, Phone, Mail, Send, CheckCircle } from "lucide-react";
 
 const projectTypes = [
@@ -64,6 +65,10 @@ export default function ContactPage() {
     setMailtoLink(
       `mailto:${companyInfo.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     );
+    trackEvent("contact_form_submit_ready", {
+      project_type: formData.projectType || "Website",
+      budget_range: formData.budgetRange || "Not provided",
+    });
     setSubmitted(true);
   };
 
@@ -131,6 +136,8 @@ export default function ContactPage() {
                       </p>
                       <a
                         href={`tel:${companyInfo.phone}`}
+                        data-gtm-event="phone_click"
+                        data-gtm-source="contact_page"
                         className="mt-1 block font-sans text-sm text-[#1a1a1a]/70 transition-colors hover:text-accent"
                       >
                         {companyInfo.phone}
@@ -148,6 +155,8 @@ export default function ContactPage() {
                       </p>
                       <a
                         href={`mailto:${companyInfo.email}`}
+                        data-gtm-event="email_click"
+                        data-gtm-source="contact_page"
                         className="mt-1 block font-sans text-sm text-[#1a1a1a]/70 transition-colors hover:text-accent"
                       >
                         {companyInfo.email}
@@ -189,6 +198,8 @@ export default function ContactPage() {
                     </p>
                     <a
                       href={mailtoLink}
+                      data-gtm-event="contact_email_app_click"
+                      data-gtm-source="contact_page"
                       className="mt-8 border border-accent bg-white px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-all hover:bg-accent/8 hover:text-[#0a0a0a]"
                     >
                       Open Email App

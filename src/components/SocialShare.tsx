@@ -20,7 +20,7 @@ export default function SocialShare({ url, title, excerpt }: SocialShareProps) {
     {
       label: "Facebook",
       Icon: Facebook,
-      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedExcerpt}`,
       color: "hover:bg-[#1877f2] hover:border-[#1877f2]",
     },
     {

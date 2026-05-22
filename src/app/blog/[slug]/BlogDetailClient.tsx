@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, User, Tag } from "lucide-react";
@@ -9,6 +10,7 @@ import CTASection from "@/components/CTASection";
 import SocialShare from "@/components/SocialShare";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { BlogPost } from "@/lib/types";
+import { trackEvent } from "@/lib/analytics";
 
 export default function BlogDetailClient({
   post,
@@ -22,6 +24,14 @@ export default function BlogDetailClient({
     typeof window !== "undefined"
       ? window.location.href
       : `https://www.arcbuilders.com.au/blog/${post.slug}`;
+
+  useEffect(() => {
+    trackEvent("blog_article_view", {
+      blog_slug: post.slug,
+      blog_title: post.title,
+      blog_category: post.category,
+    });
+  }, [post]);
 
   // Simple markdown-like rendering: convert ## headings, **bold**, paragraphs, and lists
   const renderContent = (content: string) => {
@@ -281,7 +291,7 @@ export default function BlogDetailClient({
         </section>
       )}
 
-      <CTASection />
+      <CTASection analyticsSource={`${post.slug}_blog_cta`} />
       <Footer />
     </main>
   );

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { projects } from "@/lib/data";
+import { localAreas } from "@/lib/local-areas";
 import { absoluteUrl } from "@/lib/seo";
 import { maintenanceModeEnabled } from "@/lib/site-state";
 
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/contact"), lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: absoluteUrl("/residential"), lastModified: now, changeFrequency: "monthly", priority: 0.78 },
     { url: absoluteUrl("/commercial"), lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: absoluteUrl("/locations"), lastModified: now, changeFrequency: "monthly", priority: 0.86 },
     { url: absoluteUrl("/blog"), lastModified: now, changeFrequency: "weekly", priority: 0.82 },
   ];
 
@@ -36,5 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.74,
   }));
 
-  return [...staticRoutes, ...projectRoutes, ...blogRoutes];
+  const locationRoutes: MetadataRoute.Sitemap = localAreas.map((area) => ({
+    url: absoluteUrl(`/locations/${area.slug}`),
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.84,
+  }));
+
+  return [...staticRoutes, ...projectRoutes, ...locationRoutes, ...blogRoutes];
 }

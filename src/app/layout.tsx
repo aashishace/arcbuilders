@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -77,6 +78,7 @@ export default function RootLayout({
 }>) {
   const socialProfiles = Object.values(companyInfo.socials).filter((url) => url && url !== "#");
   const basePhone = companyInfo.phone.replace(/\s+/g, "");
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -120,6 +122,28 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body suppressHydrationWarning className={`${inter.variable} ${dmSerif.variable} font-sans bg-background text-foreground antialiased selection:bg-accent selection:text-white`}>
+        {gtmId && (
+          <>
+            <Script id="gtm-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({ event: 'gtm.js', 'gtm.start': new Date().getTime() });
+                (function(w,d,s,l,i){var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','${gtmId}');
+              `}
+            </Script>
+            <noscript>
+              <iframe
+                src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+                height="0"
+                width="0"
+                style={{ display: "none", visibility: "hidden" }}
+              />
+            </noscript>
+          </>
+        )}
         <div className="flex min-h-screen flex-col">
           {children}
         </div>
@@ -136,4 +160,3 @@ export default function RootLayout({
     </html>
   );
 }
-

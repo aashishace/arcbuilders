@@ -1,24 +1,10 @@
 import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
+import { localAreas } from "@/lib/local-areas";
 
-const areaCards = [
-  {
-    name: "Brisbane",
-    focus: "Custom homes, duplex builds, and high-end family residences",
-  },
-  {
-    name: "Brisbane Southside",
-    focus: "Renovations, extensions, and practical multi-generational homes",
-  },
-  {
-    name: "Eight Mile Plains",
-    focus: "Premium custom builds with modern layouts, Vastu options, and clear consultant guidance",
-  },
-  {
-    name: "South East Queensland",
-    focus: "Residential and selected commercial projects with transparent scope",
-  },
-];
+const areaCards = localAreas.filter((area) =>
+  ["brisbane-southside", "logan", "rochedale", "calamvale", "pallara", "greenbank", "eight-mile-plains", "mount-gravatt"].includes(area.slug)
+);
 
 export default function ServiceAreasSection() {
   return (
@@ -40,10 +26,16 @@ export default function ServiceAreasSection() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {areaCards.map((area, index) => (
             <ScrollReveal key={area.name} delay={index * 0.08}>
-              <div className="h-full border border-[#1a1a1a]/8 bg-[#fafafa] p-6">
+              <Link
+                href={`/locations/${area.slug}`}
+                className="block h-full border border-[#1a1a1a]/8 bg-[#fafafa] p-6 transition-all duration-300 hover:border-accent/40 hover:bg-white hover:shadow-lg"
+              >
                 <h3 className="font-sans text-lg font-semibold text-[#1a1a1a]">{area.name}</h3>
-                <p className="mt-3 font-sans text-sm leading-relaxed text-[#1a1a1a]/60">{area.focus}</p>
-              </div>
+                <p className="mt-3 font-sans text-sm leading-relaxed text-[#1a1a1a]/60">{area.strengths[0]}</p>
+                <span className="mt-5 inline-block font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-accent">
+                  View Local Page
+                </span>
+              </Link>
             </ScrollReveal>
           ))}
         </div>

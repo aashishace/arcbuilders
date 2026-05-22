@@ -23,13 +23,13 @@ export default function AdminPage() {
             name: "github",
             repo: cmsRepo,
             branch: "main",
-            base_url: "https://arcbuilders.com.au",
+            base_url: "https://www.arcbuilders.com.au",
             auth_endpoint: "/api/auth",
           },
           publish_mode: "editorial_workflow",
           media_folder: "public/uploads",
           public_folder: "/uploads",
-          site_url: "https://arcbuilders.com.au",
+          site_url: "https://www.arcbuilders.com.au",
           collections: [
             {
               name: "blog",

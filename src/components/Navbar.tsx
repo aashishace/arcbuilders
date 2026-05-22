@@ -64,6 +64,8 @@ export default function Navbar() {
           <div className="hidden shrink-0 items-center gap-4 xl:flex">
             <a
               href={`tel:${companyInfo.phone}`}
+              data-gtm-event="phone_click"
+              data-gtm-source="navbar"
               className="hidden items-center gap-2 text-sm text-[#0a0a0a]/80 transition-colors hover:text-accent 2xl:flex"
             >
               <Phone size={14} />
@@ -71,6 +73,8 @@ export default function Navbar() {
             </a>
             <Link
               href="/contact"
+              data-gtm-event="contact_cta_click"
+              data-gtm-source="navbar"
               className="rounded-none border border-accent bg-white/90 px-6 py-2.5 text-sm font-semibold tracking-wider text-accent transition-all duration-300 hover:bg-accent/8 hover:text-[#0a0a0a]"
             >
               START PROJECT
@@ -119,11 +123,13 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              <Link
-                href="/contact"
-                onClick={() => setMobileOpen(false)}
-                className="mt-4 inline-block border border-accent bg-white px-8 py-3 text-sm font-semibold tracking-wider text-accent transition-all duration-300 hover:bg-accent/8 hover:text-[#0a0a0a]"
-              >
+                <Link
+                  href="/contact"
+                  onClick={() => setMobileOpen(false)}
+                  data-gtm-event="contact_cta_click"
+                  data-gtm-source="mobile_nav"
+                  className="mt-4 inline-block border border-accent bg-white px-8 py-3 text-sm font-semibold tracking-wider text-accent transition-all duration-300 hover:bg-accent/8 hover:text-[#0a0a0a]"
+                >
                 START YOUR PROJECT
               </Link>
             </motion.div>
