@@ -2,6 +2,7 @@
 import Script from "next/script";
 import { Inter, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
+import AnalyticsEvents from "@/components/AnalyticsEvents";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { commercialServices, companyInfo, residentialServices } from "@/lib/data";
 import { absoluteUrl, defaultKeywords, siteConfig } from "@/lib/seo";
@@ -184,6 +185,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           {children}
         </div>
+        {!maintenanceModeEnabled && <AnalyticsEvents />}
         {!maintenanceModeEnabled && <WhatsAppButton />}
         {!maintenanceModeEnabled && (
           <script
