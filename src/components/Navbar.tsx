@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { navLinks, companyInfo } from "@/lib/data";
+import { navLinks } from "@/lib/data";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -61,16 +61,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden shrink-0 items-center gap-4 xl:flex">
-            <a
-              href={`tel:${companyInfo.phone}`}
-              data-gtm-event="phone_click"
-              data-gtm-source="navbar"
-              className="hidden items-center gap-2 text-sm text-[#0a0a0a]/80 transition-colors hover:text-accent 2xl:flex"
-            >
-              <Phone size={14} />
-              {companyInfo.phone}
-            </a>
+          <div className="hidden shrink-0 items-center xl:flex">
             <Link
               href="/contact"
               data-gtm-event="contact_cta_click"

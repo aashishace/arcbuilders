@@ -88,8 +88,8 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.45 }}
                   className="max-w-3xl text-4xl font-light leading-[0.98] tracking-tight text-[#0a0a0a] sm:text-5xl md:text-6xl xl:text-7xl"
                 >
-                  Building
-                  <span className="block text-accent">Bespoke Homes with Precision</span>
+                  Custom Homes
+                  <span className="block text-accent">Crafted with Care</span>
                 </motion.h1>
 
                 <motion.p
