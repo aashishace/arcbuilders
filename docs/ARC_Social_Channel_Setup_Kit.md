@@ -26,7 +26,7 @@ Use it when setting up ARC Builders on Google Business Profile, Instagram, Faceb
 - Projects page: `https://arcbuilders.com.au/projects`
 - Blog page: `https://arcbuilders.com.au/blog`
 - WhatsApp link: `https://wa.me/61411878438?text=Hi%20ARC%20Builders%2C%20I%27m%20interested%20in%20discussing%20a%20project.`
-- Address: `25 Langford Street, Eight Mile Plains QLD 4113`
+- Address: `8 Clunies Ross Court, Eight Mile Plains QLD 4113`
 - QBCC Licence: `15090326`
 
 ### Public service area wording
@@ -113,7 +113,7 @@ Have these ready before creating channels:
 - Phone: `0411 878 438`
 - Website: `https://arcbuilders.com.au/`
 - Appointment link: `https://arcbuilders.com.au/contact`
-- Address: `25 Langford Street, Eight Mile Plains QLD 4113`
+- Address: `8 Clunies Ross Court, Eight Mile Plains QLD 4113`
 
 ### Service areas to paste
 

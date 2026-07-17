@@ -29,7 +29,7 @@ export default function Footer() {
 
   return (
     <footer className="relative border-t border-black/8 bg-white text-[#0a0a0a]">
-      {/* Gold accent line */}
+      {/* Brand accent line */}
       <div className="h-px bg-linear-to-r from-transparent via-accent to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
@@ -38,11 +38,11 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-flex items-center">
               <Image
-                src="/logo-tight.webp"
+                src="/arc-logo.svg"
                 alt="ARC Builders"
-                width={373}
-                height={238}
-                className="h-16 w-auto"
+                width={842}
+                height={123}
+                className="h-auto w-full max-w-72"
                 unoptimized
               />
             </Link>

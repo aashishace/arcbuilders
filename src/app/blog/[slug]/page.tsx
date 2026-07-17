@@ -69,7 +69,7 @@ export default async function BlogDetailPage({
       name: siteConfig.name,
       logo: {
         "@type": "ImageObject",
-        url: absoluteUrl("/logo-tight.webp"),
+        url: absoluteUrl("/arc-logo.svg"),
       },
     },
     articleSection: post.category,

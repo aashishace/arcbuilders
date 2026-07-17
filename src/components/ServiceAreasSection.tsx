@@ -44,7 +44,7 @@ export default function ServiceAreasSection() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/projects"
-              className="inline-flex border border-accent bg-accent px-7 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-[#1a1a1a] transition-all duration-300 hover:bg-transparent hover:text-accent"
+              className="inline-flex border border-accent bg-accent px-7 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-transparent hover:text-accent"
             >
               Explore Projects
             </Link>

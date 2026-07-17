@@ -65,7 +65,7 @@ export default function ServicesSection() {
                   {/* Gold accent top line */}
                   <div className="absolute left-0 top-0 h-0.5 w-0 bg-accent transition-all duration-500 group-hover:w-full" />
 
-                  <div className="flex h-12 w-12 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-[#1a1a1a]">
+                  <div className="flex h-12 w-12 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-white">
                     <Icon size={20} />
                   </div>
                   <h3 className="mt-6 font-sans text-lg font-semibold text-[#1a1a1a]">
@@ -91,7 +91,7 @@ export default function ServicesSection() {
             </p>
             <Link
               href="/contact"
-              className="mt-4 inline-flex border border-[#1a1a1a] px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all duration-300 hover:border-accent hover:bg-accent hover:text-[#1a1a1a]"
+              className="mt-4 inline-flex border border-[#1a1a1a] px-8 py-3 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all duration-300 hover:border-accent hover:bg-accent hover:text-white"
             >
               Get Service Consultation
             </Link>

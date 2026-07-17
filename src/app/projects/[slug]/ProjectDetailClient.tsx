@@ -139,7 +139,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                   href="/contact"
                   data-gtm-event="project_contact_click"
                   data-gtm-source={project.slug}
-                  className="inline-flex border border-accent bg-accent px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-[#1a1a1a] transition-all duration-300 hover:bg-transparent hover:text-accent"
+                  className="inline-flex border border-accent bg-accent px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-transparent hover:text-accent"
                 >
                   Discuss a Similar Build
                 </Link>

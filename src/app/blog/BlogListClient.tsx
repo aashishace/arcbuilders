@@ -38,7 +38,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
             onClick={() => setActiveCategory(cat)}
             className={`border px-5 py-2 font-sans text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
               activeCategory === cat
-                ? "border-accent bg-accent text-[#1a1a1a]"
+                ? "border-accent bg-accent text-white"
                 : "border-[#1a1a1a]/10 bg-white text-[#1a1a1a]/60 hover:border-accent hover:text-accent"
             }`}
           >
@@ -117,7 +117,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div className="absolute left-4 top-4">
-                    <span className="bg-accent/90 px-3 py-1 font-sans text-[10px] font-semibold uppercase tracking-wider text-[#1a1a1a]">
+                    <span className="bg-accent/90 px-3 py-1 font-sans text-[10px] font-semibold uppercase tracking-wider text-white">
                       {post.category}
                     </span>
                   </div>

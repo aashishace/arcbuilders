@@ -87,7 +87,7 @@ export default function ResidentialPage() {
                     id={service.href.split("#")[1]}
                     className="group border border-[#1a1a1a]/5 bg-white p-8 transition-all duration-500 hover:border-accent/30 hover:shadow-xl"
                   >
-                    <div className="flex h-14 w-14 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-[#1a1a1a]">
+                    <div className="flex h-14 w-14 items-center justify-center border border-accent/20 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-white">
                       <Icon size={24} />
                     </div>
                     <h3 className="mt-6 font-sans text-xl font-semibold text-[#1a1a1a]">

@@ -32,7 +32,7 @@ export const metadata: Metadata = createPageMetadata({
     "multi-generational home builder",
     "transparent pricing home builder",
   ],
-  images: ["/hero.webp", "/logo-tight.webp"],
+  images: ["/hero.webp", "/arc-logo.svg"],
 });
 
 export default function HomePage() {

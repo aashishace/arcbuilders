@@ -119,7 +119,7 @@ export default function RootLayout({
     },
     areaServed: siteConfig.serviceAreas,
     image: absoluteUrl("/hero.webp"),
-    logo: absoluteUrl("/logo-tight.webp"),
+    logo: absoluteUrl("/arc-logo.svg"),
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",

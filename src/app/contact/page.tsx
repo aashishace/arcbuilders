@@ -334,7 +334,7 @@ export default function ContactPage() {
                       {/* Submit */}
                       <button
                         type="submit"
-                        className="group relative mt-4 flex w-full items-center justify-center gap-3 overflow-hidden border border-accent bg-accent py-4 font-sans text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] transition-all duration-500"
+                        className="group relative mt-4 flex w-full items-center justify-center gap-3 overflow-hidden border border-accent bg-accent py-4 font-sans text-sm font-semibold uppercase tracking-wider text-white transition-all duration-500"
                       >
                         <span className="relative z-10 transition-colors duration-500 group-hover:text-accent">
                           Send Enquiry

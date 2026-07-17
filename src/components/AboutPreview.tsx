@@ -7,7 +7,7 @@ import { companyInfo } from "@/lib/data";
 export default function AboutPreview() {
   return (
     <section className="relative overflow-hidden bg-white py-24 lg:py-32">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(191,143,0,0.10),transparent_38%),radial-gradient(circle_at_bottom_left,rgba(191,143,0,0.05),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,56,142,0.10),transparent_38%),radial-gradient(circle_at_bottom_left,rgba(0,56,142,0.05),transparent_50%)]" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">

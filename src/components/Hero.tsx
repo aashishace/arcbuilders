@@ -67,7 +67,7 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-white pb-6 pt-20 sm:pb-8 sm:pt-24 lg:pt-28">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(191,143,0,0.08),transparent_34%),linear-gradient(180deg,#ffffff_0%,#fbfbf8_42%,#f4f1ea_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(0,56,142,0.08),transparent_34%),linear-gradient(180deg,#ffffff_0%,#fbfbf8_42%,#f4f1ea_100%)]" />
       <div className="relative mx-auto max-w-385 px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-4xl border border-black/6 bg-[#fbfaf7] shadow-[0_30px_90px_rgba(0,0,0,0.08)]">
           <div className="grid min-h-[calc(100vh-7.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">

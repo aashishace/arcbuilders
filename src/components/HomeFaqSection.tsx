@@ -59,7 +59,7 @@ export default function HomeFaqSection() {
           <div className="mt-10">
             <Link
               href="/contact"
-              className="inline-flex border border-accent bg-accent px-8 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-[#1a1a1a] transition-all duration-300 hover:bg-transparent hover:text-accent"
+              className="inline-flex border border-accent bg-accent px-8 py-3 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all duration-300 hover:bg-transparent hover:text-accent"
             >
               Get Free Consultation
             </Link>

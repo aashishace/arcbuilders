@@ -18,7 +18,7 @@ export default function TestimonialsSection() {
       {/* Subtle texture */}
       <div className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(191,143,0,0.25) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0,56,142,0.25) 1px, transparent 0)`,
           backgroundSize: "40px 40px",
         }}
       />

@@ -14,10 +14,10 @@
 :root {
   --background: #ffffff;
   --foreground: #0a0a0a;
-  --primary: #0a0a0a;
-  --accent: #bf8f00;
-  --accent-light: #d5bb6b;
-  --accent-dark: #8f6b00;
+  --primary: #00388e;
+  --accent: #00388e;
+  --accent-light: #00388e;
+  --accent-dark: #001d44;
 }
 
 body {
@@ -34,4 +34,3 @@ body {
 h1, h2, h3, h4, h5, h6, .font-serif {
   font-family: var(--font-serif), serif;
 }
-

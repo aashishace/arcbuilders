@@ -245,7 +245,7 @@ export default function InclusionsPage() {
                         onClick={() => setForm((prev) => ({ ...prev, buildType: item.value }))}
                         className={`rounded-md border px-5 py-2.5 text-sm font-semibold shadow-sm transition-all duration-150 active:scale-[0.98] ${
                           form.buildType === item.value
-                            ? "border-accent bg-accent text-[#1a1a1a] shadow-[0_0_0_2px_rgba(223,131,88,0.25)]"
+                            ? "border-accent bg-accent text-white shadow-[0_0_0_2px_rgba(0,56,142,0.25)]"
                             : "border-[#1a1a1a]/20 bg-white text-[#1a1a1a]/80 hover:border-accent hover:bg-accent/10"
                         }`}
                       >
@@ -269,7 +269,7 @@ export default function InclusionsPage() {
                         onClick={() => setForm((prev) => ({ ...prev, packageId: pkg.id }))}
                         className={`rounded-md border px-4 py-3 text-left shadow-sm transition-all duration-150 active:scale-[0.99] ${
                           form.packageId === pkg.id
-                            ? "border-accent bg-accent/10 shadow-[0_0_0_2px_rgba(223,131,88,0.22)]"
+                            ? "border-accent bg-accent/10 shadow-[0_0_0_2px_rgba(0,56,142,0.22)]"
                             : "border-[#1a1a1a]/12 bg-white hover:border-accent/40 hover:bg-[#fffaf6]"
                         }`}
                       >
@@ -353,7 +353,7 @@ export default function InclusionsPage() {
                                     onClick={() => setRowSelection(section.id, rowIndex, "upgrade")}
                                     className={`rounded border px-2.5 py-1.5 font-sans text-[10px] font-semibold uppercase tracking-[0.12em] shadow-sm transition-all duration-150 active:scale-[0.98] ${
                                       currentDecision.status === "upgrade"
-                                        ? "border-accent bg-accent text-[#1a1a1a] shadow-[0_0_0_2px_rgba(223,131,88,0.25)]"
+                                        ? "border-accent bg-accent text-white shadow-[0_0_0_2px_rgba(0,56,142,0.25)]"
                                         : "border-[#1a1a1a]/20 bg-white text-[#1a1a1a]/70 hover:border-accent hover:bg-accent/10"
                                     }`}
                                   >
@@ -372,7 +372,7 @@ export default function InclusionsPage() {
                                   }
                                   className={`rounded border px-2.5 py-1.5 font-sans text-[10px] font-semibold uppercase tracking-[0.12em] shadow-sm transition-all duration-150 active:scale-[0.98] ${
                                     currentDecision.status === "upgrade"
-                                      ? "border-accent bg-accent text-[#1a1a1a] shadow-[0_0_0_2px_rgba(223,131,88,0.25)]"
+                                      ? "border-accent bg-accent text-white shadow-[0_0_0_2px_rgba(0,56,142,0.25)]"
                                       : "border-[#1a1a1a]/20 bg-white text-[#1a1a1a]/70 hover:border-accent hover:bg-accent/10"
                                   }`}
                                 >
@@ -502,7 +502,7 @@ export default function InclusionsPage() {
                   type="button"
                   disabled={isGenerating || !isFormReady()}
                   onClick={generatePdf}
-                  className="border border-accent bg-accent px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#1a1a1a] transition-colors hover:bg-[#1a1a1a] hover:text-accent disabled:cursor-not-allowed disabled:opacity-70"
+                  className="border border-accent bg-accent px-6 py-3 font-sans text-xs font-semibold uppercase tracking-[0.18em] text-white transition-colors hover:border-accent-dark hover:bg-accent-dark hover:text-white disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {isGenerating ? "Generating PDF..." : "Download Inclusion Summary"}
                 </button>

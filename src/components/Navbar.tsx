@@ -33,13 +33,13 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="relative z-10 flex shrink-0 items-center">
             <Image
-              src="/logo-tight.webp"
+              src="/arc-logo.svg"
               alt="ARC Builders"
-              width={373}
-              height={238}
+              width={842}
+              height={123}
               className={cn(
                 "w-auto transition-all duration-500",
-                scrolled ? "h-12 md:h-14" : "h-14 md:h-16"
+                scrolled ? "h-7 md:h-9" : "h-8 md:h-10"
               )}
               priority
               unoptimized

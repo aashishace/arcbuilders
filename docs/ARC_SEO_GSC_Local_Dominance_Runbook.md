@@ -29,7 +29,7 @@ Use the same NAP everywhere:
 - Phone: `0411 878 438`
 - Email: `admin@arcbuilders.com.au`
 - Website: `https://arcbuilders.com.au/`
-- Address: `25 Langford Street, Eight Mile Plains QLD 4113`
+- Address: `8 Clunies Ross Court, Eight Mile Plains QLD 4113`
 - Primary category: `Custom Home Builder`
 - Secondary categories: `Home Builder`, `Construction Company`, `Renovation Contractor`
 
