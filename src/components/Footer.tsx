@@ -40,9 +40,9 @@ export default function Footer() {
               <Image
                 src="/arc-logo.svg"
                 alt="ARC Builders"
-                width={842}
-                height={123}
-                className="h-auto w-full max-w-72"
+                width={500}
+                height={189}
+                className="h-auto w-full max-w-52"
                 unoptimized
               />
             </Link>

@@ -29,17 +29,17 @@ export default function Navbar() {
             : "bg-transparent py-3"
         )}
       >
-        <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
+        <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link href="/" className="relative z-10 flex shrink-0 items-center">
             <Image
               src="/arc-logo.svg"
               alt="ARC Builders"
-              width={842}
-              height={123}
+              width={500}
+              height={189}
               className={cn(
                 "w-auto transition-all duration-500",
-                scrolled ? "h-7 md:h-9" : "h-8 md:h-10"
+                scrolled ? "h-9 sm:h-10" : "h-10 sm:h-11"
               )}
               priority
               unoptimized
@@ -47,12 +47,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 xl:flex">
+          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-6 xl:flex 2xl:gap-7">
             {topNavLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="group relative whitespace-nowrap text-[13px] font-semibold uppercase tracking-widest text-accent transition-colors hover:text-[#0a0a0a]"
+                className="group relative whitespace-nowrap py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-accent transition-colors hover:text-accent-dark 2xl:text-[13px]"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
@@ -75,7 +75,7 @@ export default function Navbar() {
               href="/contact"
               data-gtm-event="contact_cta_click"
               data-gtm-source="navbar"
-              className="rounded-none border border-accent bg-white/90 px-6 py-2.5 text-sm font-semibold tracking-wider text-accent transition-all duration-300 hover:bg-accent/8 hover:text-[#0a0a0a]"
+              className="border border-accent bg-white/90 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-accent transition-all duration-300 hover:bg-accent hover:text-white 2xl:px-6 2xl:text-sm"
             >
               START PROJECT
             </Link>
@@ -84,8 +84,10 @@ export default function Navbar() {
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="relative z-10 text-accent xl:hidden"
-            aria-label="Toggle menu"
+            className="relative z-10 flex h-11 w-11 items-center justify-center text-accent transition-colors hover:text-accent-dark xl:hidden"
+            aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -100,7 +102,8 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-white/96 backdrop-blur-lg xl:hidden"
+            id="mobile-navigation"
+            className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-5 bg-white/96 px-6 pt-16 backdrop-blur-lg xl:hidden"
           >
             {topNavLinks.map((link, i) => (
               <motion.div
@@ -112,7 +115,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-2xl font-light tracking-wider text-accent transition-colors hover:text-[#0a0a0a]"
+                  className="block py-1 text-2xl font-light tracking-wider text-accent transition-colors hover:text-accent-dark"
                 >
                   {link.label}
                 </Link>
@@ -128,7 +131,7 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   data-gtm-event="contact_cta_click"
                   data-gtm-source="mobile_nav"
-                  className="mt-4 inline-block border border-accent bg-white px-8 py-3 text-sm font-semibold tracking-wider text-accent transition-all duration-300 hover:bg-accent/8 hover:text-[#0a0a0a]"
+                  className="mt-3 inline-block border border-accent bg-accent px-8 py-3 text-sm font-semibold tracking-wider text-white transition-all duration-300 hover:bg-accent-dark"
                 >
                 START YOUR PROJECT
               </Link>

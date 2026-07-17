@@ -36,6 +36,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "ARC Builders | Custom Home Builder in Brisbane & South East Queensland",
     description: siteConfig.description,
@@ -64,9 +65,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml", sizes: "any" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.ico" },
     ],
     apple: "/apple-touch-icon.png",
   },
